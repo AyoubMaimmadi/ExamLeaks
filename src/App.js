@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import Exam from './Exam'
 import Categories from './Categories'
 import items from './data'
-const allCategories = ['all', ...new Set(items.map((item) => item.category))]
+import Footer from './Footer'
 
+const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 function App() {
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
@@ -21,12 +22,16 @@ function App() {
     <main>
       <section className="exam section">
         <div className="title">
-          <h2>Exam Leaks</h2>
+          <h2>
+            Exam Leaks
+            <a href="#home" class="scroll-link"></a>
+          </h2>
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <Exam items={examItems} />
       </section>
+      <Footer className="" />
     </main>
   )
 }
