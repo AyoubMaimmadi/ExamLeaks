@@ -14,7 +14,7 @@ const exam = [
     category: 'CSC',
     name: 'CSC 3300',
     img: './images/csc.png',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -23,7 +23,7 @@ const exam = [
     category: 'BA',
     name: 'BA 3300',
     img: './images/ba.jpg',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -32,7 +32,7 @@ const exam = [
     category: 'BA',
     name: 'BA 3300',
     img: './images/ba.jpg',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -41,7 +41,7 @@ const exam = [
     category: 'SHSS',
     name: 'SHSS 3300',
     img: './images/shss.jpg',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -50,7 +50,7 @@ const exam = [
     category: 'IMS',
     name: 'IMS 3300',
     img: './images/ims.jpg',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -59,7 +59,7 @@ const exam = [
     category: 'CSC',
     name: 'CSC 3300',
     img: './images/csc.png',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -68,7 +68,7 @@ const exam = [
     category: 'BA',
     name: 'BA 3300',
     img: './images/ba.jpg',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -77,7 +77,7 @@ const exam = [
     category: 'IMS',
     name: 'IMS 3300',
     img: './images/ims.jpg',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -86,7 +86,7 @@ const exam = [
     category: 'SHSS',
     name: 'SHSS 3300',
     img: './images/shss.jpg',
-    link: 'https://twitter.com/',
+    link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
 ]
