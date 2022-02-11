@@ -2,12 +2,23 @@ import React from 'react'
 
 const SearchBar = () => {
   return (
-    <div>
+    // <div>
+    //   <input
+    //     className="searchbar"
+    //     type="text"
+    //     placeholder=" i.e. Software Eng"
+    //   />
+    // </div>
+    <div class="search">
       <input
-        className="searchbar"
         type="text"
-        placeholder=" i.e. Software Eng"
+        name=""
+        placeholder="i.e Software Engineering"
+        class="text"
       />
+      <a href="#" class="btn">
+        <i class="fa fa-search "></i>
+      </a>
     </div>
   )
 }
