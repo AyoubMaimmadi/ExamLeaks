@@ -28,7 +28,7 @@ function App() {
         <SearchBar />
         <br />
         <div className="title">
-          <h2>
+          <h2 id="examPage">
             Exam Leaks
             <a class="scroll-link"></a>
           </h2>
@@ -36,7 +36,34 @@ function App() {
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <Exam items={examItems} />
+        <Uparrow />
       </section>
+      <section className="exam section">
+        <br />
+        <div className="title">
+          <h2 id="prgPage">
+            Project Leaks
+            <a class="scroll-link"></a>
+          </h2>
+          <div className="underline"></div>
+        </div>
+        <Categories categories={categories} filterItems={filterItems} />
+        <Exam items={examItems} />
+        <Uparrow />
+      </section>
+      <section className="exam section">
+        <br />
+        <div className="title">
+          <h2 id="HomeworkPage">
+            Homework Leaks
+            <a class="scroll-link"></a>
+          </h2>
+          <div className="underline"></div>
+        </div>
+        <Categories categories={categories} filterItems={filterItems} />
+        <Exam items={examItems} />
+      </section>
+
       <Uparrow />
       <Footer />
     </main>
