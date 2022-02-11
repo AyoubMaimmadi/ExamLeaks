@@ -13,13 +13,13 @@ const Navbar = () => {
         <a href="index.html" class="logo"></a>
         <ul class="navlinks">
           <li>
-            <a href="#examPage">Exams</a>
+            <a href="#exams">Exams</a>
           </li>
           <li>
-            <a href="#PrjPage">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#HomeworkPage">Homeworks</a>
+            <a href="#homework">Homeworks</a>
           </li>
         </ul>
       </nav>

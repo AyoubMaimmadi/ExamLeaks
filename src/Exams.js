@@ -29,7 +29,7 @@ export const Exams = () => {
         <SearchBar />
         <br />
         <div className="title">
-          <h2 id="examPage">
+          <h2 id="exams">
             Exam Leaks
             <a class="scroll-link"></a>
           </h2>
