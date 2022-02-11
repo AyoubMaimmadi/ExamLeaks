@@ -161,14 +161,5 @@ const exam = [
     link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
-  {
-    id: 19,
-    title: 'Philosophical Thought	',
-    category: 'SHSS',
-    name: 'SHSS 3300',
-    img: './images/shss.jpg',
-    link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-  },
 ]
 export default exam
