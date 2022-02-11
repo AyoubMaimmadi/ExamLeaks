@@ -13,7 +13,7 @@ const SearchBar = () => {
       <input
         type="text"
         name=""
-        placeholder="i.e Software Engineering"
+        placeholder="i.e. Software Eng ..."
         class="text"
       />
       <a href="#" class="btn">
