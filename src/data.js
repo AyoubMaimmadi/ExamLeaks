@@ -6,7 +6,7 @@ const exam = [
     name: 'CSC 3300',
     img: './images/csc.png',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const exam = [
     name: 'CSC 3300',
     img: './images/csc.png',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const exam = [
     name: 'BA 3300',
     img: './images/ba.jpg',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const exam = [
     name: 'BA 3300',
     img: './images/ba.jpg',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ const exam = [
     name: 'SHSS 3300',
     img: './images/shss.jpg',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const exam = [
     name: 'IMS 3300',
     img: './images/ims.jpg',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ const exam = [
     name: 'CSC 3300',
     img: './images/csc.png',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ const exam = [
     name: 'BA 3300',
     img: './images/ba.jpg',
     link: 'https://github.com/AyoubMaimmadi',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   // {
   //   id: 9,

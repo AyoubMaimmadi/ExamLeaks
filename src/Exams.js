@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Exam from './Exam'
 import Categories from './Categories'
 import items from './data'

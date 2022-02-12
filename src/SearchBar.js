@@ -1,24 +1,27 @@
 import React, { useState } from 'react'
-import items from './data'
-
-const allCategories = ['all', ...new Set(items.map((item) => item.category))]
+import { useEffect } from 'react'
+import exam from './data'
+import Exam from './Exam'
 
 const SearchBar = () => {
-  //Searching
+  const [input, setInput] = useState('')
+  const [output, setOutput] = useState([])
 
-  const [examItems, setExamItems] = useState(items)
-  const [categories, setCategories] = useState(allCategories)
+  useEffect(() => {
+    setOutput([])
+    exam.filter((val) => {
+      if (val.title.toLowerCase().includes(input.toLowerCase())) {
+        setOutput((output) => [...output, val])
+      }
+    })
+  }, [input])
 
-  const inp = 'CSC'
+  const mainOutput = output.map((item) => {
+    return item
+  })
 
-  const filterItems = (category) => {
-    if (category === inp) {
-      setExamItems(inp)
-      return
-    }
-    const newItems = items.filter((item) => item.category === category)
-    setExamItems(newItems)
-  }
+  // console.log()
+
   return (
     <div class="search">
       <input
@@ -26,6 +29,7 @@ const SearchBar = () => {
         name=""
         placeholder="i.e. Software Eng ..."
         class="text"
+        onChange={(e) => setInput(e.target.value)}
       />
       <a href="#" class="btn">
         <i class="fa fa-search "></i>
@@ -33,5 +37,4 @@ const SearchBar = () => {
     </div>
   )
 }
-
 export default SearchBar
