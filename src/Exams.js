@@ -12,6 +12,21 @@ const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 export const Exams = () => {
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
+  const [input, setInput] = useState('')
+
+  useEffect(() => {
+    setExamItems([])
+    items.filter((val) => {
+      if (val.title.toLowerCase().includes(input.toLowerCase())) {
+        setExamItems((examItems) => [...examItems, val])
+      }
+    })
+  }, [input])
+
+  const mainOutput = examItems.map((item) => {
+    return item
+  })
+  // console.log(mainOutput)
 
   const filterItems = (category) => {
     if (category === 'all') {
@@ -26,7 +41,18 @@ export const Exams = () => {
     <main>
       <section id="home" className="exam section">
         <Navbar />
-        <SearchBar />
+        <div class="search">
+          <input
+            type="text"
+            name=""
+            placeholder="i.e. Software Eng ..."
+            class="text"
+            onChange={(e) => setInput(e.target.value)}
+          />
+          <a href="#" class="btn">
+            <i class="fa fa-search "></i>
+          </a>
+        </div>
         <br />
         <div className="title">
           <h2 id="exams">
