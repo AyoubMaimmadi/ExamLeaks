@@ -13,3 +13,5 @@ open terminal and type/run
 `npm unstall` to install node modules, then run
 
 `npm start` to open developement at `localhost:3000`
+
+View website using the link `https://examleaks.netlify.app/`
