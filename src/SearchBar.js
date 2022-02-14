@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
 import exam from './data'
-import Exam from './Exam'
+// import Exam from './Exam'
 
 const SearchBar = () => {
   const [input, setInput] = useState('')

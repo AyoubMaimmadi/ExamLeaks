@@ -23,7 +23,7 @@ const Homewok = () => {
     <main>
       <section id="home" className="exam section">
         <div className="title">
-          <h2 id="homework">
+          <h2 id="Homework">
             Homework Leaks
             <a className="scroll-link"></a>
           </h2>
