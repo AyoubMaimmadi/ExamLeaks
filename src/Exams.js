@@ -56,8 +56,10 @@ export const Exams = () => {
             onChange={(e) => {
               setInput(e.target.value)
               setPagename('Results')
+              setCategories([])
               if (e.target.value === '') {
                 setPagename('ExamLeaks')
+                setCategories(allCategories)
               }
             }}
           />

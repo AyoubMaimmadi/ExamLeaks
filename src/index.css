@@ -475,12 +475,3 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-/* .title {
-  margin-top: -rem;
-} */
-
-@media screen {
-  .search {
-  }
-}
