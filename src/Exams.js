@@ -8,13 +8,6 @@ import Navbar from './Navbar'
 import hwdata from './HwData'
 import prjdata from './PrjData'
 
-global.allData = [
-  ...new Set(items.map((item) => item)),
-  ...new Set(hwdata.map((item) => item)),
-  ...new Set(prjdata.map((item) => item)),
-]
-console.log(global.allData)
-
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
 export const Exams = () => {
@@ -22,9 +15,16 @@ export const Exams = () => {
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
 
+  const allData = [
+    ...new Set(items.map((item) => item)),
+    ...new Set(prjdata.map((item) => item)),
+    ...new Set(hwdata.map((item) => item)),
+  ]
+  // console.log(allData)
+
   useEffect(() => {
     setExamItems([])
-    items.filter((val) => {
+    allData.filter((val) => {
       if (val.title.toLowerCase().includes(input.toLowerCase())) {
         setExamItems((examItems) => [...examItems, val])
       }
@@ -34,7 +34,6 @@ export const Exams = () => {
   const mainOutput = examItems.map((item) => {
     return item
   })
-  // console.log(mainOutput)
 
   const filterItems = (category) => {
     if (category === 'all') {
