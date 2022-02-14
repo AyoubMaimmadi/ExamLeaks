@@ -5,13 +5,13 @@ import './nav.css'
 const Navbar = () => {
   return (
     <header>
-      <nav class="main-nav">
+      <nav className="main-nav">
         <input type="checkbox" id="check" />
-        <label for="check" class="menu-btn">
-          <i class="fas fa-bars"></i>
+        <label htmlFor="check" className="menu-btn">
+          <i className="fas fa-bars"></i>
         </label>
-        <a href="index.html" class="logo"></a>
-        <ul class="navlinks">
+        <a href="index.html" className="logo"></a>
+        <ul className="navlinks">
           <li>
             <a href="#exams">Exams</a>
           </li>

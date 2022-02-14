@@ -4,9 +4,9 @@ const date = new Date().getFullYear()
 const Footer = () => {
   return (
     <footer>
-      <div class="footerCol">
-        <div class="container">
-          <ul class="socialCol">
+      <div className="footerCol">
+        <div className="container">
+          <ul className="socialCol">
             <li>
               <a href="https://www.facebook.com/AYOUB.MAIMMADI1">
                 <img src="./images//fb.svg" />
@@ -28,7 +28,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <div class="copyrightCol">
+          <div className="copyrightCol">
             <p>
               Copyright &copy; Ayoub Maimmadi
               <span> {date}</span>. all rights reserved.
