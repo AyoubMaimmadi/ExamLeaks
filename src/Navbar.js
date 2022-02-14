@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { FaBars } from 'react-icons/fa'
 import './nav.css'
 
 const Navbar = () => {
@@ -26,5 +25,10 @@ const Navbar = () => {
     </header>
   )
 }
+
+// export function Something() {
+//   const aaa = [1, 2, 3, 4, 5, 6]
+//   return aaa
+// }
 
 export default Navbar
