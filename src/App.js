@@ -7,6 +7,7 @@ import Projects from './Projects'
 // console.log(Something)
 
 const App = () => {
+  console.log('GTFO nerd!')
   return (
     <>
       <Exams />
