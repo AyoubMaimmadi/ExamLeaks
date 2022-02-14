@@ -8,8 +8,8 @@ you need to have node.js installed in you computer
 
 open the project in your IDE
 
-open terminal and type
+open terminal and type/run
 
-`npm unstall` to install node modules
+`npm unstall` to install node modules, then run
 
-then `npm start` to start developement at `localhost:3000`
+`npm start` to open developement at `localhost:3000`
