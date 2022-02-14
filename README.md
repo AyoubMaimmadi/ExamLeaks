@@ -10,6 +10,6 @@ you need to have node.js installed in you computer
 
 open terminal and type
 
-1npm unstall` to install node modules
+`npm unstall` to install node modules
 
 then npm start to start developement 
