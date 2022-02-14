@@ -12,4 +12,4 @@ open terminal and type
 
 `npm unstall` to install node modules
 
-then `npm start` to start developement at `locallhost:3000`
+then `npm start` to start developement at `localhost:3000`
