@@ -381,10 +381,10 @@ body {
 }
 @media (max-width: 640px) {
   .search:hover > .text {
-    width: 200px;
+    width: 150px;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 340px) {
   .search:hover > .text {
     width: 160px;
   }
@@ -405,14 +405,14 @@ body {
     justify-content: center; */
   }
 }
-@media (max-width: 461px) {
+@media (max-width: 450px) {
   .search:hover > .text {
     width: 140px;
   }
 }
 @media (max-width: 401px) {
   .search:hover > .text {
-    width: 110px;
+    width: 100px;
   }
 }
 
@@ -474,4 +474,13 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* .title {
+  margin-top: -rem;
+} */
+
+@media screen {
+  .search {
+  }
 }

@@ -13,6 +13,7 @@ body {
 
 .main-nav {
   height: 90px;
+  margin-top: -4rem;
 }
 
 .logo {
