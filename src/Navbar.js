@@ -29,9 +29,4 @@ const Navbar = () => {
   )
 }
 
-// export function Something() {
-//   const aaa = [1, 2, 3, 4, 5, 6]
-//   return aaa
-// }
-
 export default Navbar
