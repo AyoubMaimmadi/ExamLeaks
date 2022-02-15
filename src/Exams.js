@@ -6,6 +6,7 @@ import Uparrow from './Uparrow'
 import Navbar from './Navbar'
 import hwdata from './HwData'
 import prjdata from './PrjData'
+import quizeData from './quizData'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
@@ -17,6 +18,7 @@ export const Exams = () => {
 
   const allData = [
     ...new Set(items.map((item) => item)),
+    ...new Set(quizeData.map((item) => item)),
     ...new Set(prjdata.map((item) => item)),
     ...new Set(hwdata.map((item) => item)),
   ]

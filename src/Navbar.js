@@ -15,7 +15,7 @@ const Navbar = () => {
             <a href="#Exams">Exams</a>
           </li>
           <li>
-            <a href="#">Quizes</a>
+            <a href="#Quizes">Quizes</a>
           </li>
           <li>
             <a href="#Projects">Projects</a>
