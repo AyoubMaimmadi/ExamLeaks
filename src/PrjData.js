@@ -1,6 +1,6 @@
 const prjdata = [
   {
-    id: 100,
+    id: 3000,
     title: 'Works In Literature	',
     category: 'SHSS',
     name: 'SHSS 3300',
@@ -9,7 +9,7 @@ const prjdata = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 101,
+    id: 3001,
     title: 'Calculus 1',
     category: 'IMS',
     name: 'IMS 3300',
@@ -18,7 +18,7 @@ const prjdata = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 102,
+    id: 3002,
     title: 'Software Engineering',
     category: 'CSC',
     name: 'CSC 3300',

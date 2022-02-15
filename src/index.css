@@ -475,3 +475,9 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@media screen {
+  html {
+    scroll-behavior: smooth;
+  }
+}

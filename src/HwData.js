@@ -1,6 +1,6 @@
 const hwdata = [
   {
-    id: 201,
+    id: 4001,
     title: 'Languages & Compilers',
     category: 'CSC',
     name: 'CSC 3300',
@@ -9,7 +9,7 @@ const hwdata = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 202,
+    id: 4002,
     title: 'Works In Literature	',
     category: 'SHSS',
     name: 'SHSS 3300',
@@ -18,7 +18,7 @@ const hwdata = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 203,
+    id: 4003,
     title: 'Calculus 1',
     category: 'IMS',
     name: 'IMS 3300',
@@ -27,7 +27,7 @@ const hwdata = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 204,
+    id: 4004,
     title: 'Software Engineering',
     category: 'CSC',
     name: 'CSC 3300',
@@ -36,7 +36,7 @@ const hwdata = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 205,
+    id: 4005,
     title: 'lorem ipsum',
     category: 'CSC',
     name: 'CSC 3300',
