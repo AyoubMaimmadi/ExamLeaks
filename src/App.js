@@ -19,3 +19,20 @@ const App = () => {
 }
 
 export default App
+
+// <Router>
+//   <Switch>
+//     <Route path="/Home">
+//       <Exams />
+//     </Route>
+//     <Route path="/Quiz">
+//       <Quiz />
+//     </Route>
+//     <Route path="/Homewok">
+//       <Homewok />
+//     </Route>
+//     <Route path="/Projects">
+//       <Projects />
+//     </Route>
+//   </Switch>
+// </Router>
