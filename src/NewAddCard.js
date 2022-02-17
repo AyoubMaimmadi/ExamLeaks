@@ -10,7 +10,7 @@ const NewAddCard = () => {
     emailjs
       .sendForm(
         'gmail',
-        'service_ea5cfj4',
+        'template_h4ehzyk',
         e.target,
         'user_lgllKkiV9b83P4UUBcDGr'
       )
