@@ -1,6 +1,7 @@
 import React from 'react'
 import Uparrow from './Uparrow'
 import { useState } from 'react'
+import emailjs from 'emailjs-com'
 import './add-card.css'
 
 const AddCard = () => {
@@ -11,34 +12,50 @@ const AddCard = () => {
   const [message, setMessage] = useState('')
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
 
-    sendFeedback('***TEMPLAYE_ID***', {
-      name,
-      company,
-      phone,
-      email,
-      message,
-    })
-  }
-
-  const sendFeedback = (templateId, variables) => {
-    window.emailjs
-      .send('gmail', templateId, variables)
-      .then((res) => {
-        console.log('success !')
-        setName('')
-        setCompany('')
-        setPhone('')
-        setEmail('')
-        setMessage('')
-      })
-      .catch(
-        (err) =>
-          (document.querySelector('.form-message').innerHTML =
-            "Une erreur s'est produite, veuillez réessayer.")
+    // sendFeedback('***TEMPLAYE_ID***', {
+    //   name,
+    //   company,
+    //   phone,
+    //   email,
+    //   message,
+    // })e.preventDefault();
+    emailjs
+      .sendForm(
+        'gmail',
+        'service_ea5cfj4',
+        e.target,
+        'user_lgllKkiV9b83P4UUBcDGr'
       )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+    e.target.reset()
   }
+
+  // const sendFeedback = (templateId, variables) => {
+  //   window.emailjs
+  //     .send('gmail', templateId, variables)
+  //     .then((res) => {
+  //       console.log('success !')
+  //       setName('')
+  //       setCompany('')
+  //       setPhone('')
+  //       setEmail('')
+  //       setMessage('')
+  //     })
+  //     .catch(
+  //       (err) =>
+  //         (document.querySelector('.form-message').innerHTML =
+  //           "Une erreur s'est produite, veuillez réessayer.")
+  //     )
+  // }
   return (
     <main>
       <section className="exam section">
