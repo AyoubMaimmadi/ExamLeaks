@@ -43,7 +43,7 @@ const AddCard = () => {
     <main>
       <section className="exam section">
         <div className="title">
-          <h2 id="add">
+          <h2 id="Add">
             Add new Card
             <a className="scroll-link"></a>
           </h2>

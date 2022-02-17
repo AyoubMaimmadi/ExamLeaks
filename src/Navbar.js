@@ -23,6 +23,9 @@ const Navbar = () => {
           <li>
             <a href="#Homework">Homeworks</a>
           </li>
+          <li>
+            <a href="#Add">+</a>
+          </li>
         </ul>
       </nav>
     </header>
