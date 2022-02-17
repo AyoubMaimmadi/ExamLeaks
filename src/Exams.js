@@ -7,6 +7,7 @@ import Navbar from './Navbar'
 import hwdata from './HwData'
 import prjdata from './PrjData'
 import quizeData from './quizData'
+import './searchBar.css'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
