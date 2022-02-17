@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Projects from './Projects'
 import Quiz from './quizes'
 import AddCard from './addCard'
+import NewAddCard from './NewAddCard.js'
 
 const App = () => {
   console.log('GTFO nerd!')
@@ -14,27 +15,10 @@ const App = () => {
       <Quiz />
       <Projects />
       <Homewok />
-      <AddCard />
+      <NewAddCard />
       <Footer />
     </>
   )
 }
 
 export default App
-
-// <Router>
-//   <Switch>
-//     <Route path="/Home">
-//       <Exams />
-//     </Route>
-//     <Route path="/Quiz">
-//       <Quiz />
-//     </Route>
-//     <Route path="/Homewok">
-//       <Homewok />
-//     </Route>
-//     <Route path="/Projects">
-//       <Projects />
-//     </Route>
-//   </Switch>
-// </Router>

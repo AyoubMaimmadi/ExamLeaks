@@ -5,22 +5,14 @@ import emailjs from 'emailjs-com'
 import './add-card.css'
 
 const AddCard = () => {
-  const [name, setName] = useState('')
-  const [company, setCompany] = useState('')
-  const [phone, setPhone] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  // const [name, setName] = useState('')
+  // const [company, setCompany] = useState('')
+  // const [phone, setPhone] = useState('')
+  // const [email, setEmail] = useState('')
+  // const [message, setMessage] = useState('')
 
   const handleSubmit = (e) => {
-    // e.preventDefault()
-
-    // sendFeedback('***TEMPLAYE_ID***', {
-    //   name,
-    //   company,
-    //   phone,
-    //   email,
-    //   message,
-    // })e.preventDefault();
+    e.preventDefault()
     emailjs
       .sendForm(
         'gmail',
@@ -73,47 +65,27 @@ const AddCard = () => {
         <div className="form-content">
           <input
             type="text"
-            id="name"
-            name="name"
-            onChange={(e) => setName(e.target.value)}
+            id="Class Name"
+            name="Class Name"
             placeholder="Class Name"
-            value={name}
             autoComplete="off"
           />
-          <input
-            type="text"
-            id="company"
-            name="company"
-            onChange={(e) => setCompany(e.target.value)}
-            placeholder="School"
-            value={company}
-          />
-          <input
-            type="text"
-            id="phone"
-            name="phone"
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder="Class Code"
-            value={phone}
-          />
+          <input type="text" id="company" name="School" placeholder="School" />
+          <input type="text" id="phone" name="phone" placeholder="Class Code" />
           <div className="email-content">
             <label id="not-mail">Email non valide</label>
             <input
-              type="mail"
-              id="email"
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
+              type="link"
+              id="link"
+              name="link"
               placeholder="link"
-              value={email}
               autoComplete="off"
             />
           </div>
           <textarea
-            id="message"
-            name="message"
-            onChange={(e) => setMessage(e.target.value)}
+            id="Description"
+            name="Description"
             placeholder="Description"
-            value={message}
           />
         </div>
         <input
