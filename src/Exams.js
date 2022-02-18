@@ -15,7 +15,7 @@ export const Exams = () => {
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
-  const [pagename, setPagename] = useState('ExamLeaks')
+  const [pagename, setPagename] = useState('Exams')
 
   const allData = [
     ...new Set(items.map((item) => item)),
@@ -61,7 +61,7 @@ export const Exams = () => {
               setPagename('Results')
               setCategories([])
               if (e.target.value === '') {
-                setPagename('ExamLeaks')
+                setPagename('Exams')
                 setCategories(allCategories)
               }
             }}
