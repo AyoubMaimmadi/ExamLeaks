@@ -14,4 +14,6 @@ open terminal and type/run
 
 `npm start` to open developement at `localhost:3000`
 
-View website using the link `https://examleaks.netlify.app/`
+View website using the link `https://gpabooster.netlify.app/`
+
+
