@@ -1,7 +1,7 @@
 # GPA Booster
 
 ## Agile Software Engineering Project using React: (JS/JSX/CSS)
-## allows student to easily search and find old exams 
+## Allows student to easily search and find old exams/quizes/projects/homework
 
 Clone or download
 
