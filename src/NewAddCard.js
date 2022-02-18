@@ -1,7 +1,7 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
 import './newaddcard.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 const NewAddCard = () => {
   function sendEmail(e) {
@@ -37,7 +37,7 @@ const NewAddCard = () => {
       </section>
 
       <div>
-        <div className="container">
+        <div className="container myowncontainer">
           <form onSubmit={sendEmail}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
@@ -74,7 +74,7 @@ const NewAddCard = () => {
                   name="message"
                 ></textarea>
               </div>
-              <div className="col-8 pt-3 mx-auto">
+              <div className="col-10 pt-3 mx-auto">
                 <input
                   type="submit"
                   className="btn btn-info"

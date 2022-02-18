@@ -24,7 +24,7 @@ const Quiz = () => {
       <section id="home" className="exam section">
         <div className="title">
           <h2 id="Quizes">
-            Quizes Leaks
+            Quizes
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
