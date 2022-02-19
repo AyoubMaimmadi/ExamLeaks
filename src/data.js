@@ -164,9 +164,13 @@ const exam = [
   },
 ]
 
-// console.log(newArr)
-// console.log(exam)
-// exam.push(newArr)
-// console.log(newArr)
-// console.log(exam)
+function addelement(newArr) {
+  console.log(newArr)
+  console.log(exam)
+  exam.push(newArr)
+  console.log(newArr)
+  console.log(exam)
+}
+// addelement(newArr)
+
 export default exam

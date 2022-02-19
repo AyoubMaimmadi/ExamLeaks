@@ -19,7 +19,7 @@ const NewAddCard = () => {
     e.preventDefault()
 
     if (key === 'admin') {
-      const myitem = { id, title, category, name, img, link, desc }
+      const myitem = [id, title, category, name, img, link, desc]
       data.push(myitem)
       id += 1
     }

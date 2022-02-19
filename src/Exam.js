@@ -12,7 +12,7 @@ const Exam = ({ items }) => {
             </a>
             <div className="item-info">
               <header>
-                <h4>{title}</h4>
+                <h4>{title}&nbsp;</h4>
                 <h4 className="name">{name}</h4>
               </header>
               <p className="item-text">{desc}</p>
