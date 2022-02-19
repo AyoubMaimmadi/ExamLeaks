@@ -4,6 +4,7 @@ import './newaddcard.css'
 import data from './data'
 import './nav.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
+let password = 'admin'
 
 const NewAddCard = () => {
   let idCounter = data.length
@@ -14,14 +15,19 @@ const NewAddCard = () => {
   const [link, setLink] = useState('')
   const [desc, setDesc] = useState('')
   const [key, setKey] = useState('')
-  const [error, setError] = useState('Input Data')
+
+  const [ItemID, setItemID] = useState('')
+  const [Delkey, setDelKey] = useState('')
+
+  const [error, setError] = useState('Input Item Data to Add')
+  const [delerror, setDelerror] = useState('Input Item ID to Delete')
+
   let id = idCounter + 1
 
   const sendData = (e) => {
     // e.preventDefault()
     // e.target.reset()
-
-    if (key === 'admin') {
+    if (key === password) {
       const myitem = { id, title, category, name, img, link, desc }
       data.push(myitem)
       id += 1
@@ -31,10 +37,26 @@ const NewAddCard = () => {
       setLink('')
       setDesc('')
       setKey('')
-      setTimeout(() => setError('Imput New Data'), 2000)
+      setTimeout(() => setError('Imput New Data'), 1200)
       setError('Added')
     } else {
       setError('Sorry, You do not have permission to add!')
+    }
+  }
+
+  const EditData = (e) => {
+    if (Delkey === password) {
+      data.map((item) => {
+        if (item.id === parseInt(ItemID)) {
+          data.splice(item.id - 1, 1)
+        }
+      })
+      setItemID('')
+      setDelKey('')
+      setTimeout(() => setDelerror('Imput New item ID to delete'), 1200)
+      setDelerror('Deleted')
+    } else {
+      setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
 
@@ -43,7 +65,7 @@ const NewAddCard = () => {
       <section className="exam section">
         <div className="title">
           <h2 id="Add">
-            Add new Card
+            Add/Del Card
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
@@ -130,13 +152,67 @@ const NewAddCard = () => {
                   }}
                 />
               </div>
-              <div className="col-10 pt-3 mx-auto">
+              {/* <div className="col-10 pt-3 mx-auto"> */}
+              <div className="d-flex justify-content-center pt-4">
                 <input type="submit" className="btn btn-info" value="+"></input>
               </div>
             </div>
           </form>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div className="uperuper">
+        <div className="container myowncontainer">
+          <form onSubmit={EditData}>
+            <div className="row pt-5 mx-auto">
+              <div className="col-8 form-group pt-2 mx-auto">
+                <div className="d-flex justify-content-center">
+                  <br />
+                  <h4>
+                    {delerror}
+                    <a className="scroll-link"></a>
+                  </h4>
+                </div>
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  placeholder="Item ID"
+                  value={ItemID}
+                  onChange={(e) => {
+                    setItemID(e.target.value)
+                  }}
+                />
+              </div>
+              <div className="col-8 form-group pt-2 mx-auto">
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  placeholder="Admin key"
+                  value={Delkey}
+                  onChange={(e) => {
+                    setDelKey(e.target.value)
+                  }}
+                />
+              </div>
+              {/* <div className="col-10 pt-3 mx-auto"> */}
+              <div className="d-flex justify-content-center pt-4">
+                <input type="submit" className="btn btn-info" value="-"></input>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
     </>
   )
 }

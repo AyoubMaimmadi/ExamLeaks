@@ -24,7 +24,7 @@ const Navbar = () => {
             <a href="#Homework">Homeworks</a>
           </li>
           <li>
-            <a href="#Add">+</a>
+            <a href="#Add">+ / -</a>
           </li>
         </ul>
       </nav>

@@ -15,7 +15,11 @@ const Exam = ({ items }) => {
                 <h4>{title}&nbsp;</h4>
                 <h4 className="name">{name}</h4>
               </header>
-              <p className="item-text">{desc}</p>
+              <p className="item-text">
+                {desc}
+                <br />
+                ID: {id}
+              </p>
             </div>
           </article>
         )
