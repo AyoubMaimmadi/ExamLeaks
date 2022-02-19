@@ -4,6 +4,8 @@ import './newaddcard.css'
 import data from './data'
 import './nav.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
+import Uparrow from './Uparrow'
+
 let password = 'admin'
 
 const NewAddCard = () => {
@@ -202,6 +204,7 @@ const NewAddCard = () => {
               <div className="d-flex justify-content-center pt-4">
                 <input type="submit" className="btn btn-info" value="-"></input>
               </div>
+              <Uparrow />
             </div>
           </form>
         </div>
