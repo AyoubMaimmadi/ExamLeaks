@@ -1,13 +1,15 @@
 import React from 'react'
+import testing from './testing'
 import Exams from './Exams'
 import Homewok from './Homework'
 import Footer from './Footer'
 import Projects from './Projects'
 import Quiz from './quizes'
 import NewAddCard from './NewAddCard.js'
+import NewCard from './NewCard'
 
 const App = () => {
-  console.log('GTFO nerd!')
+  // console.log('GTFO nerd!')
   return (
     <>
       <Exams />

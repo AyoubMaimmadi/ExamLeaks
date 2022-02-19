@@ -1,3 +1,4 @@
+import testing, { newArr } from './testing'
 const exam = [
   {
     id: 1,
@@ -162,4 +163,10 @@ const exam = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
 ]
+
+// console.log(newArr)
+// console.log(exam)
+// exam.push(newArr)
+// console.log(newArr)
+// console.log(exam)
 export default exam
