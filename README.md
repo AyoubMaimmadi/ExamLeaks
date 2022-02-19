@@ -1,6 +1,7 @@
-# ExamLeaks
+# GPA Booster
 
 ## Agile Software Engineering Project using React: (JS/JSX/CSS)
+## Allows student to easily search and find old exams/quizes/projects/homework
 
 Clone or download
 
@@ -14,4 +15,6 @@ open terminal and type/run
 
 `npm start` to open developement at `localhost:3000`
 
-View website using the link `https://examleaks.netlify.app/`
+View website using the link `https://gpabooster.netlify.app/`
+
+
