@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Exam from './Exam'
 import Categories from './Categories'
-import items from './HwData'
+import items from './quizData'
 import Uparrow from './Uparrow'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
