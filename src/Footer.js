@@ -30,7 +30,7 @@ const Footer = () => {
           </ul>
           <div className="copyrightCol">
             <p>
-              Copyright &copy; Ayoub Maimmadi: Agile-Team-6<span> {date}</span>.
+              Copyright &copy; Ayoub Maimmadi: ASED-Team-6<span> {date}</span>.
               all rights reserved.
             </p>
           </div>
