@@ -25,12 +25,21 @@ export const Exams = () => {
   ]
 
   useEffect(() => {
-    setExamItems([])
-    allData.filter((val) => {
-      if (val.title.toLowerCase().includes(input.toLowerCase())) {
-        setExamItems((examItems) => [...examItems, val])
-      }
-    })
+    if (pagename === 'Results') {
+      setExamItems([])
+      allData.filter((val) => {
+        if (val.title.toLowerCase().includes(input.toLowerCase())) {
+          setExamItems((examItems) => [...examItems, val])
+        }
+      })
+    } else {
+      setExamItems([])
+      items.filter((val) => {
+        if (val.title.toLowerCase().includes(input.toLowerCase())) {
+          setExamItems((examItems) => [...examItems, val])
+        }
+      })
+    }
   }, [input])
 
   const mainOutput = examItems.map((item) => {

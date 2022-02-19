@@ -44,5 +44,15 @@ const quizeData = [
     link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
+  {
+    id: 1006,
+    title: 'fooo',
+    category: 'FOO',
+    name: 'FOO 3300',
+    img: './images/csc.png',
+    link: 'https://github.com/AyoubMaimmadi',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+  },
 ]
+
 export default quizeData

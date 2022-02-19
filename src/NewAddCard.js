@@ -70,10 +70,7 @@ const NewAddCard = () => {
           </h2>
           <div className="underline"></div>
           <br />
-          <h4>
-            {error}
-            <a className="scroll-link"></a>
-          </h4>
+          <h4>{error}</h4>
         </div>
       </section>
 
@@ -175,7 +172,7 @@ const NewAddCard = () => {
                   <br />
                   <h4>
                     {delerror}
-                    <a className="scroll-link"></a>
+                    {/* <a className="scroll-link"></a> */}
                   </h4>
                 </div>
                 <input
