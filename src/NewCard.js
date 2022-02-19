@@ -4,19 +4,7 @@ import './newaddcard.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 const NewCard = () => {
-  let idCounter = data.length
-  const [title, setTitle] = useState('')
-  const [category, setCategory] = useState('')
-  const [name, setname] = useState('')
-  const [link, setlink] = useState('')
-  const [desc, setdesc] = useState('')
-  let newId = idCounter + 1
-
-  const sendData = (e) => {
-    e.preventDefault()
-    const item = { title }
-    console.log(item)
-  }
+  const doSomething = (e) => {}
 
   return (
     <>
@@ -32,7 +20,7 @@ const NewCard = () => {
 
       <div>
         <div className="container myowncontainer">
-          <form onSubmit={sendData}>
+          <form onSubmit={doSomething}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input

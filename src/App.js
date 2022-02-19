@@ -6,7 +6,6 @@ import Footer from './Footer'
 import Projects from './Projects'
 import Quiz from './quizes'
 import NewAddCard from './NewAddCard.js'
-import NewCard from './NewCard'
 
 const App = () => {
   // console.log('GTFO nerd!')

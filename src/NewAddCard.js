@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import './newaddcard.css'
 import data from './data'
+import './nav.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 const NewAddCard = () => {
@@ -13,17 +14,28 @@ const NewAddCard = () => {
   const [link, setLink] = useState('')
   const [desc, setDesc] = useState('')
   const [key, setKey] = useState('')
+  const [error, setError] = useState('Input Data')
   let id = idCounter + 1
 
   const sendData = (e) => {
-    e.preventDefault()
+    // e.preventDefault()
+    // e.target.reset()
 
     if (key === 'admin') {
-      const myitem = [id, title, category, name, img, link, desc]
+      const myitem = { id, title, category, name, img, link, desc }
       data.push(myitem)
       id += 1
+      setTitle('')
+      setCategory('')
+      setName('')
+      setLink('')
+      setDesc('')
+      setKey('')
+      setTimeout(() => setError('Imput New Data'), 2000)
+      setError('Added')
+    } else {
+      setError('Sorry, You do not have permission to add!')
     }
-    e.target.reset()
   }
 
   return (
@@ -35,10 +47,15 @@ const NewAddCard = () => {
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
+          <br />
+          <h4>
+            {error}
+            <a className="scroll-link"></a>
+          </h4>
         </div>
       </section>
 
-      <div>
+      <div className="uperuper">
         <div className="container myowncontainer">
           <form onSubmit={sendData}>
             <div className="row pt-5 mx-auto">
@@ -114,11 +131,7 @@ const NewAddCard = () => {
                 />
               </div>
               <div className="col-10 pt-3 mx-auto">
-                <input
-                  type="submit"
-                  className="btn btn-info"
-                  value="submit"
-                ></input>
+                <input type="submit" className="btn btn-info" value="+"></input>
               </div>
             </div>
           </form>
