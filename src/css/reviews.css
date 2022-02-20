@@ -88,7 +88,7 @@
   }
 }
 
-article.review {
+myarticle {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,13 +97,13 @@ article.review {
   opacity: 0;
   transition: var(--transition);
 }
-article.review.activeSlide {
+myarticle.activeSlide {
   opacity: 1;
   transform: translateX(0);
 }
-article.review.lastSlide {
+myarticle.lastSlide {
   transform: translateX(-100%);
 }
-article.review.nextSlide {
+myarticle.nextSlide {
   transform: translateX(100%);
 }

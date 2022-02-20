@@ -29,12 +29,12 @@ const Reviews = () => {
           }
 
           return (
-            <article className={position} key={id}>
+            <myarticle className={position} key={id}>
               <img src={image} alt={name} className="person-img" />
               <h4>{name}</h4>
               <p className="title-review">{title}</p>
               <p className="text-review">{quote}</p>
-            </article>
+            </myarticle>
           )
         })}
         <button className="prev" onClick={() => setIndex(index - 1)}>
