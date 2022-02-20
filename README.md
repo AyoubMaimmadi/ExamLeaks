@@ -1,20 +1,23 @@
 # GPA Booster
 
 ## Agile Software Engineering Project using React: (JS/JSX/CSS)
-## Allows student to easily search and find old exams/quizes/projects/homework
 
-Clone or download
+## Allows student to easily search and find old exams, quizes, projects, amd homeworks
 
-you need to have node.js installed in you computer
+### You can also Add and Delete new ITems, and leave reviews for you friends to read
 
-open the project in your IDE
+To use you need to:
 
-open terminal and type/run
+1- Clone or Download this repository
 
-`npm unstall` to install node modules, then run
+2- Have node.js pre-installed in you computer
 
-`npm start` to open developement at `localhost:3000`
+3- Launch your IDE and cd into the projct
 
-View website using the link `https://gpabooster.netlify.app/`
+4- open terminal and run:
 
+- `npm unstall` to install node modules
 
+- `npm start` to open developement at `localhost:3000`
+
+#### You can see this website using the link `https://gpabooster.netlify.app/`
