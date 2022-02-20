@@ -18,6 +18,6 @@ To use you need to:
 
 - `npm unstall` to install node modules
 
-- `npm start` to open developement at `localhost:3000`
+- `npm start` to open developement at localhost:3000
 
-#### You can see this website using the link `https://gpabooster.netlify.app/`
+#### You can see this website using the link ` https://gpabooster.netlify.app/ `
