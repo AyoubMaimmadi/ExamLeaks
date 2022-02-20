@@ -1,5 +1,4 @@
 import React from 'react'
-import testing from './testing'
 import Exams from './Exams'
 import Homewok from './Homework'
 import Footer from './Footer'
