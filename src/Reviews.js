@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import './reviews.css'
+import './css/reviews.css'
+
+import { MdPreview } from 'react-icons/fa'
 
 const Reviews = () => {
-  return <div>Reviews!!</div>
+  return (
+    <div className="text-center">
+      Reviews!!
+      <br />
+      <MdPreview />
+    </div>
+  )
 }
 
 export default Reviews
