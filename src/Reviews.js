@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
+import Uparrow from './Components/Uparrow'
 import { FaQuoteRight } from 'react-icons/fa'
 import data from './data/ReviewsData'
 import './css/reviews.css'
@@ -7,11 +8,30 @@ import './css/reviews.css'
 const Reviews = () => {
   const [people, setPeople] = useState(data)
   const [index, setIndex] = React.useState(0)
+  useEffect(() => {
+    const lastIndex = people.length - 1
+    if (index < 0) {
+      setIndex(lastIndex)
+    }
+    if (index > lastIndex) {
+      setIndex(0)
+    }
+  }, [index, people])
 
+  useEffect(() => {
+    let slider = setInterval(() => {
+      setIndex(index + 1)
+    }, 4000)
+    return () => {
+      clearInterval(slider)
+    }
+  }, [index])
   return (
     <section className="section-review">
       <div className="title-review">
-        <h2 className="text-center">//&nbsp;reviews&nbsp;//</h2>
+        <h2 id="Reviews" className="text-center">
+          //&nbsp;reviews&nbsp;//
+        </h2>
       </div>
       <div className="section-center-review">
         {people.map((person, personIndex) => {
@@ -34,6 +54,7 @@ const Reviews = () => {
               <h4>{name}</h4>
               <p className="title-review">{title}</p>
               <p className="text-review">{quote}</p>
+              <FaQuoteRight className="icon-review" />
             </myarticle>
           )
         })}

@@ -24,7 +24,10 @@ const Navbar = () => {
             <a href="#Homework">Homeworks</a>
           </li>
           <li>
-            <a href="#Add">+ / -</a>
+            <a href="#Add">ADD / DEL</a>
+          </li>
+          <li>
+            <a href="#Reviews">Reviews</a>
           </li>
         </ul>
       </nav>

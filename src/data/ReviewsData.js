@@ -9,7 +9,7 @@ const reviews = [
   },
   {
     id: 2,
-    image: './images/ayoub.jpeg',
+    image: './images/rabii.PNG',
     name: 'Rabii Alaoui',
     title: 'SSE Student',
     quote:
@@ -17,17 +17,49 @@ const reviews = [
   },
   {
     id: 3,
-    image: './images/ayoub.jpeg',
-    name: 'Imane Ettabae',
+    image: './images/imane.PNG',
+    name: 'Imane Ettabaa',
     title: 'SSE Student',
     quote:
       'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
   },
   {
     id: 4,
-    image: './images/ayoub.jpeg',
+    image: './images/hiba.jpeg',
     name: 'Hiba Akhadar',
     title: 'SSE Student',
+    quote:
+      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+  },
+  {
+    id: 5,
+    image: './images/jiji.PNG',
+    name: 'Abderrahmane Jibrane',
+    title: 'BA Student',
+    quote:
+      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+  },
+  {
+    id: 6,
+    image: './images/nour.PNG',
+    name: 'Noure Eddine Jenhaji',
+    title: 'EMS Student',
+    quote:
+      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+  },
+  {
+    id: 7,
+    image: './images/ayman.PNG',
+    name: 'Ayman Tardaoui',
+    title: 'BA Student',
+    quote:
+      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+  },
+  {
+    id: 7,
+    image: './images/taha.PNG',
+    name: 'Taha Samih',
+    title: 'EMS Student',
     quote:
       'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
   },
