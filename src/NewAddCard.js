@@ -46,6 +46,7 @@ const NewAddCard = () => {
   }
 
   const EditData = (e) => {
+    e.preventDefault()
     if (Delkey === password) {
       data.map((item) => {
         if (item.id === parseInt(ItemID)) {
