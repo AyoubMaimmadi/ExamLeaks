@@ -27,7 +27,7 @@ const NewAddCard = () => {
   let id = idCounter + 1
 
   const sendData = (e) => {
-    // e.preventDefault()
+    e.preventDefault()
     // e.target.reset()
     if (key === password) {
       const myitem = { id, title, category, name, img, link, desc }
