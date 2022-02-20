@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-import exam from './data/ExamData'
+import exam from '../data/ExamData'
 // import Exam from './Exam'
 
 const SearchBar = () => {

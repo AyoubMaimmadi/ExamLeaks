@@ -6,7 +6,7 @@ import Uparrow from './Uparrow'
 import Navbar from './Components/Navbar'
 import hwdata from './data/HomeWorkData'
 import prjdata from './data/ProjectData'
-import quizeData from './quizData'
+import quizeData from './data/QuizData'
 import './css/searchBar.css'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
