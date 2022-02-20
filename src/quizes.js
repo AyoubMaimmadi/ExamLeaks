@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Exam from './Exams/Exam'
-import Categories from './Exams/Categories'
+import Exam from './Components/Exam'
+import Categories from './Components/Categories'
 import items from './quizData'
 import Uparrow from './Uparrow'
 
