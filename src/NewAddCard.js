@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './css/newaddcard.css'
 import data from './data/ExamData'
-import Uparrow from './Uparrow'
+import Uparrow from './Components/Uparrow'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 let password = 'admin'

@@ -3,7 +3,7 @@ import Exams from './Exams'
 import Homewok from './Homework'
 import Footer from './Components/Footer'
 import Projects from './Projects'
-import Quiz from './quizes'
+import Quiz from './Quizes'
 import NewAddCard from './NewAddCard.js'
 import Rviews from './Reviews'
 
