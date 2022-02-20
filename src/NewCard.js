@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import data from './data/data'
+import data from './data/ExamData'
 import './newaddcard.css'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
