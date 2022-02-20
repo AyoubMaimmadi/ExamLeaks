@@ -1,4 +1,4 @@
-import exam from './data.js'
+import exam from './data/data.js'
 
 const newArr = [
   {

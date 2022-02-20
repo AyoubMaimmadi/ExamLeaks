@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Exam from './Exam'
 import Categories from './Categories'
-import items from './data'
+import items from './data/data'
 import Uparrow from './Uparrow'
 import Navbar from './Navbar'
 import hwdata from './HwData'

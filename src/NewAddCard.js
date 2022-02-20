@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import './css/newaddcard.css'
-import data from './data'
+import data from './data/data'
 // import 'bootstrap/dist/css/bootstrap.min.css'
 import Uparrow from './Uparrow'
 

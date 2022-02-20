@@ -1,4 +1,4 @@
-import testing, { newArr } from './testing'
+import testing, { newArr } from '../testing'
 
 const exam = [
   {
