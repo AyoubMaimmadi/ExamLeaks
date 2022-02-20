@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import emailjs from 'emailjs-com'
 import './css/newaddcard.css'
 import data from './data/ExamData'
-// import 'bootstrap/dist/css/bootstrap.min.css'
 import Uparrow from './Uparrow'
+// import 'bootstrap/dist/css/bootstrap.min.css'
 
 let password = 'admin'
 
