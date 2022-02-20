@@ -6,9 +6,9 @@ import Footer from './Footer'
 import Projects from './Projects'
 import Quiz from './quizes'
 import NewAddCard from './NewAddCard.js'
+import Rviews from './Reviews'
 
 const App = () => {
-  // console.log('GTFO nerd!')
   return (
     <>
       <Exams />
@@ -16,6 +16,7 @@ const App = () => {
       <Projects />
       <Homewok />
       <NewAddCard />
+      <Rviews />
       <Footer />
     </>
   )
