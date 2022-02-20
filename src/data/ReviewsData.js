@@ -27,7 +27,7 @@ const reviews = [
     id: 4,
     image: './images/ayoub.jpeg',
     name: 'Hiba Akhadar',
-    title: 'the boss',
+    title: 'SSE Student',
     quote:
       'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
   },
