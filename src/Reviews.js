@@ -11,9 +11,7 @@ const Reviews = () => {
   return (
     <section className="section-review">
       <div className="title-review">
-        <h2 className="text-center">
-          <span>/</span>reviews
-        </h2>
+        <h2 className="text-center">//&nbsp;reviews&nbsp;//</h2>
       </div>
       <div className="section-center-review">
         {people.map((person, personIndex) => {
