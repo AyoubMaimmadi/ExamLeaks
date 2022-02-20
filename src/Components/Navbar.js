@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react'
-import './css/nav.css'
+import React from 'react'
+import '../css/nav.css'
 
 const Navbar = () => {
   return (
