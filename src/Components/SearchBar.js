@@ -19,9 +19,6 @@ const SearchBar = () => {
     return item
   })
 
-  let ans = input
-  // console.log(ans)
-
   return (
     <div class="search">
       <input
