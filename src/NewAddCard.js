@@ -51,9 +51,6 @@ const NewAddCard = () => {
           data.splice(item.id - 1, 1)
         }
       })
-      // data.filter((item) => {
-      //   return item.id != parseInt(ItemID)
-      // })
       setItemID('')
       setDelKey('')
       setTimeout(() => setDelerror('Imput New item ID to delete'), 1200)
