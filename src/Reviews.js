@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
-import { FaQuoteRight } from 'react-icons/fa'
+import { BsFillChatQuoteFill } from 'react-icons/bs'
 import data from './data/ReviewsData'
 import './css/reviews.css'
 
@@ -53,7 +53,7 @@ const Reviews = () => {
               <h4>{name}</h4>
               <p className="title-review">{title}</p>
               <p className="text-review">{quote}</p>
-              <FaQuoteRight className="icon-review" />
+              <BsFillChatQuoteFill className="icon-review" />
             </myarticle>
           )
         })}
