@@ -405,3 +405,7 @@ html {
   font-weight: bolder;
   color: #ff0000;
 }
+
+.colorerror {
+  border: 2px solid hsl(360, 67%, 44%);
+}

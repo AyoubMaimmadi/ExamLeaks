@@ -21,6 +21,8 @@ const NewAddCard = () => {
   const [error, setError] = useState('Input Item Data to Add')
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
 
+  const [colorError, setColorError] = useState(false)
+
   let id = idCounter + 1
 
   const sendData = (e) => {
@@ -45,6 +47,10 @@ const NewAddCard = () => {
 
   const EditData = (e) => {
     e.preventDefault()
+    if (Delkey !== password) {
+      setTimeout(() => setColorError(false), 700)
+      setColorError(true)
+    }
     if (Delkey === password) {
       data.map((item) => {
         if (item.id === parseInt(ItemID)) {
@@ -187,6 +193,7 @@ const NewAddCard = () => {
                   type="text"
                   required
                   className="form-control"
+                  // className={`${colorError ? 'colorerror' : null}`}
                   placeholder="Admin key"
                   value={Delkey}
                   onChange={(e) => {
