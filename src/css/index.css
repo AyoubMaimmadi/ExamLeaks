@@ -397,3 +397,8 @@ html {
     scroll-behavior: smooth;
   }
 }
+
+.exam-item:hover {
+  border-radius: 10% 10% 10% 10%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
