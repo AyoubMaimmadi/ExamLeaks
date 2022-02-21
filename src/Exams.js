@@ -28,7 +28,10 @@ export const Exams = () => {
     if (pagename === 'Results') {
       setExamItems([])
       allData.filter((val) => {
-        if (val.title.toLowerCase().includes(input.toLowerCase())) {
+        if (
+          val.title.toLowerCase().includes(input.toLowerCase()) ||
+          val.name.toLowerCase().includes(input.toLowerCase())
+        ) {
           setExamItems((examItems) => [...examItems, val])
         }
       })
