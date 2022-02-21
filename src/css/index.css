@@ -401,4 +401,5 @@ html {
 .exam-item:hover {
   border-radius: 8% 7% 7% 7%;
   background-color: rgba(0, 0, 0, 0.1);
+  font-size: large;
 }
