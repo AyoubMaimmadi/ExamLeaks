@@ -21,7 +21,7 @@ const Reviews = () => {
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
-    }, 4000)
+    }, 3000)
     return () => {
       clearInterval(slider)
     }
