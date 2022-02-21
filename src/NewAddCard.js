@@ -169,10 +169,7 @@ const NewAddCard = () => {
               <div className="col-8 form-group pt-2 mx-auto">
                 <div className="d-flex justify-content-center">
                   <br />
-                  <h4>
-                    {delerror}
-                    {/* <a className="scroll-link"></a> */}
-                  </h4>
+                  <h4>{delerror}</h4>
                 </div>
                 <input
                   type="text"
