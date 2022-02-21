@@ -56,7 +56,7 @@ const exam = [
   {
     id: 6,
     title: 'Calculus 1',
-    category: 'IMS',
+    category: 'EMS',
     name: 'IMS 3300',
     img: './images/ims.jpg',
     link: 'https://github.com/AyoubMaimmadi',
@@ -83,7 +83,7 @@ const exam = [
   {
     id: 9,
     title: 'Linear Algebra',
-    category: 'IMS',
+    category: 'EMS',
     name: 'IMS 3300',
     img: './images/ims.jpg',
     link: 'https://github.com/AyoubMaimmadi',
@@ -137,7 +137,7 @@ const exam = [
   {
     id: 15,
     title: 'Calculus 1',
-    category: 'IMS',
+    category: 'EMS',
     name: 'IMS 3300',
     img: './images/ims.jpg',
     link: 'https://github.com/AyoubMaimmadi',
@@ -164,7 +164,7 @@ const exam = [
   {
     id: 18,
     title: 'Linear Algebra',
-    category: 'IMS',
+    category: 'EMS',
     name: 'IMS 3300',
     img: './images/ims.jpg',
     link: 'https://github.com/AyoubMaimmadi',
