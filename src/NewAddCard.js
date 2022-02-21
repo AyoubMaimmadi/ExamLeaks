@@ -194,7 +194,6 @@ const NewAddCard = () => {
                   }}
                 />
               </div>
-              {/* <div className="col-10 pt-3 mx-auto"> */}
               <div className="d-flex justify-content-center pt-4">
                 <input type="submit" className="btn btn-info" value="-"></input>
               </div>
