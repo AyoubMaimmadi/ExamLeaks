@@ -54,7 +54,8 @@ const NewAddCard = () => {
     if (Delkey === password) {
       data.map((item) => {
         if (item.id === parseInt(ItemID)) {
-          data.splice(item.id - 1, 1)
+          // data.splice(Delkey - 1, 1)
+          data.filter((item) => parseInt(item.id) != parseInt(Delkey))
         }
       })
       setItemID('')
@@ -188,6 +189,9 @@ const NewAddCard = () => {
                   }}
                 />
               </div>
+              {/* <li>
+                <ul>Exam</ul> <ul>Quiz</ul> <ul>Projects</ul> <ul>Homework</ul>
+              </li> */}
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
                   type="text"
