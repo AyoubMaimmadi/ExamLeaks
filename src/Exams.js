@@ -30,7 +30,9 @@ export const Exams = () => {
       allData.filter((val) => {
         if (
           val.title.toLowerCase().includes(input.toLowerCase()) ||
-          val.name.toLowerCase().includes(input.toLowerCase())
+          val.name.toLowerCase().includes(input.toLowerCase()) ||
+          val.category.toLowerCase().includes(input.toLowerCase()) ||
+          val.id == parseInt(input)
         ) {
           setExamItems((examItems) => [...examItems, val])
         }
