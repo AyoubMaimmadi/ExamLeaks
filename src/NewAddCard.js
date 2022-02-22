@@ -55,7 +55,8 @@ const NewAddCard = () => {
       data.map((item) => {
         if (item.id === parseInt(ItemID)) {
           // data.splice(Delkey - 1, 1)
-          data.filter((item) => parseInt(item.id) != parseInt(Delkey))
+          // data.filter((item) => parseInt(item.id) != parseInt(Delkey))
+          data.pop(item)
         }
       })
       setItemID('')
