@@ -14,7 +14,7 @@ const NewAddCard = () => {
   const [link, setLink] = useState('')
   const [desc, setDesc] = useState('')
   const [key, setKey] = useState('')
-
+  const [newData, setNewData] = useState(data)
   const [ItemID, setItemID] = useState('')
   const [Delkey, setDelKey] = useState('')
 
@@ -30,7 +30,9 @@ const NewAddCard = () => {
     // e.target.reset()
     if (key === password) {
       const myitem = { id, title, category, name, img, link, desc }
-      data.push(myitem)
+      // data.push(myitem)
+      const newArr = data.filter((item) => item.id !== id)
+      setNewData(newArr)
       id += 1
       setTitle('')
       setCategory('')
