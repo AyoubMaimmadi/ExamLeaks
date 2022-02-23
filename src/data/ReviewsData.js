@@ -56,7 +56,7 @@ const reviews = [
       'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
   },
   {
-    id: 7,
+    id: 8,
     image: './images/taha.PNG',
     name: 'Taha Samih',
     title: 'EMS Student',
