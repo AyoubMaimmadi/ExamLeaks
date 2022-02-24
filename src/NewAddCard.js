@@ -23,17 +23,16 @@ const NewAddCard = () => {
 
   const [colorError, setColorError] = useState(false)
 
-  let id = idCounter + 1
+  let id = Math.floor(new Date().getTime().toString() / 100000000)
 
   const sendData = (e) => {
     e.preventDefault()
     // e.target.reset()
     if (key === password) {
       const myitem = { id, title, category, name, img, link, desc }
-      // data.push(myitem)
-      const newArr = data.filter((item) => item.id !== id)
-      setNewData(newArr)
-      id += 1
+      data.push(myitem)
+      // const newArr = data.filter((item) => item.id !== id)
+      // setNewData(myitem)
       setTitle('')
       setCategory('')
       setName('')
