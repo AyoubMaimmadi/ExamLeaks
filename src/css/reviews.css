@@ -1,6 +1,6 @@
 .section-review {
   width: 90vw;
-  height: 35vw;
+  height: 30vw;
   margin: 5rem auto;
   max-width: var(--max-width);
   margin-top: -1rem;
@@ -10,7 +10,7 @@
   margin: 0 auto;
   margin-top: 4rem;
   width: 100vw;
-  height: 650px;
+  height: 450px;
   max-width: 1100px;
   text-align: center;
   position: relative;
