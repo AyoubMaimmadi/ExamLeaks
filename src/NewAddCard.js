@@ -32,7 +32,7 @@ const NewAddCard = () => {
       const myitem = { id, title, category, name, img, link, desc }
       data.push(myitem)
       // const newArr = data.filter((item) => item.id !== id)
-      // setNewData(myitem)
+      // setNewData([...newData, myitem])
       setTitle('')
       setCategory('')
       setName('')
