@@ -191,9 +191,6 @@ const NewAddCard = () => {
                   }}
                 />
               </div>
-              {/* <li>
-                <ul>Exam</ul> <ul>Quiz</ul> <ul>Projects</ul> <ul>Homework</ul>
-              </li> */}
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
                   type="text"
