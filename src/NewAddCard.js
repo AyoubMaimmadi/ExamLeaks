@@ -33,6 +33,7 @@ const NewAddCard = () => {
       data.push(myitem)
       // const newArr = data.filter((item) => item.id !== id)
       // setNewData([...newData, myitem])
+      //int the main and main the int mother fucker
       setTitle('')
       setCategory('')
       setName('')
