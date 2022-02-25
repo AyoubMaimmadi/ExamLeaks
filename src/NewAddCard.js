@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import './css/newaddcard.css'
 import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
+import './css/newaddcard.css'
 
 let password = 'admin'
 
 const NewAddCard = () => {
-  let idCounter = data.length
+  // let idCounter = data.length
   const img = './images/csc.png'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
@@ -17,10 +17,8 @@ const NewAddCard = () => {
   const [newData, setNewData] = useState(data)
   const [ItemID, setItemID] = useState('')
   const [Delkey, setDelKey] = useState('')
-
   const [error, setError] = useState('Input Item Data to Add')
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
-
   const [colorError, setColorError] = useState(false)
 
   // let id = Math.floor(new Date().getTime().toString() / 100000000)
