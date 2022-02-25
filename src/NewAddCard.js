@@ -23,7 +23,8 @@ const NewAddCard = () => {
 
   const [colorError, setColorError] = useState(false)
 
-  let id = Math.floor(new Date().getTime().toString() / 100000000)
+  // let id = Math.floor(new Date().getTime().toString() / 100000000)
+  let id = new Date().getTime().toString()
 
   const sendData = (e) => {
     e.preventDefault()
@@ -33,7 +34,6 @@ const NewAddCard = () => {
       data.push(myitem)
       // const newArr = data.filter((item) => item.id !== id)
       // setNewData([...newData, myitem])
-      //int the main and main the int mother fucker
       setTitle('')
       setCategory('')
       setName('')
@@ -54,13 +54,13 @@ const NewAddCard = () => {
       setColorError(true)
     }
     if (Delkey === password) {
-      data.map((item) => {
-        if (item.id === parseInt(ItemID)) {
-          // data.splice(Delkey - 1, 1)
-          // data.filter((item) => parseInt(item.id) != parseInt(Delkey))
-          data.pop(item)
-        }
-      })
+      // data.map((item) => {
+      //   if (item.id === parseInt(ItemID)) {
+      //     // data.splice(Delkey - 1, 1)
+      //     // data.filter((item) => parseInt(item.id) != parseInt(Delkey))
+      //   }
+      // })
+      data.pop(item)
       setItemID('')
       setDelKey('')
       setTimeout(() => setDelerror('Imput New item ID to delete'), 1200)
