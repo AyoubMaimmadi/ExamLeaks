@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /maimmadia.session.sql
+/.vscode
 
 # testing
 /coverage
