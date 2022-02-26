@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+/maimmadia.session.sql
 
 # testing
 /coverage
