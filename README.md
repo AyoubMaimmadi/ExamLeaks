@@ -21,3 +21,5 @@ To use you need to:
 ##### - `npm start` to open developement at localhost:3000
 
 #### You can see this website using the link `https://gpabooster.netlify.app/`
+
+![](public/images/QRcode.PNG)
