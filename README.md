@@ -2,9 +2,7 @@
 
 ## Agile Software Engineering Project using React: (JS/JSX/CSS)
 
-## Allows student to easily search and find old exams, quizes, projects, amd homeworks
-
-### You can also Add and Delete new ITems, and leave reviews for you friends to read
+## Allows student to easily search and find old exams, quizes, projects, and homeworks. You can also Add and Delete new ITems, and leave reviews for you friends to read
 
 To use you need to:
 
