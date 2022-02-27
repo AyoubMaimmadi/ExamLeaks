@@ -16,8 +16,8 @@ To use you need to:
 
 4- open terminal and run:
 
-# - `npm unstall` to install node modules
+##### - `npm unstall` to install node modules
 
-# - `npm start` to open developement at localhost:3000
+##### - `npm start` to open developement at localhost:3000
 
 #### You can see this website using the link `https://gpabooster.netlify.app/`
