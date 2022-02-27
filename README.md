@@ -24,4 +24,4 @@ To use you need to:
 
 #### OR
 
-![](public/images/QRcode3.PNG)
+![](public/images/QRcode.PNG)
