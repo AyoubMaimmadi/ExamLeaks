@@ -26,7 +26,7 @@ const reviews = [
   {
     id: 4,
     image: './images/hiba.jpeg',
-    name: 'Hiba Akhadar',
+    name: 'Hiba Akhaddar',
     title: 'SSE Student',
     quote:
       'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
