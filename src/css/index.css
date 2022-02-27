@@ -418,3 +418,8 @@ html {
     padding-top: 23rem;
   }
 }
+
+.hometitle {
+  text-align: center;
+  margin-bottom: 2rem;
+}

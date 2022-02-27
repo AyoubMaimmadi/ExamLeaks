@@ -86,6 +86,9 @@ export const Exams = () => {
         </div>
         <br />
         <div className="title">
+          <h1>A Website for Boosting AUIer's GPA</h1>
+        </div>
+        <div className="title">
           <h2 id="Exams">
             {pagename}
             <a className="scroll-link"></a>
