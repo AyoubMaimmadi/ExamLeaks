@@ -22,6 +22,6 @@ To use you need to:
 
 #### You can see this website using the link `https://gpabooster.netlify.app/`
 
-## OR
+#### OR
 
 ![](public/images/QRcode3.PNG)
