@@ -1,14 +1,5 @@
 const exam = [
   {
-    id: 0,
-    title: 'Ayoub Maimmadi',
-    category: 'AM',
-    name: 'AM 0000',
-    img: './images/IMS.jpg',
-    link: 'https://github.com/AyoubMaimmadi',
-    desc: 'My name is not Ayoub Maimmadi',
-  },
-  {
     id: 1,
     title: 'Languages & Compilers',
     category: 'CSC',
