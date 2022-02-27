@@ -6,3 +6,5 @@ img.save('GPA-Booster.png')
 img.show()
 
 
+
+
