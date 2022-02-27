@@ -16,6 +16,9 @@ export const Exams = () => {
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')
+  const [pageHeadline, setpageHeadline] = useState(
+    `A Website For Boosting AUIer's GPA`
+  )
 
   const allData = [
     ...new Set(items.map((item) => item)),
@@ -26,6 +29,7 @@ export const Exams = () => {
 
   useEffect(() => {
     if (pagename === 'Results') {
+      setpageHeadline(``)
       setExamItems([])
       allData.filter((val) => {
         if (
@@ -76,6 +80,7 @@ export const Exams = () => {
               setCategories([])
               if (e.target.value === '') {
                 setPagename('Exams')
+                setpageHeadline(`A Website For Boosting AUIer's GPA`)
                 setCategories(allCategories)
               }
             }}
@@ -86,9 +91,8 @@ export const Exams = () => {
         </div>
         <br />
         <div className="title">
-          <h1>A Website for Boosting AUIer's GPA</h1>
-        </div>
-        <div className="title">
+          <h1>{pageHeadline}</h1>
+          <br />
           <h2 id="Exams">
             {pagename}
             <a className="scroll-link"></a>
