@@ -9,18 +9,18 @@ import prjdata from './data/ProjectData'
 import quizeData from './data/QuizData'
 import './css/searchBar.css'
 
-// const getLocalStorage = (items) => {
-//   let examItems = localStorage.getItem('examItems')
-//   if (items) {
-//     return JSON.parse(localStorage.getItem('examItems'))
+// const getLocalStorage = () => {
+//   let locatdata = localStorage.getItem('examItems')
+//   if (locatdata) {
+//     return JSON.parse(locatdata)
 //   } else {
-//     return items
+//     return []
 //   }
 // }
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
-export const Exams = ({ handleSendData }) => {
+export const Exams = () => {
   const [examItems, setExamItems] = useState(items)
   // const [examItems, setExamItems] = useState(getLocalStorage(items))
   const [categories, setCategories] = useState(allCategories)
@@ -74,9 +74,9 @@ export const Exams = ({ handleSendData }) => {
     setExamItems(newItems)
   }
 
-  // useEffect(() => {
-  //   localStorage.setItem('examItems', JSON.stringify(examItems))
-  // }, [examItems])
+  useEffect(() => {
+    localStorage.setItem('examItems', JSON.stringify(examItems))
+  }, [examItems])
 
   return (
     <main>

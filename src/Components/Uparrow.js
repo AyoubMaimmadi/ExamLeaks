@@ -1,4 +1,5 @@
 import React from 'react'
+import Exam from './Exam'
 
 const Uparrow = () => {
   return (

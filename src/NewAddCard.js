@@ -2,21 +2,13 @@ import React, { useState, useEffect } from 'react'
 import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
 import './css/newaddcard.css'
+import Exam from './Components/Exam'
+import Exams from './Exams'
 
 let password = 'ayoub'
 
-// const getLocalStorage = () => {
-//   let data = localStorage.getItem('data')
-//   if (data) {
-//     return JSON.parse(localStorage.getItem('data'))
-//   } else {
-//     return data
-//   }
-// }
-
 const NewAddCard = () => {
-  // let idCounter = data.length
-  const img = './images/csc.png'
+  const img = './images/newCourse.png'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
   const [name, setName] = useState('')
@@ -42,9 +34,10 @@ const NewAddCard = () => {
     handleSendData()
   }
 
+  const myitem = { id, title, category, name, img, link, desc }
+
   const handleSendData = () => {
     if (key === password) {
-      const myitem = { id, title, category, name, img, link, desc }
       data.push(myitem)
       // setListmyitem])
       // const newArr = data.filter((item) => item.id !== id)
@@ -84,9 +77,9 @@ const NewAddCard = () => {
     }
   }
 
-  // useEffect(() => {
-  //   localStorage.setItem('data', JSON.stringify(data))
-  // }, [data])
+  useEffect(() => {
+    localStorage.setItem('list', JSON.stringify(list))
+  }, [data])
 
   return (
     <>
@@ -226,7 +219,7 @@ const NewAddCard = () => {
               <div className="d-flex justify-content-center pt-4">
                 <input type="submit" className="btn btn-info" value="-"></input>
               </div>
-              <Uparrow handleSendData={handleSendData} />
+              <Uparrow />
             </div>
           </form>
         </div>
