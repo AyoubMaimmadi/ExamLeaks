@@ -3,7 +3,6 @@ import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
 import './css/newaddcard.css'
 import Exam from './Components/Exam'
-import Exams from './Exams'
 
 let password = 'ayoub'
 
