@@ -1,9 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
 import './css/newaddcard.css'
 
-let password = 'admin'
+let password = 'ayoub'
+
+// const getLocalStorage = () => {
+//   let data = localStorage.getItem('data')
+//   if (data) {
+//     return JSON.parse(localStorage.getItem('data'))
+//   } else {
+//     return data
+//   }
+// }
 
 const NewAddCard = () => {
   // let idCounter = data.length
@@ -14,7 +23,10 @@ const NewAddCard = () => {
   const [link, setLink] = useState('')
   const [desc, setDesc] = useState('')
   const [key, setKey] = useState('')
-  const [newData, setNewData] = useState(data)
+
+  // const [list, setList] = useState(getLocalStorage())
+  const [list, setList] = useState(data)
+
   const [ItemID, setItemID] = useState('')
   const [Delkey, setDelKey] = useState('')
   const [error, setError] = useState('Input Item Data to Add')
@@ -30,8 +42,9 @@ const NewAddCard = () => {
     if (key === password) {
       const myitem = { id, title, category, name, img, link, desc }
       data.push(myitem)
+      // setListmyitem])
       // const newArr = data.filter((item) => item.id !== id)
-      // setNewData([...newData, myitem])
+      // setList([...data, myitem])
       setTitle('')
       setCategory('')
       setName('')
@@ -67,6 +80,10 @@ const NewAddCard = () => {
       setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
+
+  // useEffect(() => {
+  //   localStorage.setItem('data', JSON.stringify(data))
+  // }, [data])
 
   return (
     <>
