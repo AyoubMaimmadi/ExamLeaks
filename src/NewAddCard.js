@@ -29,6 +29,7 @@ const NewAddCard = () => {
   }
 
   // Store data we got from the form in an item and add it to the list of Exams
+
   const handleSendData = () => {
     const myitem = { id, title, category, name, img, link, desc }
     if (key === password) {
@@ -47,6 +48,7 @@ const NewAddCard = () => {
   }
 
   // Remove an Item based on it's ID
+
   const EditData = (e) => {
     e.preventDefault()
     if (Delkey !== password) {

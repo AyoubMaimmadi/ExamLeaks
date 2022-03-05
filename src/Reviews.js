@@ -9,7 +9,8 @@ const Reviews = () => {
   const [people, setPeople] = useState(data)
   const [index, setIndex] = React.useState(0)
 
-  // Every time the (people, index) changes,  we move to the next target
+  // Every time the (people, index) changes,  we check if its the end of the array go over the last array index
+
   useEffect(() => {
     const lastIndex = people.length - 1
     if (index < 0) {
@@ -20,8 +21,8 @@ const Reviews = () => {
     }
   }, [index, people])
 
-  // Every time the index changes, we keep a card for 5 seconds
-  // Then we increase the index
+  // Every time the index changes, we set up an interval for 5 seconds, Then we increase the index and clear said interval
+
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)

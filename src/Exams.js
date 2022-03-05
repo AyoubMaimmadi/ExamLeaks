@@ -30,6 +30,7 @@ export const Exams = () => {
   )
 
   // Gather all data in one array with unique values
+
   const allData = [
     ...new Set(items.map((item) => item)),
     ...new Set(quizeData.map((item) => item)),
@@ -37,7 +38,8 @@ export const Exams = () => {
     ...new Set(hwdata.map((item) => item)),
   ]
 
-  // When there is an input in the searchbar we change the name of the page to the page and search for the target using simple array manipulation
+  // When there is an input in the searchbar we change the name of the page to Results and search for the target using simple array manipulation
+
   useEffect(() => {
     if (pagename === 'Results') {
       setpageHeadline(``)
@@ -63,6 +65,7 @@ export const Exams = () => {
   }, [input])
 
   // Filter Items based on the School i.e. CSC, BA, ...
+
   const filterItems = (category) => {
     if (category === 'all') {
       setExamItems(items)
