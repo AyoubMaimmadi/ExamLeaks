@@ -1,5 +1,8 @@
 import React from 'react'
 
+// We get categories and the function: filterItems from other components
+// then each time we click a category we display the filtred items
+
 const Categories = ({ categories, filterItems }) => {
   return (
     <div className="btn-container">

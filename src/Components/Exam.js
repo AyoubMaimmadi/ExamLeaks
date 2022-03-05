@@ -1,5 +1,8 @@
 import React from 'react'
 
+// We get items from Exams, Quizes, ...
+// We destruture then into cards that can be displayed
+
 const Exam = ({ items }) => {
   return (
     <div className="section-center">
