@@ -39,6 +39,10 @@ const NewAddCard = () => {
   const sendData = (e) => {
     e.preventDefault()
     // e.target.reset()
+    handleSendData()
+  }
+
+  const handleSendData = () => {
     if (key === password) {
       const myitem = { id, title, category, name, img, link, desc }
       data.push(myitem)
@@ -57,7 +61,6 @@ const NewAddCard = () => {
       setError('Sorry, You do not have permission to add!')
     }
   }
-
   const EditData = (e) => {
     e.preventDefault()
     if (Delkey !== password) {
@@ -223,7 +226,7 @@ const NewAddCard = () => {
               <div className="d-flex justify-content-center pt-4">
                 <input type="submit" className="btn btn-info" value="-"></input>
               </div>
-              <Uparrow />
+              <Uparrow handleSendData={handleSendData} />
             </div>
           </form>
         </div>
