@@ -10,6 +10,7 @@ const Homewok = () => {
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
 
+  // Filter Items based on their school: CSC, BA, ...
   const filterItems = (category) => {
     if (category === 'all') {
       setExamItems(items)
