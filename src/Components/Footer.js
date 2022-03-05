@@ -1,6 +1,8 @@
 import React from 'react'
 const date = new Date().getFullYear()
 
+// Literly just a footer for some style points
+
 const Footer = () => {
   return (
     <footer>

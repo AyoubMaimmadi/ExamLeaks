@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import exam from '../data/ExamData'
 
+// Doesn't work: ignore
+
 const SearchBar = () => {
   const [input, setInput] = useState('')
   const [output, setOutput] = useState([])
@@ -14,10 +16,6 @@ const SearchBar = () => {
       }
     })
   }, [input])
-
-  const mainOutput = output.map((item) => {
-    return item
-  })
 
   return (
     <div class="search">

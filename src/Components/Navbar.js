@@ -1,6 +1,8 @@
 import React from 'react'
 import '../css/nav.css'
 
+// Click on the navigation button and get there using good'ol HMTL magic
+
 const Navbar = () => {
   return (
     <header>
