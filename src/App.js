@@ -7,6 +7,8 @@ import Quiz from './Quizes'
 import NewAddCard from './NewAddCard.js'
 import Rviews from './Reviews'
 
+// Organize all components here in a simple way
+
 const App = () => {
   return (
     <>
