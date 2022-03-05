@@ -8,6 +8,8 @@ import Uparow from './Components/Uparrow'
 const Reviews = () => {
   const [people, setPeople] = useState(data)
   const [index, setIndex] = React.useState(0)
+
+  // Every time the (people, index) changes,  we move to the next target
   useEffect(() => {
     const lastIndex = people.length - 1
     if (index < 0) {
@@ -18,6 +20,8 @@ const Reviews = () => {
     }
   }, [index, people])
 
+  // Every time the index changes, we keep a card for 5 seconds
+  // Then we increase the index
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
@@ -26,6 +30,7 @@ const Reviews = () => {
       clearInterval(slider)
     }
   }, [index])
+
   return (
     <section className="section-review">
       <div className="title-review">
