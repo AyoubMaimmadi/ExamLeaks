@@ -22,7 +22,6 @@ const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
 export const Exams = () => {
   const [examItems, setExamItems] = useState(items)
-  // const [examItems, setExamItems] = useState(getLocalStorage(items))
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')
@@ -30,6 +29,7 @@ export const Exams = () => {
     `A Website For Boosting AUIer's GPA`
   )
 
+  // Gather all data in one array with unique values
   const allData = [
     ...new Set(items.map((item) => item)),
     ...new Set(quizeData.map((item) => item)),
@@ -37,6 +37,7 @@ export const Exams = () => {
     ...new Set(hwdata.map((item) => item)),
   ]
 
+  // When there is an input in the searchbar we change the name of the page to the page and search for the target using simple array manipulation
   useEffect(() => {
     if (pagename === 'Results') {
       setpageHeadline(``)
@@ -61,10 +62,7 @@ export const Exams = () => {
     }
   }, [input])
 
-  const mainOutput = examItems.map((item) => {
-    return item
-  })
-
+  // Filter Items based on the School i.e. CSC, BA, ...
   const filterItems = (category) => {
     if (category === 'all') {
       setExamItems(items)
@@ -74,9 +72,9 @@ export const Exams = () => {
     setExamItems(newItems)
   }
 
-  useEffect(() => {
-    localStorage.setItem('examItems', JSON.stringify(examItems))
-  }, [examItems])
+  // useEffect(() => {
+  //   localStorage.setItem('examItems', JSON.stringify(examItems))
+  // }, [examItems])
 
   return (
     <main>

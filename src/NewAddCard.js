@@ -14,33 +14,25 @@ const NewAddCard = () => {
   const [link, setLink] = useState('')
   const [desc, setDesc] = useState('')
   const [key, setKey] = useState('')
-
-  // const [list, setList] = useState(getLocalStorage())
   const [list, setList] = useState(data)
-
   const [ItemID, setItemID] = useState('')
   const [Delkey, setDelKey] = useState('')
   const [error, setError] = useState('Input Item Data to Add')
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
   const [colorError, setColorError] = useState(false)
 
-  // let id = Math.floor(new Date().getTime().toString() / 100000000)
   let id = new Date().getTime().toString()
 
   const sendData = (e) => {
     e.preventDefault()
-    // e.target.reset()
     handleSendData()
   }
 
-  const myitem = { id, title, category, name, img, link, desc }
-
+  // Store data we got from the form in an item and add it to the list of Exams
   const handleSendData = () => {
+    const myitem = { id, title, category, name, img, link, desc }
     if (key === password) {
       data.push(myitem)
-      // setListmyitem])
-      // const newArr = data.filter((item) => item.id !== id)
-      // setList([...data, myitem])
       setTitle('')
       setCategory('')
       setName('')
@@ -53,6 +45,8 @@ const NewAddCard = () => {
       setError('Sorry, You do not have permission to add!')
     }
   }
+
+  // Remove an Item based on it's ID
   const EditData = (e) => {
     e.preventDefault()
     if (Delkey !== password) {
@@ -60,13 +54,7 @@ const NewAddCard = () => {
       setColorError(true)
     }
     if (Delkey === password) {
-      // data.map((item) => {
-      //   if (item.id === parseInt(ItemID)) {
-      //     // data.splice(Delkey - 1, 1)
-      //     // data.filter((item) => parseInt(item.id) != parseInt(Delkey))
-      //   }
-      // data.pop(item)
-      // })
+      data.pop()
       setItemID('')
       setDelKey('')
       setTimeout(() => setDelerror('Imput New item ID to delete'), 1200)
@@ -76,9 +64,9 @@ const NewAddCard = () => {
     }
   }
 
-  useEffect(() => {
-    localStorage.setItem('list', JSON.stringify(list))
-  }, [data])
+  // useEffect(() => {
+  //   localStorage.setItem('list', JSON.stringify(list))
+  // }, [data])
 
   return (
     <>
@@ -93,7 +81,6 @@ const NewAddCard = () => {
           <h4>{error}</h4>
         </div>
       </section>
-
       <div className="uperuper">
         <div className="container myowncontainer">
           <form onSubmit={sendData}>
