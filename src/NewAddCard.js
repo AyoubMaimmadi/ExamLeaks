@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
 import './css/newaddcard.css'
-import Exam from './Components/Exam'
 
 let password = 'ayoub'
 
