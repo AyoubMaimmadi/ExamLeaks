@@ -409,6 +409,8 @@ html {
 
 .colorerror {
   border: 2px solid hsl(360, 67%, 44%);
+  color: red;
+  background-color: red;
 }
 
 @media screen {

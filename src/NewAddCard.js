@@ -20,6 +20,7 @@ const NewAddCard = () => {
   const [error, setError] = useState('Input Item Data to Add')
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
   const [colorError, setColorError] = useState(false)
+  const [colorError2, setColorError2] = useState(false)
 
   let id = new Date().getTime().toString()
 
@@ -32,6 +33,10 @@ const NewAddCard = () => {
 
   const handleSendData = () => {
     const myitem = { id, title, category, name, img, link, desc }
+    if (key !== password) {
+      setTimeout(() => setColorError(false), 700)
+      setColorError(true)
+    }
     if (key === password) {
       data.push(myitem)
       setTitle('')
@@ -52,8 +57,8 @@ const NewAddCard = () => {
   const EditData = (e) => {
     e.preventDefault()
     if (Delkey !== password) {
-      setTimeout(() => setColorError(false), 700)
-      setColorError(true)
+      setTimeout(() => setColorError2(false), 700)
+      setColorError2(true)
     }
     if (Delkey === password) {
       data.pop()
@@ -150,7 +155,9 @@ const NewAddCard = () => {
                 <input
                   type="text"
                   required
-                  className="form-control"
+                  className={`${
+                    colorError ? 'form-control btn-danger' : 'form-control'
+                  }`}
                   placeholder="Admin key"
                   value={key}
                   onChange={(e) => {
@@ -195,8 +202,9 @@ const NewAddCard = () => {
                 <input
                   type="text"
                   required
-                  className="form-control"
-                  // className={`${colorError ? 'colorerror' : null}`}
+                  className={`${
+                    colorError2 ? 'form-control btn-danger' : 'form-control'
+                  }`}
                   placeholder="Admin key"
                   value={Delkey}
                   onChange={(e) => {
