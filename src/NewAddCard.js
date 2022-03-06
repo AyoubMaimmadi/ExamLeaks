@@ -152,6 +152,43 @@ const NewAddCard = () => {
                   }}
                 />
               </div>
+              <br />
+              <br />
+              <label for="myRadioId" className="radio">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input
+                  type="radio"
+                  name="myRadioId"
+                  id="myRadioId"
+                  className="radio__input"
+                />
+                <div className="radio__radio"></div>
+                &nbsp; Exam &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input
+                  type="radio"
+                  name="myRadioId"
+                  id="myRadioId"
+                  className="radio__input"
+                />
+                <div className="radio__radio"></div>
+                &nbsp; Quiz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input
+                  type="radio"
+                  name="myRadioId"
+                  id="myRadioId"
+                  className="radio__input"
+                />
+                <div className="radio__radio"></div>
+                &nbsp; Project &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input
+                  type="radio"
+                  name="myRadioId"
+                  id="myRadioId"
+                  className="radio__input"
+                />
+                <div className="radio__radio"></div>
+                &nbsp; Homework &nbsp;
+              </label>
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
                   type="text"
