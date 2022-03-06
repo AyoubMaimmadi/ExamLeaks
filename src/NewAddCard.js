@@ -36,6 +36,7 @@ const NewAddCard = () => {
     if (key !== password) {
       setTimeout(() => setColorError(false), 700)
       setColorError(true)
+      setKey('')
     }
     if (key === password) {
       data.push(myitem)
@@ -59,6 +60,7 @@ const NewAddCard = () => {
     if (Delkey !== password) {
       setTimeout(() => setColorError2(false), 700)
       setColorError2(true)
+      setDelKey('')
     }
     if (Delkey === password) {
       data.pop()

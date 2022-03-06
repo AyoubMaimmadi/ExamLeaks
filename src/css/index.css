@@ -407,18 +407,10 @@ html {
   color: orangered;
 }
 
-.colorerror {
-  border: 2px solid hsl(360, 67%, 44%);
-  color: red;
-  background-color: red;
-}
-
 @media screen {
   .footerCol {
     padding: 20px 0;
     text-align: center;
-    /* padding-top: 23rem; */
-    /* padding: 0% 0% 0% 1%; */
     padding-top: 28rem;
   }
 }
