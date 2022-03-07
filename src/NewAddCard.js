@@ -39,6 +39,8 @@ const NewAddCard = () => {
     }
     if (key === password) {
       data.push(myitem)
+      // localStorage.setItem('item', JSON.stringify(data))
+      // JSON.parse(localStorage.getItem('item'))
       setTitle('')
       setCategory('')
       setName('')
@@ -71,10 +73,6 @@ const NewAddCard = () => {
       setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
-
-  // useEffect(() => {
-  //   localStorage.setItem('list', JSON.stringify(list))
-  // }, [data])
 
   return (
     <>
