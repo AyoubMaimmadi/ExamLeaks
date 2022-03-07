@@ -20,6 +20,7 @@ const NewAddCard = () => {
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
   const [colorError, setColorError] = useState(false)
   const [colorError2, setColorError2] = useState(false)
+  const [exist, setExist] = useState(true)
 
   let id = new Date().getTime().toString()
 
@@ -73,6 +74,14 @@ const NewAddCard = () => {
       setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
+
+  // useEffect(() => {
+  //   const existingData = localStorage.getItem('item')
+  //   setExist(existingData ? JSON.parse(existingData) : [])
+  // }, [])
+
+  ////////////////////////////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////////////////////////////
 
   return (
     <>
