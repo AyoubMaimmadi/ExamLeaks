@@ -305,6 +305,7 @@ exam
   margin-left: 80%;
   width: 44px;
   height: 44px;
+  background: transparent;
 }
 
 .arrowbtn:hover {
