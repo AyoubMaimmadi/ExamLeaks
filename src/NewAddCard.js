@@ -40,6 +40,9 @@ const NewAddCard = () => {
     }
     if (key === password) {
       data.push(myitem)
+      // setList((item) => {
+      //   return [...data, myitem]
+      // })
       // localStorage.setItem('item', JSON.stringify(data))
       // JSON.parse(localStorage.getItem('item'))
       setTitle('')
