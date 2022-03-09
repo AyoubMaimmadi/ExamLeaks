@@ -391,8 +391,8 @@ html {
 
 .exam-item:hover {
   border-radius: 16% 4% 5% 5%;
-  background-color: rgba(0, 0, 0, 0.06);
-  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0.08);
+  font-size: 15px;
   font-weight: bolder;
   color: black;
 }
