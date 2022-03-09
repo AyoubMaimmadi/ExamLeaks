@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
 import './css/newaddcard.css'
 
 let password = 'ayoub'
+
+export const AppContext = React.createContext()
 
 const NewAddCard = () => {
   const img = './images/newCourse.png'
