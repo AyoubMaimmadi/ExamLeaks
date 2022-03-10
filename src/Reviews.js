@@ -45,6 +45,7 @@ const Reviews = () => {
           //&nbsp;reviews&nbsp;//
         </h2>
       </div>
+      <br />
       <div className="section-center-review">
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote } = person
