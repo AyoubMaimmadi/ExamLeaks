@@ -16,7 +16,7 @@ To use you need to:
 
 4- open terminal and run:
 
-##### - `npm unstall` to install node modules
+##### - `npm Install` to install node modules
 
 ##### - `npm start` to open developement at localhost:3000
 
