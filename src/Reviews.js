@@ -5,6 +5,7 @@ import data from './data/ReviewsData'
 import './css/reviews.css'
 import Uparow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
+import SearchBar from './Components/SearchBar'
 
 const Reviews = () => {
   const [people, setPeople] = useState(data)
@@ -36,9 +37,7 @@ const Reviews = () => {
   return (
     <section className="section-review">
       <Navbar />
-      <br />
-      <br />
-      <br />
+      <SearchBar />
       <br />
       <br />
       <div className="title-review">
@@ -78,7 +77,6 @@ const Reviews = () => {
           <FiChevronRight />
         </button>
       </div>
-      <Uparow />
     </section>
   )
 }

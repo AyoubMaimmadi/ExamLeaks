@@ -3,6 +3,7 @@ import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
 import './css/newaddcard.css'
+import SearchBar from './Components/SearchBar'
 
 let password = 'ayoub'
 
@@ -93,6 +94,7 @@ const NewAddCard = () => {
     <>
       <section className="exam section">
         <Navbar />
+        <SearchBar />
         <br />
         <div className="title">
           <h2 id="Add">

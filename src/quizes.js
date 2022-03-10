@@ -4,6 +4,7 @@ import Categories from './Components/Categories'
 import items from './data/QuizData'
 import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
+import SearchBar from './Components/SearchBar'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
@@ -26,6 +27,7 @@ const Quiz = () => {
     <main>
       <section id="home" className="exam section">
         <Navbar />
+        <SearchBar />
         <br />
         <div className="title">
           <h2 id="Quizes">
