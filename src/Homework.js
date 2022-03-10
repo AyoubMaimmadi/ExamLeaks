@@ -3,6 +3,7 @@ import Exam from './Components/Exam'
 import Categories from './Components/Categories'
 import items from './data/HomeWorkData'
 import Uparrow from './Components/Uparrow'
+import Navbar from './Components/Navbar'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
@@ -22,20 +23,24 @@ const Homewok = () => {
   }
 
   return (
-    <main>
-      <section id="home" className="exam section">
-        <div className="title">
-          <h2 id="Homework">
-            Homework
-            <a className="scroll-link"></a>
-          </h2>
-          <div className="underline"></div>
-        </div>
-        <Categories categories={categories} filterItems={filterItems} />
-        <Exam items={examItems} />
-      </section>
-      <Uparrow />
-    </main>
+    <>
+      <main>
+        <section id="home" className="exam section">
+          <Navbar />
+          <br />
+          <div className="title">
+            <h2 id="Homework">
+              Homework
+              <a className="scroll-link"></a>
+            </h2>
+            <div className="underline"></div>
+          </div>
+          <Categories categories={categories} filterItems={filterItems} />
+          <Exam items={examItems} />
+        </section>
+        <Uparrow />
+      </main>
+    </>
   )
 }
 

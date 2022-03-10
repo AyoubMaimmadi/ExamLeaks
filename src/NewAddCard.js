@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react'
 import data from './data/ExamData'
 import Uparrow from './Components/Uparrow'
+import Navbar from './Components/Navbar'
 import './css/newaddcard.css'
 
 let password = 'ayoub'
@@ -91,6 +92,8 @@ const NewAddCard = () => {
   return (
     <>
       <section className="exam section">
+        <Navbar />
+        <br />
         <div className="title">
           <h2 id="Add">
             Add/Del Card

@@ -4,6 +4,7 @@ import { BsFillChatQuoteFill } from 'react-icons/bs'
 import data from './data/ReviewsData'
 import './css/reviews.css'
 import Uparow from './Components/Uparrow'
+import Navbar from './Components/Navbar'
 
 const Reviews = () => {
   const [people, setPeople] = useState(data)
@@ -34,6 +35,12 @@ const Reviews = () => {
 
   return (
     <section className="section-review">
+      <Navbar />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div className="title-review">
         <h2 id="Reviews" className="text-center">
           //&nbsp;reviews&nbsp;//

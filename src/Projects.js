@@ -3,6 +3,7 @@ import Exam from './Components/Exam'
 import Categories from './Components/Categories'
 import items from './data/ProjectData'
 import Uparrow from './Components/Uparrow'
+import Navbar from './Components/Navbar'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
@@ -24,6 +25,8 @@ const Homewok = () => {
   return (
     <main>
       <section id="home" className="exam section">
+        <Navbar />
+        <br />
         <div className="title">
           <h2 id="Projects">
             Projects

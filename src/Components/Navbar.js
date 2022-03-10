@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/nav.css'
+import { Link } from 'react-router-dom'
 
 // Click on the navigation button and get there using good'ol HMTL magic
 
@@ -14,22 +15,22 @@ const Navbar = () => {
         <a href="index.html" className="logo"></a>
         <ul className="navlinks">
           <li>
-            <a href="#Exams">Exams</a>
+            <Link to="/">Exams</Link>
           </li>
           <li>
-            <a href="#Quizes">Quizes</a>
+            <Link to="/quiz">Quizes</Link>
           </li>
           <li>
-            <a href="#Projects">Projects</a>
+            <Link to="/project">Projects</Link>
           </li>
           <li>
-            <a href="#Homework">Homework</a>
+            <Link to="/homework">Homework</Link>
           </li>
           <li>
-            <a href="#Add">ADD / DEL</a>
+            <Link to="/edit">ADD / DEL</Link>
           </li>
           <li>
-            <a href="#Reviews">Reviews</a>
+            <Link to="/reviews">Reviews</Link>
           </li>
         </ul>
       </nav>
