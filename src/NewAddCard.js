@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
 import data from './data/ExamData'
-import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
 import './css/newaddcard.css'
 import SearchBar from './Components/SearchBar'
@@ -270,7 +269,6 @@ const NewAddCard = () => {
               <div className="d-flex justify-content-center pt-4">
                 <input type="submit" className="btn btn-info" value="-"></input>
               </div>
-              <Uparrow />
             </div>
           </form>
         </div>
