@@ -98,7 +98,7 @@ const NewAddCard = () => {
     //   setReviewError(`ID doesn't exist`)
     //   setauiID('')
     // }
-    if (parseInt(auiID) >= 7000) {
+    if (parseInt(auiID) >= 70000) {
       setusername('')
       setschool('')
       setreview('')
