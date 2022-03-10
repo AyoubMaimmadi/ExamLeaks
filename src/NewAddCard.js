@@ -24,6 +24,10 @@ const NewAddCard = () => {
   const [colorError, setColorError] = useState(false)
   const [colorError2, setColorError2] = useState(false)
   const [exist, setExist] = useState(true)
+  const [reviewError, setReviewError] = useState(
+    `You must have an AUI ID to leave a review!`
+  )
+  const [colorError3, setColorError3] = useState(false)
 
   let id = new Date().getTime().toString()
 
@@ -95,12 +99,15 @@ const NewAddCard = () => {
         <Navbar />
         <SearchBar />
         <br />
+        <br />
+        <br />
         <div className="title">
           <h2 id="Add">
             Add/Del Card
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
+          <br />
           <br />
           <h4>{error}</h4>
         </div>
@@ -231,12 +238,23 @@ const NewAddCard = () => {
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
       <div className="uperuper">
         <div className="container myowncontainer">
           <form onSubmit={EditData}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group pt-2 mx-auto">
+                <div className="title">
+                  <h2 id="Add">Delete Card</h2>
+                  <div className="underline"></div>
+                  <br />
+                </div>
                 <div className="d-flex justify-content-center">
                   <br />
                   <h4>{delerror}</h4>
@@ -274,7 +292,64 @@ const NewAddCard = () => {
         </div>
       </div>
 
+      {/* ////////////////////// */}
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="uperuper">
+        <div className="container myowncontainer">
+          <form onSubmit={EditData}>
+            <div className="row pt-5 mx-auto">
+              <div className="col-8 form-group pt-2 mx-auto">
+                <div className="title">
+                  <h2 id="Add">Leave a Review</h2>
+                  <div className="underline"></div>
+                  <br />
+                </div>
+                <div className="d-flex justify-content-center">
+                  <br />
+                  <h4>{reviewError}</h4>
+                </div>
+                <input
+                  type="text"
+                  required
+                  className="form-control"
+                  placeholder="Item ID"
+                  value={ItemID}
+                  onChange={(e) => {
+                    setItemID(e.target.value)
+                  }}
+                />
+              </div>
+              <div className="col-8 form-group pt-2 mx-auto">
+                <input
+                  type="text"
+                  required
+                  className={`${
+                    colorError3 ? 'form-control btn-danger' : 'form-control'
+                  }`}
+                  placeholder="Admin key"
+                  value={Delkey}
+                  onChange={(e) => {
+                    setDelKey(e.target.value)
+                  }}
+                />
+              </div>
+              <div className="d-flex justify-content-center pt-4">
+                <input type="submit" className="btn btn-info" value="+"></input>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
       <br />
       <br />
     </>
