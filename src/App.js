@@ -6,6 +6,7 @@ import Projects from './Projects'
 import Quiz from './Quizes'
 import NewAddCard from './NewAddCard.js'
 import Rviews from './Reviews'
+import ErrorPage from './Components/ErrorPage'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 // Organize all components here in a simple way
@@ -32,6 +33,9 @@ const App = () => {
           </Route>
           <Route exact path="/reviews">
             <Rviews />
+          </Route>
+          <Route path="*">
+            <ErrorPage />
           </Route>
         </Switch>
       </Router>
