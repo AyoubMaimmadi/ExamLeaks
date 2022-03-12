@@ -1,6 +1,6 @@
 # GPA Booster
 
-## Agile Software Engineering Project using React: (JS/JSX/CSS/...)
+## Agile Software Engineering Project using React: (JS/JSX/CSS/MongoDB/Express/Bootstrap/...)
 
 ## Allows AUIers to easily find old exams, quizes, projects, and homeworks.
 
