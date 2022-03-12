@@ -1,6 +1,6 @@
 # GPA Booster
 
-## Agile Software Engineering Project using React: (JS/JSX/CSS/...)
+## Agile Software Engineering Project using React: (JS/JSX/CSS/MongoDB/Express/Bootstrap/...)
 
 ## Allows AUIers to easily find old exams, quizes, projects, and homeworks.
 
@@ -16,7 +16,7 @@ To use you need to:
 
 4- open terminal and run:
 
-##### - `npm unstall` to install node modules
+##### - `npm install` to install node modules
 
 ##### - `npm start` to open developement at localhost:3000
 
