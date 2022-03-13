@@ -12,17 +12,23 @@ const Footer = () => {
         <div className="container">
           <ul className="socialCol">
             <li>
-              <a href="https://www.facebook.com/AYOUB.MAIMMADI1">
+              <a
+                href="https://www.facebook.com/AYOUB.MAIMMADI1"
+                target="_blank"
+              >
                 <img src="./images//fb.svg" />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/ayoubmaimmadi/">
+              <a
+                href="https://www.instagram.com/ayoubmaimmadi/"
+                target="_blank"
+              >
                 <img src="./images//insta.svg" />
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/Ayoubmaimmadi2">
+              <a href="https://twitter.com/Ayoubmaimmadi2" target="_blank">
                 <img src="./images//twitter.svg" />
               </a>
             </li>
@@ -35,10 +41,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/in/ayoub-maimmadi-533587198/"
-                target="_blank"
-              >
+              <a href="https://github.com/AyoubMaimmadi" target="_blank">
                 <img src="./images//github.svg" />
               </a>
             </li>
