@@ -239,7 +239,6 @@ const NewAddCard = () => {
       <br />
       <br />
       <br />
-
       <div className="uperuper">
         <div className="container myowncontainer">
           <form onSubmit={EditData}>
@@ -286,9 +285,6 @@ const NewAddCard = () => {
           </form>
         </div>
       </div>
-
-      {/* ////////////////////// */}
-
       <br />
       <br />
     </>

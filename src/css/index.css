@@ -309,10 +309,11 @@ exam
   border: transparent;
 }
 
-/* .arrowbtn:hover {
-  border-radius: 30%;
-  color: rgb(24, 179, 199);
-} */
+.arrowbtn:hover {
+  border-radius: 50%;
+  border: 3px solid black;
+  background: transparent;
+}
 
 body {
   background-color: #eeddd3;
