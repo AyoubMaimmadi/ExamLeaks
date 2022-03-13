@@ -309,21 +309,16 @@ exam
   border: transparent;
 }
 
-.arrowbtn:hover {
-  /* border-radius: 30%; */
+/* .arrowbtn:hover {
+  border-radius: 30%;
   color: rgb(24, 179, 199);
-}
+} */
 
 body {
   background-color: #eeddd3;
   padding: 0;
   margin: 0;
 }
-/* a {
-  text-decoration: none;
-} */
-
-/* Navigation Bar */
 
 .logo {
   height: 40px;
