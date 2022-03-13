@@ -1,14 +1,10 @@
 .section-review {
-  /* width: 90vw; */
   width: 90vw;
   height: 30vw;
   margin: 5rem auto;
   max-width: var(--max-width);
-  /* margin-top: 5rem; */
-  /* background-color: red; */
 }
 .section-center-review {
-  /* background-color: red; */
   margin: 0 auto;
   margin-top: 1rem;
   width: 100vw;
