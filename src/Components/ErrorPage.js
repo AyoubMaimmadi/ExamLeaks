@@ -1,5 +1,5 @@
 import React from 'react'
-import backHome from '../css/backHome.css'
+import errorpage from '../css/errorpage.css'
 import { Link } from 'react-router-dom'
 
 const ErrorPage = () => {
