@@ -7,8 +7,7 @@ const Uparrow = () => {
   return (
     <>
       <a id="endofpage" href="#home">
-        {/* <img className="arrowbtn" src="./images/up.png" /> */}
-        <BsArrowUpCircleFill className="arrowbtn" />
+        <img className="arrowbtn" src="./images/arrowupsvg.svg" />
       </a>
     </>
   )
