@@ -1,5 +1,13 @@
 const reviews = [
   {
+    id: 0,
+    image: './images/bot.png',
+    name: 'John Doe',
+    title: 'BA Student',
+    quote:
+      'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+  },
+  {
     id: 1,
     image: './images/ayoub.jpeg',
     name: 'Ayoub Maimmadi',
