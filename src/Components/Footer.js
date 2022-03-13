@@ -1,4 +1,6 @@
 import React from 'react'
+import { BsGithub } from 'react-icons/bs'
+
 const date = new Date().getFullYear()
 
 // Literly just a footer for some style points
@@ -25,8 +27,19 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/ayoub-maimmadi-533587198/">
+              <a
+                href="https://www.linkedin.com/in/ayoub-maimmadi-533587198/"
+                target="_blank"
+              >
                 <img src="./images//linkedin.svg" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ayoub-maimmadi-533587198/"
+                target="_blank"
+              >
+                <img src="./images//github.svg" />
               </a>
             </li>
           </ul>
