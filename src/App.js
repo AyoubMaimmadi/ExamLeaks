@@ -11,6 +11,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 // Organize all components here in a simple way
 
+const URL = process.env.REAC_APP_API_KEY
+console.log('my api key is: ', URL)
+
 const App = () => {
   return (
     <>
