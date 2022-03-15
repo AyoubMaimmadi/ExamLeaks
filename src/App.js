@@ -11,8 +11,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Syllabus from './Syllabus'
 import HomePage from './Components/HomePage'
 
-// Organize all components here in a simple way
-
 const API_KEY = process.env.REAC_APP_API_KEY
 
 const App = () => {
