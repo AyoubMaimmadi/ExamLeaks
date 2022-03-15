@@ -1,6 +1,6 @@
-const quizeData = [
+const syllabusData = [
   {
-    id: 1001,
+    id: 5001,
     title: 'Languages & Compilers',
     category: 'CSC',
     name: 'CSC 3300',
@@ -9,7 +9,7 @@ const quizeData = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 1002,
+    id: 5002,
     title: 'Works In Literature	',
     category: 'SHSS',
     name: 'SHSS 3300',
@@ -18,7 +18,7 @@ const quizeData = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 1003,
+    id: 5003,
     title: 'Calculus 1',
     category: 'EMS',
     name: 'IMS 3300',
@@ -27,7 +27,7 @@ const quizeData = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 1004,
+    id: 5004,
     title: 'Software Engineering',
     category: 'CSC',
     name: 'CSC 3300',
@@ -36,7 +36,7 @@ const quizeData = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 1005,
+    id: 5005,
     title: 'dolar sit amit',
     category: 'CSC',
     name: 'CSC 3300',
@@ -45,14 +45,14 @@ const quizeData = [
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
-    id: 1006,
-    title: 'fooo',
-    category: 'FOO',
-    name: 'FOO 3300',
-    img: './images/csc.png',
+    id: 5006,
+    title: 'Ayoub Maimmadi',
+    category: 'AM',
+    name: 'AM 3300',
+    img: './images/bot.png',
     link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
 ]
 
-export default quizeData
+export default syllabusData

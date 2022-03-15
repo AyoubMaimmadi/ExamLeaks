@@ -27,6 +27,9 @@ const Navbar = () => {
             <Link to="/homework">Homework</Link>
           </li>
           <li>
+            <Link to="/syllabus">Syllabus</Link>
+          </li>
+          <li>
             <Link to="/edit">ADD / DEL</Link>
           </li>
           <li>

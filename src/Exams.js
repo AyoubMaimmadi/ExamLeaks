@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar'
 import hwdata from './data/HomeWorkData'
 import prjdata from './data/ProjectData'
 import quizeData from './data/QuizData'
+import sylData from './data/syllabusData'
 import './css/searchBar.css'
 
 // const getLocalStorage = () => {
@@ -36,6 +37,7 @@ export const Exams = () => {
     ...new Set(quizeData.map((item) => item)),
     ...new Set(prjdata.map((item) => item)),
     ...new Set(hwdata.map((item) => item)),
+    ...new Set(sylData.map((item) => item)),
   ]
 
   // When there is an input in the searchbar we change the name of the page to Results and search for the target using simple array manipulation
