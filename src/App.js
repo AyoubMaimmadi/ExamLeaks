@@ -9,6 +9,7 @@ import Rviews from './Reviews'
 import ErrorPage from './Components/ErrorPage'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Syllabus from './Syllabus'
+import HomePage from './Components/HomePage'
 
 // Organize all components here in a simple way
 
@@ -20,6 +21,9 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route exact path="/exams">
             <Exams />
           </Route>
           <Route exact path="/quiz">

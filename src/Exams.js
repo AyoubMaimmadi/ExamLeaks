@@ -108,8 +108,6 @@ export const Exams = () => {
         </div>
         <br />
         <div className="title">
-          <h1>{pageHeadline}</h1>
-          <br />
           <h2 id="Exams">
             {pagename}
             <a className="scroll-link"></a>

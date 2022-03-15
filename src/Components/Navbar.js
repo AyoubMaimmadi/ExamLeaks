@@ -15,7 +15,10 @@ const Navbar = () => {
         <a href="index.html" className="logo"></a>
         <ul className="navlinks">
           <li>
-            <Link to="/">Exams</Link>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/exams">Exams</Link>
           </li>
           <li>
             <Link to="/quiz">Quizes</Link>
