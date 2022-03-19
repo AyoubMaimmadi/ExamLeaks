@@ -42,11 +42,6 @@ const NewAddCard = () => {
     }
     if (key === password) {
       data.push(myitem)
-      // setList((item) => {
-      //   return [...data, myitem]
-      // })
-      // localStorage.setItem('item', JSON.stringify(data))
-      // JSON.parse(localStorage.getItem('item'))
       setTitle('')
       setCategory('')
       setName('')
@@ -79,11 +74,6 @@ const NewAddCard = () => {
       setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
-
-  // useEffect(() => {
-  //   const existingData = localStorage.getItem('item')
-  //   setExist(existingData ? JSON.parse(existingData) : [])
-  // }, [])
 
   ////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////

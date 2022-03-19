@@ -10,15 +10,6 @@ import quizeData from './data/QuizData'
 import sylData from './data/syllabusData'
 import './css/searchBar.css'
 
-// const getLocalStorage = () => {
-//   let locatdata = localStorage.getItem('examItems')
-//   if (locatdata) {
-//     return JSON.parse(locatdata)
-//   } else {
-//     return []
-//   }
-// }
-
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
 export const Exams = () => {
@@ -76,10 +67,6 @@ export const Exams = () => {
     const newItems = items.filter((item) => item.category === category)
     setExamItems(newItems)
   }
-
-  // useEffect(() => {
-  //   localStorage.setItem('examItems', JSON.stringify(examItems))
-  // }, [examItems])
 
   return (
     <main>
