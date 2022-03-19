@@ -6,4 +6,3 @@ import cors from 'cors'
 import postRoutes from './routes/posts.js'
 
 const app = express()
-const app1 = express()
