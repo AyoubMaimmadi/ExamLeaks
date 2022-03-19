@@ -11,7 +11,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Syllabus from './Syllabus'
 import HomePage from './Components/HomePage'
 
+import { useSelector } from 'react-redux'
+
 const App = () => {
+  const posts = useSelector((state) => state.posts)
   return (
     <>
       <Router>

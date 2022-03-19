@@ -12,14 +12,12 @@ import './css/searchBar.css'
 import { useDispatch } from 'react-redux'
 import { getPosts } from './actions/posts'
 import { useSelector } from 'react-redux'
+import FileBase from 'react-file-base64'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
-
 export const Exams = () => {
   const dispatch = useDispatch()
   const posts = useSelector((state) => state.posts)
-
-  console.log(posts)
 
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)

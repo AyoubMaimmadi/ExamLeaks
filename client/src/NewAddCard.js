@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar'
 import './css/newaddcard.css'
 import SearchBar from './Components/SearchBar'
 import { useDispatch } from 'react-redux'
+import { createPost } from './actions/posts'
 
 let password = 'ayoub'
 
@@ -30,21 +31,18 @@ const NewAddCard = () => {
 
   let id = new Date().getTime().toString()
 
+  // Store data we got from the form in an item and add it to the list of Exams
+
   const sendData = (e) => {
     e.preventDefault()
-    handleSendData()
-  }
-
-  // Store data we got from the form in an item and add it to the list of Exams
-  const handleSendData = () => {
     const myitem = { id, title, category, name, img, link, desc }
+    dispatch(createPost(myitem))
     if (key !== password) {
       setTimeout(() => setColorError(false), 700)
       setColorError(true)
       setKey('')
     }
     if (key === password) {
-      data.push(myitem)
       setTitle('')
       setCategory('')
       setName('')
