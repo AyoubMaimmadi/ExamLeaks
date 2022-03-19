@@ -11,11 +11,11 @@ const HomePage = () => {
         <section id="home" className="exam section">
           <Navbar />
           <SearchBar />
-          <div class="mainbox">
-            <div class="err">&nbsp;A</div>
-            <div class="far">&nbsp;U</div>
-            <div class="err2">&nbsp;I</div>
-            <div class="msg">
+          <div className="mainbox">
+            <div className="err">&nbsp;A</div>
+            <div className="far">&nbsp;U</div>
+            <div className="err2">&nbsp;I</div>
+            <div className="msg">
               A Website For Boosting AUIer's
               <h2>GPA</h2>
               <p>

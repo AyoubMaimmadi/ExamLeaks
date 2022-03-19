@@ -18,16 +18,16 @@ const SearchBar = () => {
   }, [input])
 
   return (
-    <div class="search">
+    <div className="search">
       <input
         type="text"
         name=""
         placeholder="i.e. Software Eng ..."
-        class="text"
+        className="text"
         onChange={(e) => setInput(e.target.value)}
       />
-      <a href="#" class="btn">
-        <i class="fa fa-search "></i>
+      <a href="#" className="btn">
+        <i className="fa fa-search "></i>
       </a>
     </div>
   )
