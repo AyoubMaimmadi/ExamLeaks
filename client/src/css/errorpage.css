@@ -4,7 +4,9 @@
   width: 600px;
   position: relative;
 }
-
+.moveup {
+  margin-top: -8%;
+}
 .err {
   color: black;
   font-family: 'Nunito Sans', sans-serif;

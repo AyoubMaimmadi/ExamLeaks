@@ -13,7 +13,7 @@ export const AppContext = React.createContext()
 const NewAddCard = () => {
   const dispatch = useDispatch()
 
-  const img = './images/newCourse.png'
+  const img = './images/ba.jpg'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
   const [name, setName] = useState('')
@@ -75,10 +75,6 @@ const NewAddCard = () => {
       setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
-
-  useEffect(() => {
-    dispatch()
-  }, [])
 
   ////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////

@@ -14,7 +14,6 @@ import HomePage from './Components/HomePage'
 import { useSelector } from 'react-redux'
 
 const App = () => {
-  const posts = useSelector((state) => state.posts)
   return (
     <>
       <Router>
