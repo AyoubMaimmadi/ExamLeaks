@@ -9,10 +9,13 @@ import prjdata from './data/ProjectData'
 import quizeData from './data/QuizData'
 import sylData from './data/syllabusData'
 import './css/searchBar.css'
+import { useDispatch } from 'react-redux'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
 export const Exams = () => {
+  const dispatch = useDispatch()
+
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
@@ -20,6 +23,10 @@ export const Exams = () => {
   const [pageHeadline, setpageHeadline] = useState(
     `A Website For Boosting AUIer's GPA`
   )
+
+  useEffect(() => {
+    dispatch()
+  }, [])
 
   // Gather all data in one array with unique values
 

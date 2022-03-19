@@ -3,12 +3,15 @@ import data from './data/ExamData'
 import Navbar from './Components/Navbar'
 import './css/newaddcard.css'
 import SearchBar from './Components/SearchBar'
+import { useDispatch } from 'react-redux'
 
 let password = 'ayoub'
 
 export const AppContext = React.createContext()
 
 const NewAddCard = () => {
+  const dispatch = useDispatch()
+
   const img = './images/newCourse.png'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
@@ -74,6 +77,10 @@ const NewAddCard = () => {
       setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
+
+  useEffect(() => {
+    dispatch()
+  }, [])
 
   ////////////////////////////////////////////////////////////////////////////
   ////////////////////////////////////////////////////////////////////////////
