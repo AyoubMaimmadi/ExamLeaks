@@ -3,7 +3,6 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 import { BsFillChatQuoteFill } from 'react-icons/bs'
 import data from './data/ReviewsData'
 import './css/reviews.css'
-import Uparow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
 

@@ -7,11 +7,9 @@ import Quiz from './Quizes'
 import NewAddCard from './NewAddCard.js'
 import Rviews from './Reviews'
 import ErrorPage from './Components/ErrorPage'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Syllabus from './Syllabus'
 import HomePage from './Components/HomePage'
-
-import { useSelector } from 'react-redux'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
   return (

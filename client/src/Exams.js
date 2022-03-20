@@ -8,10 +8,10 @@ import hwdata from './data/HomeWorkData'
 import prjdata from './data/ProjectData'
 import quizeData from './data/QuizData'
 import sylData from './data/syllabusData'
-import './css/searchBar.css'
 import { useDispatch } from 'react-redux'
 import { getPosts } from './actions/posts'
 import { useSelector } from 'react-redux'
+import './css/searchBar.css'
 
 export const Exams = () => {
   const dispatch = useDispatch()

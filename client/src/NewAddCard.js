@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect } from 'react'
 import data from './data/ExamData'
 import Navbar from './Components/Navbar'
-import './css/newaddcard.css'
 import SearchBar from './Components/SearchBar'
 import { useDispatch } from 'react-redux'
 import { createPost, deletePost } from './actions/posts'
+import './css/newaddcard.css'
 
 let password = 'ayoub'
 
