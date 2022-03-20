@@ -6,7 +6,7 @@ const ErrorPage = () => {
   return (
     <div className="mainbox">
       <div className="err">4</div>
-      <div className="far">0</div>
+      <div className="far1">0</div>
       <div className="err2">4</div>
       <div className="msg">
         Maybe this page moved? Got deleted? Is hiding out somewhere? Never

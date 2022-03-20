@@ -11,26 +11,26 @@ import './css/searchBar.css'
 import { useDispatch } from 'react-redux'
 import { getPosts } from './actions/posts'
 import { useSelector } from 'react-redux'
-import FileBase from 'react-file-base64'
 
 export const Exams = () => {
   const dispatch = useDispatch()
   const posts = useSelector((state) => state.posts)
-  const [examItems, setExamItems] = useState(posts)
-  // console.log(posts)
-  console.log(examItems)
 
+  const [examItems, setExamItems] = useState([])
   const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')
-  const [pageHeadline, setpageHeadline] = useState(
-    `A Website For Boosting AUIer's GPA`
-  )
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     dispatch(getPosts())
   }, [dispatch])
+
+  useEffect(() => {
+    setExamItems(posts)
+    setLoading(true)
+  }, [])
 
   // Gather all data in one array with unique values
 
@@ -46,7 +46,6 @@ export const Exams = () => {
 
   useEffect(() => {
     if (pagename === 'Results') {
-      setpageHeadline(``)
       setExamItems([])
       allData.filter((val) => {
         if (
@@ -55,14 +54,14 @@ export const Exams = () => {
           val.category.toLowerCase().includes(input.toLowerCase()) ||
           val.id == parseInt(input)
         ) {
-          setExamItems((posts) => [...posts, val])
+          setExamItems((examItems) => [...examItems, val])
         }
       })
     } else {
       setExamItems([])
       posts.filter((val) => {
         if (val.title.toLowerCase().includes(input.toLowerCase())) {
-          setExamItems((posts) => [...posts, val])
+          setExamItems((examItems) => [...examItems, val])
         }
       })
     }
@@ -75,7 +74,7 @@ export const Exams = () => {
       setExamItems(posts)
       return
     }
-    const newItems = posts.filter((item) => posts.category === category)
+    const newItems = posts.filter((item) => item.category === category)
     setExamItems(newItems)
   }
 
@@ -95,7 +94,6 @@ export const Exams = () => {
               setCategories([])
               if (e.target.value === '') {
                 setPagename('Exams')
-                setpageHeadline(`A Website For Boosting AUIer's GPA`)
                 setCategories(allCategories)
               }
             }}
@@ -112,8 +110,15 @@ export const Exams = () => {
           </h2>
           <div className="underline"></div>
         </div>
-        <Categories categories={categories} filterItems={filterItems} />
-        <Exam items={posts} />
+
+        {loading ? (
+          <>
+            <Categories categories={categories} filterItems={filterItems} />
+            <Exam items={examItems} />
+          </>
+        ) : (
+          <h1 className="msg2">Loading...</h1>
+        )}
       </section>
       <Uparrow />
     </main>
