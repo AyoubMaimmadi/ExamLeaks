@@ -2,8 +2,8 @@ import express from 'express'
 import bodyParser from 'body-parser'
 import mongoose from 'mongoose'
 import cors from 'cors'
-import postRoutes from './routes/posts.js'
 import dotenv from 'dotenv'
+import postRoutes from './routes/posts.js'
 
 const app = express()
 dotenv.config()
@@ -14,8 +14,11 @@ app.use(cors())
 
 app.use('/posts', postRoutes)
 
-// const CONNECTION_URL =
-//   'mongodb+srv://ayoubmaimmadi:ayoubmaimmadi123@cluster0.jmgd0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+app.get('/', (req, res) => {
+  res.send(`Welcome to GPA-Booster's API`)
+})
+
+const CONNECTION_URL = process.env.CONNECTION_URL
 
 const PORT = process.env.PORT || 5000
 
