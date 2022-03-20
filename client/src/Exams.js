@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Exam from './Components/Exam'
+import Examm from './Components/Examm'
 import Categories from './Components/Categories'
 import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
@@ -114,7 +115,7 @@ export const Exams = () => {
         {loading ? (
           <>
             <Categories categories={categories} filterItems={filterItems} />
-            <Exam items={examItems} />
+            <Examm items={examItems} />
           </>
         ) : (
           <h1 className="msg2">Loading...</h1>

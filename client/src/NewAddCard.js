@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar'
 import './css/newaddcard.css'
 import SearchBar from './Components/SearchBar'
 import { useDispatch } from 'react-redux'
-import { createPost } from './actions/posts'
+import { createPost, deletePost } from './actions/posts'
 
 let password = 'ayoub'
 
@@ -61,13 +61,13 @@ const NewAddCard = () => {
 
   const EditData = (e) => {
     e.preventDefault()
+    dispatch(deletePost(ItemID))
     if (Delkey !== password) {
       setTimeout(() => setColorError2(false), 700)
       setColorError2(true)
       setDelKey('')
     }
     if (Delkey === password) {
-      data.pop()
       setItemID('')
       setDelKey('')
       setTimeout(() => setDelerror('Imput New item ID to delete'), 1200)
