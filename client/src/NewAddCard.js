@@ -13,7 +13,7 @@ export const AppContext = React.createContext()
 const NewAddCard = () => {
   const dispatch = useDispatch()
 
-  const img = './images/ba.jpg'
+  const img = './images/shss.jpg'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
   const [name, setName] = useState('')
@@ -36,13 +36,14 @@ const NewAddCard = () => {
   const sendData = (e) => {
     e.preventDefault()
     const myitem = { id, title, category, name, img, link, desc }
-    dispatch(createPost(myitem))
+
     if (key !== password) {
       setTimeout(() => setColorError(false), 700)
       setColorError(true)
       setKey('')
     }
     if (key === password) {
+      dispatch(createPost(myitem)) // Add the new item to the database
       setTitle('')
       setCategory('')
       setName('')
