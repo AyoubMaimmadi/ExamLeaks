@@ -1,6 +1,4 @@
 import React from 'react'
-import { BsGithub } from 'react-icons/bs'
-
 const date = new Date().getFullYear()
 
 // Literly just a footer for some style points

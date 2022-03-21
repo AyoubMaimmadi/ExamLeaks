@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 import { BsFillChatQuoteFill } from 'react-icons/bs'
 import data from './data/ReviewsData'
-import './css/reviews.css'
 import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
 

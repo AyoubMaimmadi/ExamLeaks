@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Clone of Exam that deals with _id (MonogoDB)
 // We get items from Exams, Quizes, ...
 // We destruture then into cards that can be displayed
 

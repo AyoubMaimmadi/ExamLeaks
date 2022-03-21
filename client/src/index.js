@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './css/index.css'
+import './css/searchBar.css'
+import './css/reviews.css'
 import App from './App'
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux'

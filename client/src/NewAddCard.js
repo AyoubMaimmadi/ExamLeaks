@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import data from './data/ExamData'
 import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
 import { useDispatch } from 'react-redux'
@@ -9,8 +8,6 @@ import './css/newaddcard.css'
 let password = 'ayoub'
 
 const NewAddCard = () => {
-  const dispatch = useDispatch()
-
   const img = './images/bot.png'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
@@ -24,6 +21,8 @@ const NewAddCard = () => {
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
   const [colorError, setColorError] = useState(false)
   const [colorError2, setColorError2] = useState(false)
+
+  const dispatch = useDispatch()
 
   let id = new Date().getTime().toString()
 

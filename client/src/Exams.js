@@ -6,15 +6,14 @@ import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
 import hwdata from './data/HomeWorkData'
 import prjdata from './data/ProjectData'
-import './css/searchBar.css'
 import quizeData from './data/QuizData'
 import sylData from './data/syllabusData'
 import { useSelector } from 'react-redux'
 
 export const Exams = () => {
   const posts = useSelector((state) => state.posts)
-  const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
 
+  const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
   const [examItems, setExamItems] = useState([posts])
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
