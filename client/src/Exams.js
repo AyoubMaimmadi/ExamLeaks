@@ -9,31 +9,22 @@ import prjdata from './data/ProjectData'
 import './css/searchBar.css'
 import quizeData from './data/QuizData'
 import sylData from './data/syllabusData'
-import { useDispatch } from 'react-redux'
-import { getPosts } from './actions/posts'
 import { useSelector } from 'react-redux'
 
 export const Exams = () => {
-  const dispatch = useDispatch()
   const posts = useSelector((state) => state.posts)
-
-  const [examItems, setExamItems] = useState([])
   const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
+
+  const [examItems, setExamItems] = useState([posts])
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')
-  const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    dispatch(getPosts())
-  }, [dispatch])
+  // Gather all data in one array with unique values
 
   useEffect(() => {
     setExamItems(posts)
-    setLoading(true)
   }, [])
-
-  // Gather all data in one array with unique values
 
   const allData = [
     ...new Set(posts.map((item) => item)),
@@ -79,6 +70,7 @@ export const Exams = () => {
     setExamItems(newItems)
   }
 
+  console.log(examItems)
   return (
     <main>
       <section id="home" className="exam section">
@@ -111,15 +103,8 @@ export const Exams = () => {
           </h2>
           <div className="underline"></div>
         </div>
-
-        {loading ? (
-          <>
-            <Categories categories={categories} filterItems={filterItems} />
-            <Examm items={examItems} />
-          </>
-        ) : (
-          <h1 className="msg2">Loading...</h1>
-        )}
+        <Categories categories={categories} filterItems={filterItems} />
+        <Examm items={examItems} />
       </section>
       <Uparrow />
     </main>

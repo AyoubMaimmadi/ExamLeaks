@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Exams from './Exams'
 import Homewok from './Homework'
 import Footer from './Components/Footer'
@@ -9,9 +9,15 @@ import Rviews from './Reviews'
 import ErrorPage from './Components/ErrorPage'
 import Syllabus from './Syllabus'
 import HomePage from './Components/HomePage'
+import { useDispatch } from 'react-redux'
+import { getPosts } from './actions/posts'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
+  const dispatch = useDispatch()
+  useEffect(() => {
+    dispatch(getPosts())
+  }, [dispatch])
   return (
     <>
       <Router>

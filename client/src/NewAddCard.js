@@ -8,26 +8,22 @@ import './css/newaddcard.css'
 
 let password = 'ayoub'
 
-export const AppContext = React.createContext()
-
 const NewAddCard = () => {
   const dispatch = useDispatch()
 
-  const img = './images/shss.jpg'
+  const img = './images/bot.png'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
   const [name, setName] = useState('')
   const [link, setLink] = useState('')
   const [desc, setDesc] = useState('')
   const [key, setKey] = useState('')
-  const [list, setList] = useState(data)
   const [ItemID, setItemID] = useState('')
   const [Delkey, setDelKey] = useState('')
   const [error, setError] = useState('Input Item Data to Add')
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
   const [colorError, setColorError] = useState(false)
   const [colorError2, setColorError2] = useState(false)
-  const [exist, setExist] = useState(true)
 
   let id = new Date().getTime().toString()
 
@@ -61,13 +57,14 @@ const NewAddCard = () => {
 
   const EditData = (e) => {
     e.preventDefault()
-    dispatch(deletePost(ItemID))
+
     if (Delkey !== password) {
       setTimeout(() => setColorError2(false), 700)
       setColorError2(true)
       setDelKey('')
     }
     if (Delkey === password) {
+      dispatch(deletePost(ItemID))
       setItemID('')
       setDelKey('')
       setTimeout(() => setDelerror('Imput New item ID to delete'), 1200)
