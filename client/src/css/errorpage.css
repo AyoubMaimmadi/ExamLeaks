@@ -41,6 +41,15 @@
   top: 8%;
 }
 
+.err3 {
+  color: red;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+  position: absolute;
+  left: 68%;
+  top: 8%;
+}
+
 .msg {
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
