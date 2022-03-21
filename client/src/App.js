@@ -23,7 +23,9 @@ const App = () => {
     <>
       <Router>
         <div className="format">
-          <button className="btn3">Sign in</button>
+          <Link to="/something" target="_blank">
+            <button className="btn3">Sign in</button>
+          </Link>
         </div>
         <Switch>
           <Route exact path="/">
