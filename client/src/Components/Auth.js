@@ -4,11 +4,12 @@ import SearchBar from './SearchBar'
 import { Link } from 'react-router-dom'
 
 const Auth = () => {
-  const [colorError3, setColorError3] = useState(false)
   const [username, setusername] = useState('')
-  const [school, setschool] = useState('')
-  const [review, setreview] = useState('')
-  const [auiID, setauiID] = useState('')
+  const [email, setemail] = useState('')
+  const [password, setpassword] = useState('')
+  const [password2, setpassword2] = useState('')
+  const [colorError, setColorError] = useState(false)
+
   return (
     <>
       <section className="exam section">
@@ -36,73 +37,46 @@ const Auth = () => {
                   type="text"
                   required
                   className="form-control"
-                  placeholder="Title"
-                  //   value={title}
-                  //   onChange={(e) => {
-                  //     setTitle(e.target.value)
-                  //   }}
+                  placeholder="User Name"
+                  value={username}
+                  onChange={(e) => {
+                    setusername(e.target.value)
+                  }}
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
-                  type="text"
+                  type="email"
                   className="form-control"
-                  placeholder="School"
-                  //   value={category}
-                  //   onChange={(e) => {
-                  //     setCategory(e.target.value)
-                  //   }}
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => {
+                    setemail(e.target.value)
+                  }}
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
-                  type="text"
+                  type="password"
                   required
                   className="form-control"
-                  placeholder="Class Code"
-                  //   value={name}
-                  //   onChange={(e) => {
-                  //     setName(e.target.value)
-                  //   }}
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => {
+                    setpassword(e.target.value)
+                  }}
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
-                  type="text"
+                  type="password"
                   required
                   className="form-control"
-                  placeholder="Item link"
-                  //   value={link}
-                  //   onChange={(e) => {
-                  //     setLink(e.target.value)
-                  //   }}
-                />
-              </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="text"
-                  required
-                  className="form-control"
-                  placeholder="Item description"
-                  //   value={desc}
-                  //   onChange={(e) => {
-                  //     setDesc(e.target.value)
-                  //   }}
-                />
-              </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="text"
-                  required
-                  className="form-control"
-                  //   className={`${
-                  //     colorError ? 'form-control btn-danger' : 'form-control'
-                  //   }`}
-                  placeholder="Admin key"
-                  //   value={key}
-                  //   onChange={(e) => {
-                  //     setKey(e.target.value)
-                  //   }}
+                  placeholder="Repeat Password"
+                  value={password2}
+                  onChange={(e) => {
+                    setpassword2(e.target.value)
+                  }}
                 />
               </div>
               <div className="d-flex justify-content-center pt-4">
@@ -110,6 +84,7 @@ const Auth = () => {
               </div>
             </div>
           </form>
+          <button className="btn4">Sign in with Google</button>
         </div>
       </div>
     </>
