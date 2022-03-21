@@ -26,7 +26,7 @@ const App = () => {
     <>
       <Router>
         <div className="format">
-          <Link to="/auth" target="_blank">
+          <Link to="/auth">
             <button className="btn3">Sign in</button>
           </Link>
         </div>
