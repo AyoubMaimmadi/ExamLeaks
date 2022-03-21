@@ -210,7 +210,7 @@ const NewAddCard = () => {
                 />
               </div>
               <div className="d-flex justify-content-center pt-4">
-                <input type="submit" className="btn btn-info" value="+"></input>
+                <input type="submit" className="btn3" value="Add"></input>
               </div>
             </div>
           </form>
@@ -267,7 +267,7 @@ const NewAddCard = () => {
                 />
               </div>
               <div className="d-flex justify-content-center pt-4">
-                <input type="submit" className="btn btn-info" value="-"></input>
+                <input type="submit" className="btn3" value="Del"></input>
               </div>
             </div>
           </form>

@@ -42,7 +42,8 @@
 .icon-review {
   font-size: 3rem;
   margin-top: 1rem;
-  color: var(--clr-primary-5);
+  color: rgba(0, 0, 0, 0.5);
+  /* color: var(--clr-primary-5); */
 }
 
 .prev,
@@ -65,7 +66,7 @@
 
 .prev:hover,
 .next:hover {
-  background: var(--clr-primary-5);
+  background: black;
 }
 .prev {
   left: 0;

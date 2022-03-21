@@ -12,6 +12,7 @@ import HomePage from './Components/HomePage'
 import { useDispatch } from 'react-redux'
 import { getPosts } from './actions/posts'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -21,6 +22,9 @@ const App = () => {
   return (
     <>
       <Router>
+        <div className="format">
+          <button className="btn3">Sign in</button>
+        </div>
         <Switch>
           <Route exact path="/">
             <HomePage />

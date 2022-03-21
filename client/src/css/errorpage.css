@@ -78,3 +78,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.format {
+  margin-right: 5rem;
+}
