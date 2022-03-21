@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
+import { Link } from 'react-router-dom'
 
 const Auth = () => {
   const [colorError3, setColorError3] = useState(false)
