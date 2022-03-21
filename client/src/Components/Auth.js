@@ -20,7 +20,7 @@ const Auth = () => {
         <br />
         <div className="title">
           <h2 id="Add">
-            Sign In
+            Sign up
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
@@ -80,11 +80,18 @@ const Auth = () => {
                 />
               </div>
               <div className="d-flex justify-content-center pt-4">
-                <input type="submit" className="btn3" value="Sign In"></input>
+                <input type="submit" className="btn3" value="Sign up"></input>
               </div>
             </div>
           </form>
-          <button className="btn4">Sign in with Google</button>
+          <button className="btn4">Sign in with Outlook</button>
+          <div>
+            <br />
+            <h6 className="text-center">Already have an account? </h6>
+            <Link to="something" target="_blank">
+              <button className="btn4">Sign In</button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
