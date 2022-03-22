@@ -3,9 +3,13 @@ import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import Icon from './Icon'
 import { GoogleLogin } from 'react-google-login'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
 const Auth = () => {
+  const dispatch = useDispatch()
+  const history = useHistory()
+
   const [username, setusername] = useState('')
   const [email, setemail] = useState('')
   const [password, setpassword] = useState('')
@@ -16,6 +20,13 @@ const Auth = () => {
   const googleSuccess = async (res) => {
     const result = res?.profileObj
     const token = res?.tokenId
+
+    try {
+      dispatch({ type: 'AUTH', data: { result, token } })
+      history.push('/')
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   const googleFailure = () => {
@@ -24,7 +35,7 @@ const Auth = () => {
 
   return (
     <>
-      <button className="btn2">{user}</button>
+      {/* <button className="btn2">{user}</button> */}
       <section className="exam section">
         <Navbar />
         <SearchBar />

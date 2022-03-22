@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Exams from './Exams'
 import Homewok from './Homework'
 import Footer from './Components/Footer'
@@ -18,6 +18,8 @@ import { Link } from 'react-router-dom'
 
 const App = () => {
   const dispatch = useDispatch()
+  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
+  const [username, setUsername] = useState('JD')
 
   useEffect(() => {
     dispatch(getPosts())
@@ -30,9 +32,9 @@ const App = () => {
           <Link to="/auth">
             <button className="btn3">Sign in</button>
           </Link>
-          {/* <Link to="/something" target="_blank">
-            <button className="btn2">AM</button>
-          </Link> */}
+          <Link to="/something" target="_blank">
+            <button className="btn2">{username}</button>
+          </Link>
         </div>
         <Switch>
           <Route exact path="/">
