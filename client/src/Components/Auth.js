@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
+import Icon from './Icon'
+import { GoogleLogin } from 'react-google-login'
 import { Link } from 'react-router-dom'
 
 const Auth = () => {
@@ -8,10 +10,21 @@ const Auth = () => {
   const [email, setemail] = useState('')
   const [password, setpassword] = useState('')
   const [password2, setpassword2] = useState('')
-  const [colorError, setColorError] = useState(false)
+  const [user, setUser] = useState('AM')
+  const [exist, setexist] = useState(false)
+
+  const googleSuccess = async (res) => {
+    const result = res?.profileObj
+    const token = res?.tokenId
+  }
+
+  const googleFailure = () => {
+    console.log('Google sign in was unseccessful. Try again later.')
+  }
 
   return (
     <>
+      <button className="btn2">{user}</button>
       <section className="exam section">
         <Navbar />
         <SearchBar />
@@ -84,9 +97,24 @@ const Auth = () => {
               </div>
             </div>
           </form>
-          <Link to="/something" target="_blank">
-            <button className="btn4">Sign in with Outlook</button>
-          </Link>
+          {/* <Link to="/something" target="_blank"> */}
+          <GoogleLogin
+            clientId="274059436296-0fjasat9srs1rt3j1ij4hddag02h7vbm.apps.googleusercontent.com"
+            render={(renderProps) => (
+              <button
+                className="btn4"
+                onClick={renderProps.onClick}
+                disabled={renderProps.disabled}
+                startIcon={<Icon />}
+              >
+                Sign in with Google
+              </button>
+            )}
+            onSuccess={googleSuccess}
+            onFailure={googleFailure}
+            cookiePolicy="single_host_origin"
+          />
+          {/* </Link> */}
           <div>
             <br />
             <h6 className="text-center">Already have an account? </h6>
