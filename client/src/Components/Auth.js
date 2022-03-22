@@ -84,11 +84,13 @@ const Auth = () => {
               </div>
             </div>
           </form>
-          <button className="btn4">Sign in with Outlook</button>
+          <Link to="/something" target="_blank">
+            <button className="btn4">Sign in with Outlook</button>
+          </Link>
           <div>
             <br />
             <h6 className="text-center">Already have an account? </h6>
-            <Link to="/sign-in" target="_blank">
+            <Link to="/sign-in">
               <button className="btn4">Sign In</button>
             </Link>
           </div>

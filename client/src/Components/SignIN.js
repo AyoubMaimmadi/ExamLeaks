@@ -18,7 +18,7 @@ const SignIN = () => {
         <br />
         <div className="title">
           <h2 id="Add">
-            Sign up
+            Sign In
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
@@ -57,16 +57,18 @@ const SignIN = () => {
               </div>
 
               <div className="d-flex justify-content-center pt-4">
-                <input type="submit" className="btn3" value="Sign up"></input>
+                <input type="submit" className="btn3" value="Sign In"></input>
               </div>
             </div>
           </form>
-          <button className="btn4">Sign in with Outlook</button>
+          <Link to="/something" target="_blank">
+            <button className="btn4">Sign in with Outlook</button>
+          </Link>
           <div>
             <br />
             <h6 className="text-center">Already have an account? </h6>
-            <Link to="something" target="_blank">
-              <button className="btn4">Sign In</button>
+            <Link to="/auth">
+              <button className="btn4">Sign Up</button>
             </Link>
           </div>
         </div>
