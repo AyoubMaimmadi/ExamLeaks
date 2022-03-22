@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url = 'https://gpa-booster-api.herokuapp.com/exams'
+const url = 'https://gpabooster-api.herokuapp.com/exams'
 // const url = 'http://localhost:5000/exams'
 
 export const fetchPosts = () => axios.get(url)
