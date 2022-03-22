@@ -3,11 +3,9 @@ import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import { Link } from 'react-router-dom'
 
-const Auth = () => {
+const SignIN = () => {
   const [username, setusername] = useState('')
-  const [email, setemail] = useState('')
   const [password, setpassword] = useState('')
-  const [password2, setpassword2] = useState('')
   const [colorError, setColorError] = useState(false)
 
   return (
@@ -44,17 +42,7 @@ const Auth = () => {
                   }}
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => {
-                    setemail(e.target.value)
-                  }}
-                />
-              </div>
+
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
                   type="password"
@@ -67,18 +55,7 @@ const Auth = () => {
                   }}
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="password"
-                  required
-                  className="form-control"
-                  placeholder="Repeat Password"
-                  value={password2}
-                  onChange={(e) => {
-                    setpassword2(e.target.value)
-                  }}
-                />
-              </div>
+
               <div className="d-flex justify-content-center pt-4">
                 <input type="submit" className="btn3" value="Sign up"></input>
               </div>
@@ -88,7 +65,7 @@ const Auth = () => {
           <div>
             <br />
             <h6 className="text-center">Already have an account? </h6>
-            <Link to="/sign-in" target="_blank">
+            <Link to="something" target="_blank">
               <button className="btn4">Sign In</button>
             </Link>
           </div>
@@ -98,4 +75,4 @@ const Auth = () => {
   )
 }
 
-export default Auth
+export default SignIN

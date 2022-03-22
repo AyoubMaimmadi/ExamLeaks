@@ -10,6 +10,7 @@ import ErrorPage from './Components/ErrorPage'
 import Syllabus from './Syllabus'
 import HomePage from './Components/HomePage'
 import Auth from './Components/Auth'
+import SignIN from './Components/SignIN'
 import { useDispatch } from 'react-redux'
 import { getPosts } from './actions/posts'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -60,6 +61,9 @@ const App = () => {
           </Route>
           <Route path="/auth">
             <Auth />
+          </Route>
+          <Route path="/sign-in">
+            <SignIN />
           </Route>
           <Route path="*">
             <ErrorPage />
