@@ -30,9 +30,9 @@ const App = () => {
           <Link to="/auth">
             <button className="btn3">Sign in</button>
           </Link>
-          <Link to="/something" target="_blank">
+          {/* <Link to="/something" target="_blank">
             <button className="btn2">AM</button>
-          </Link>
+          </Link> */}
         </div>
         <Switch>
           <Route exact path="/">
