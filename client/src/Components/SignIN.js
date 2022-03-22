@@ -66,7 +66,7 @@ const SignIN = () => {
           </Link>
           <div>
             <br />
-            <h6 className="text-center">Already have an account? </h6>
+            <h6 className="text-center">Sign up with an account? </h6>
             <Link to="/auth">
               <button className="btn4">Sign Up</button>
             </Link>
