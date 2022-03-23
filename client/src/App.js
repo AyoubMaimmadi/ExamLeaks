@@ -11,6 +11,7 @@ import Syllabus from './Syllabus'
 import HomePage from './Components/HomePage'
 import Auth from './Components/Auth'
 import SignIN from './Components/SignIN'
+import Email from './Components/Email'
 import { useDispatch } from 'react-redux'
 import { getPosts } from './actions/posts'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -66,6 +67,9 @@ const App = () => {
           </Route>
           <Route path="/sign-in">
             <SignIN />
+          </Route>
+          <Route path="/reach-us">
+            <Email />
           </Route>
           <Route path="*">
             <ErrorPage />

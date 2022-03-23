@@ -61,9 +61,6 @@ const SignIN = () => {
               </div>
             </div>
           </form>
-          <Link to="/something" target="_blank">
-            <button className="btn4">Sign in with Outlook</button>
-          </Link>
           <div>
             <br />
             <h6 className="text-center">Sign up with an account? </h6>

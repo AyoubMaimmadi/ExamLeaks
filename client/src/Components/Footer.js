@@ -49,7 +49,10 @@ const Footer = () => {
           <div className="copyrightCol">
             <p>
               Copyright &copy; Ayoub Maimmadi: ASED-Team-6<span> {date}</span>.
-              all rights reserved. <Link to="/reach-us">Email Us.</Link>
+              all rights reserved.{' '}
+              <Link to="/reach-us" target="_blank">
+                Email Us.
+              </Link>
             </p>
           </div>
         </div>

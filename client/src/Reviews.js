@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { BsFillChatQuoteFill } from 'react-icons/bs'
+import { VscComment } from 'react-icons/vsc'
+import { AiOutlineComment } from 'react-icons/ai'
 import data from './data/ReviewsData'
 import Navbar from './Components/Navbar'
 import SearchBar from './Components/SearchBar'
@@ -73,7 +76,7 @@ const Reviews = () => {
         <Navbar />
         <SearchBar />
         <br />
-        <br />
+
         <div className="title-review">
           <h2 id="Reviews" className="text-center">
             //&nbsp;reviews&nbsp;//
@@ -101,15 +104,16 @@ const Reviews = () => {
                 <h4>{name}</h4>
                 <p className="title-review">{title}</p>
                 <p className="text-review">{quote}</p>
-                <BsFillChatQuoteFill className="icon-review" />
+                {/* <BsFillChatQuoteFill className="icon-review" /> */}
+                <AiOutlineComment className="icon-review" />
               </myarticle>
             )
           })}
           <button className="prev" onClick={() => setIndex(index - 1)}>
-            <FiChevronLeft />
+            <FaArrowAltCircleLeft />
           </button>
           <button className="next" onClick={() => setIndex(index + 1)}>
-            <FiChevronRight />
+            <FaArrowAltCircleRight />
           </button>
         </div>
       </section>

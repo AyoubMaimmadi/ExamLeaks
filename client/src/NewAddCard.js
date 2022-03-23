@@ -81,8 +81,7 @@ const NewAddCard = () => {
       <section className="exam section">
         <Navbar />
         <SearchBar />
-        <br />
-        <br />
+
         <br />
         <div className="title">
           <h2 id="Add">
