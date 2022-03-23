@@ -21,6 +21,7 @@ To use you need to:
 ##### - `npm start` to open developement at localhost:3000
 
 #### You can see this website using the link https://gpabooster.netlify.app/
+#### You can see this website's API using the link https://gpabooster-api.herokuapp.com/exams
 
 #### OR
 
