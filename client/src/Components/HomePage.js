@@ -9,9 +9,12 @@ import hwdata from '../data/HomeWorkData'
 import prjdata from '../data/ProjectData'
 import quizeData from '../data/QuizData'
 import sylData from '../data/syllabusData'
+import { useSelector } from 'react-redux'
 import { BsTypeH1 } from 'react-icons/bs'
 
 const HomePage = () => {
+  const posts = useSelector((state) => state.posts)
+
   const [examItems, setExamItems] = useState(items)
   const [flage, setFlage] = useState(false)
   const [input, setInput] = useState('')
@@ -20,7 +23,7 @@ const HomePage = () => {
     `A Website For Boosting AUIer's GPA`
   )
   const allData = [
-    ...new Set(items.map((item) => item)),
+    ...new Set(posts.map((item) => item)),
     ...new Set(quizeData.map((item) => item)),
     ...new Set(prjdata.map((item) => item)),
     ...new Set(hwdata.map((item) => item)),
