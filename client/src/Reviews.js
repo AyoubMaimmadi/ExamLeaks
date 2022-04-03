@@ -10,7 +10,7 @@ import SearchBar from './Components/SearchBar'
 
 const Reviews = () => {
   const [people, setPeople] = useState(data)
-  const [index, setIndex] = React.useState(0)
+  const [index, setIndex] = useState(0)
 
   const [reviewError, setReviewError] = useState(
     `You must have an AUI ID to leave a review!`

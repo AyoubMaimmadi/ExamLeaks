@@ -21,7 +21,7 @@ const hwdata = [
     id: 4003,
     title: 'Calculus 1',
     category: 'EMS',
-    name: 'IMS 3300',
+    name: 'EMS 3300',
     img: './images/ims.jpg',
     link: 'https://github.com/AyoubMaimmadi',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
