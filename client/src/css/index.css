@@ -385,6 +385,13 @@ html {
   }
 }
 
+.imgFix {
+  margin-top: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .exam-item:hover {
   border-radius: 16% 4% 5% 5%;
   background-color: rgba(0, 0, 0, 0.08);
