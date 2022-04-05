@@ -25,20 +25,20 @@ export const Exams = () => {
     setExamItems(posts)
   }, [])
 
-  const allData = [
-    ...new Set(posts.map((item) => item)),
-    ...new Set(quizeData.map((item) => item)),
-    ...new Set(prjdata.map((item) => item)),
-    ...new Set(hwdata.map((item) => item)),
-    ...new Set(sylData.map((item) => item)),
-  ]
+  // const allData = [
+  //   ...new Set(posts.map((item) => item)),
+  //   ...new Set(quizeData.map((item) => item)),
+  //   ...new Set(prjdata.map((item) => item)),
+  //   ...new Set(hwdata.map((item) => item)),
+  //   ...new Set(sylData.map((item) => item)),
+  // ]
 
   // When there is an input in the searchbar we change the name of the page to Results and search for the target using simple array manipulation
 
   useEffect(() => {
     if (pagename === 'Results') {
       setExamItems([])
-      allData.filter((val) => {
+      posts.filter((val) => {
         if (
           val.title.toLowerCase().includes(input.toLowerCase()) ||
           val.name.toLowerCase().includes(input.toLowerCase()) ||
@@ -69,7 +69,6 @@ export const Exams = () => {
     setExamItems(newItems)
   }
 
-  console.log(examItems)
   return (
     <main>
       <section id="home" className="exam section">

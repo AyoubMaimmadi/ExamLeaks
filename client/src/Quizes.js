@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Exam from './Components/Exam'
 import Categories from './Components/Categories'
 import items from './data/QuizData'
@@ -11,6 +11,31 @@ const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 const Quiz = () => {
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
+  const [pagename, setPagename] = useState('Quizes')
+  const [input, setInput] = useState('')
+
+  useEffect(() => {
+    if (pagename === 'Results') {
+      setExamItems([])
+      items.filter((val) => {
+        if (
+          val.title.toLowerCase().includes(input.toLowerCase()) ||
+          val.name.toLowerCase().includes(input.toLowerCase()) ||
+          val.category.toLowerCase().includes(input.toLowerCase()) ||
+          val.id == parseInt(input)
+        ) {
+          setExamItems((examItems) => [...examItems, val])
+        }
+      })
+    } else {
+      setExamItems([])
+      items.filter((val) => {
+        if (val.title.toLowerCase().includes(input.toLowerCase())) {
+          setExamItems((examItems) => [...examItems, val])
+        }
+      })
+    }
+  }, [input])
 
   // Filter Items based on their school: CSC, BA, ...
 
@@ -27,11 +52,30 @@ const Quiz = () => {
     <main>
       <section id="home" className="exam section">
         <Navbar />
-        <SearchBar />
+        <div className="search">
+          <input
+            type="text"
+            name=""
+            placeholder="i.e. Software Eng ..."
+            className="text"
+            onChange={(e) => {
+              setInput(e.target.value)
+              setPagename('Results')
+              setCategories([])
+              if (e.target.value === '') {
+                setPagename('Exams')
+                setCategories(allCategories)
+              }
+            }}
+          />
+          <a href="#" className="btn">
+            <i className="fa fa-search "></i>
+          </a>
+        </div>
         <br />
         <div className="title">
           <h2 id="Quizes">
-            Quizes
+            {pagename}
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
