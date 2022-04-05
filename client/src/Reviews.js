@@ -1,12 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { FiChevronRight, FiChevronLeft } from 'react-icons/fi'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
-import { BsFillChatQuoteFill } from 'react-icons/bs'
-import { VscComment } from 'react-icons/vsc'
 import { AiOutlineComment } from 'react-icons/ai'
 import data from './data/ReviewsData'
 import Navbar from './Components/Navbar'
-import SearchBar from './Components/SearchBar'
 
 const Reviews = () => {
   const [people, setPeople] = useState(data)
@@ -74,7 +70,6 @@ const Reviews = () => {
     <>
       <section className="section-review">
         <Navbar />
-        <SearchBar />
         <br />
 
         <div className="title-review">

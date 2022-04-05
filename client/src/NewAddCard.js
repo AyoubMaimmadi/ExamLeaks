@@ -80,7 +80,6 @@ const NewAddCard = () => {
     <>
       <section className="exam section">
         <Navbar />
-        <SearchBar />
 
         <br />
         <div className="title">
