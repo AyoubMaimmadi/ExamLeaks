@@ -92,7 +92,8 @@ const HomePage = () => {
         ) : (
           <main>
             <section className="moveup">
-              <div class="mainbox">
+              <img className="imgFix" src="./images/students.png" alt="alt" />
+              {/* <div class="mainbox">
                 <div class="err">A</div>
                 <div class="far">U</div>
                 <div class="err2">&nbsp;I</div>
@@ -102,7 +103,7 @@ const HomePage = () => {
                     comments.
                   </p>
                 </div>
-              </div>
+              </div> */}
             </section>
           </main>
         )}
