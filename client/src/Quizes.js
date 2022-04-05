@@ -4,7 +4,6 @@ import Categories from './Components/Categories'
 import items from './data/QuizData'
 import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
-import SearchBar from './Components/SearchBar'
 
 const allCategories = ['all', ...new Set(items.map((item) => item.category))]
 
