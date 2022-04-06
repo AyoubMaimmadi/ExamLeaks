@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
-import SearchBar from './SearchBar'
 import Exam from './Exam'
 import items from '../data/ExamData'
-import Uparrow from './Uparrow'
 import hwdata from '../data/HomeWorkData'
 import prjdata from '../data/ProjectData'
 import quizeData from '../data/QuizData'
 import sylData from '../data/syllabusData'
 import { useSelector } from 'react-redux'
-import { BsTypeH1 } from 'react-icons/bs'
 
 const HomePage = () => {
   const posts = useSelector((state) => state.posts)
@@ -29,6 +25,7 @@ const HomePage = () => {
     ...new Set(hwdata.map((item) => item)),
     ...new Set(sylData.map((item) => item)),
   ]
+
   // When there is an input in the searchbar we change the name of the page to Results and search for the target using simple array manipulation
 
   useEffect(() => {
@@ -93,22 +90,10 @@ const HomePage = () => {
           <main>
             <section className="moveup">
               <img className="imgFix" src="./images/students.png" alt="alt" />
-              {/* <div class="mainbox">
-                <div class="err">A</div>
-                <div class="far">U</div>
-                <div class="err2">&nbsp;I</div>
-                <div class="msg">
-                  <p>
-                    Visit <Link to="/reviews">Reviews</Link> to see your friends
-                    comments.
-                  </p>
-                </div>
-              </div> */}
             </section>
           </main>
         )}
       </section>
-      {/* <Uparrow /> */}
     </main>
   )
 }
