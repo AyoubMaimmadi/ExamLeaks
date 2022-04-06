@@ -1,4 +1,4 @@
-# GPA Booster
+# GPA-Booster (Still In Production)
 
 ## Agile Software Engineering Project using React: (JS/JSX/CSS/MongoDB/Express/Bootstrap/...)
 
@@ -22,6 +22,8 @@ To use you need to:
 
 #### You can see this website using the link https://gpabooster.netlify.app/
 
+#### You can see this website's API using the link https://gpabooster-api.herokuapp.com/exams
+
 #### OR
 
-![](../client/public/images/QRcode.PNG)
+![](client/public/images/QRcode.PNG)
