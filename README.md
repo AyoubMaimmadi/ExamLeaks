@@ -1,4 +1,4 @@
-# GPA Booster (Front-End Not Complete Yet)
+# GPA-Booster (Still In Production)
 
 ## Agile Software Engineering Project using React: (JS/JSX/CSS/MongoDB/Express/Bootstrap/...)
 
