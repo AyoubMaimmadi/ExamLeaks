@@ -18,6 +18,8 @@ app.get('/', (req, res) => {
   res.send("Welcome to GPA-Booster's API")
 })
 
+// const CONNECTION_URL = process.env.CONNECTION_URL
+
 const CONNECTION_URL =
   'mongodb+srv://ayoubmaimmadi:ayoubmaimmadi123@cluster0.jmgd0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
