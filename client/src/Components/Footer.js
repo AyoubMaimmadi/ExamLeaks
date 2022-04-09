@@ -30,7 +30,11 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/Ayoubmaimmadi2" target="_blank">
+              <a
+                href="https://twitter.com/Ayoubmaimmadi2"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src="./images//twitter.svg" />
               </a>
             </li>
@@ -38,12 +42,17 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/in/ayoub-maimmadi-533587198/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="./images//linkedin.svg" />
               </a>
             </li>
             <li>
-              <a href="https://github.com/AyoubMaimmadi" target="_blank">
+              <a
+                href="https://github.com/AyoubMaimmadi"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src="./images//github.svg" />
               </a>
             </li>
