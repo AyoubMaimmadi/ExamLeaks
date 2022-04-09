@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
 import Exam from './Exam'
+import Uparrow from './Uparrow'
 import items from '../data/ExamData'
 import hwdata from '../data/HomeWorkData'
 import prjdata from '../data/ProjectData'
@@ -129,7 +130,10 @@ const HomePage = () => {
           <div className="underline"></div>
         </div>
         {flage ? (
-          <Exam items={examItems} />
+          <>
+            <Exam items={examItems} />
+            <Uparrow />
+          </>
         ) : (
           <main>
             <section className="moveup">
