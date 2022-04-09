@@ -127,7 +127,7 @@ const HomePage = () => {
             />
             <a className="scroll-link"></a>
           </h2>
-          <div className="underline"></div>
+          {/* <div className="underline"></div> */}
         </div>
         {flage ? (
           <>
