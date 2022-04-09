@@ -7,6 +7,7 @@ import prjdata from '../data/ProjectData'
 import quizeData from '../data/QuizData'
 import sylData from '../data/syllabusData'
 import { useSelector } from 'react-redux'
+import Typewriter from 'typewriter-effect'
 
 const HomePage = () => {
   const posts = useSelector((state) => state.posts)
@@ -14,7 +15,11 @@ const HomePage = () => {
   const [examItems, setExamItems] = useState(items)
   const [flage, setFlage] = useState(false)
   const [input, setInput] = useState('')
-  const [pagename, setPagename] = useState(`A Website For Boosting AUIer's GPA`)
+  const [pagename, setPagename] = useState(`<Typewriter
+  onInit={(typewriter) => {
+    typewriter.typeString('Welcome to the Online Exam Portal')
+  }}
+  />`)
   const [pageHeadline, setpageHeadline] = useState(
     `A Website For Boosting AUIer's GPA`
   )
@@ -79,7 +84,30 @@ const HomePage = () => {
         <br />
         <div className="title">
           <h2 id="Home">
-            {pagename}
+            Boost Your GPA By Reviewing OLd
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString(`Exams`)
+                  .pause(4000)
+                  .deleteAll()
+                  .typeString(`Quizes`)
+                  .pause(4000)
+                  .deleteAll()
+                  .typeString(`Projects`)
+                  .pause(4000)
+                  .deleteAll()
+                  .typeString(`Homework`)
+                  .pause(4000)
+                  .deleteAll()
+                  .typeString(`Syllabus`)
+                  .pause(4000)
+                  .start()
+                  .typeString(`Reviews`)
+                  .pause(4000)
+                  .start()
+              }}
+            />
             <a className="scroll-link"></a>
           </h2>
           <div className="underline"></div>
