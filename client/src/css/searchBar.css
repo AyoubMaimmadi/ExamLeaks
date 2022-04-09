@@ -32,6 +32,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+}
+
+.btn2:hover {
+  transition-duration: 0.4s;
+  color: black;
+  background-color: white;
 }
 
 .btn3 {
