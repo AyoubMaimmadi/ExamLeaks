@@ -62,16 +62,16 @@ const App = () => {
           <Route exact path="/syllabus">
             <Syllabus />
           </Route>
-          <Route path="/auth">
+          <Route exact path="/auth">
             <Auth />
           </Route>
-          <Route path="/sign-in">
+          <Route exact path="/sign-in">
             <SignIN />
           </Route>
-          <Route path="/reach-us">
+          <Route exact path="/reach-us">
             <Email />
           </Route>
-          <Route path="*">
+          <Route exact path="*">
             <ErrorPage />
           </Route>
         </Switch>
