@@ -15,6 +15,7 @@ const Footer = () => {
               <a
                 href="https://www.facebook.com/AYOUB.MAIMMADI1"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="./images//fb.svg" />
               </a>
@@ -23,6 +24,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/ayoubmaimmadi/"
                 target="_blank"
+                rel="noreferrer"
               >
                 <img src="./images//insta.svg" />
               </a>
@@ -50,7 +52,7 @@ const Footer = () => {
             <p>
               Copyright &copy; Ayoub Maimmadi: ASED-Team-6<span> {date}</span>.
               all rights reserved.{' '}
-              <Link to="/reach-us" target="_blank">
+              <Link to="/reach-us" target="_blank" rel="noreferrer">
                 Email Us.
               </Link>
             </p>
