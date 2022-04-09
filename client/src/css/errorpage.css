@@ -82,3 +82,12 @@ a:hover {
 .format {
   margin-right: 5rem;
 }
+
+.typewriter2 {
+  color: black;
+  font-weight: 700;
+}
+.typewriter {
+  color: #313bac;
+  font-weight: 700;
+}

@@ -83,10 +83,11 @@ const HomePage = () => {
         </div>
         <br />
         <div className="title">
-          <h2 id="Home">
-            Boost Your GPA By Reviewing OLd
+          <h2 id="Home" className="typewriter">
+            <span className="typewriter2">
+              Boost Your GPA By Reviewing Previous
+            </span>
             <Typewriter
-              className="typewriter"
               options={{
                 strings: [
                   'Exams',
