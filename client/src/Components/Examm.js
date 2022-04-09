@@ -11,7 +11,7 @@ const Examm = ({ items }) => {
         const { _id, title, img, desc, link, name } = examItem
         return (
           <article key={_id} className="exam-item">
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
               <img src={img} alt={title} className="photo" to="" />
             </a>
             <div className="item-info">
