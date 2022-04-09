@@ -194,10 +194,14 @@ exam
   justify-items: center;
 }
 .exam-item {
+  background-color: white;
   display: grid;
   gap: 1rem 2rem;
   max-width: 25rem;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
 }
+
 .photo {
   object-fit: cover;
   height: 200px;
@@ -395,7 +399,7 @@ html {
 
 .exam-item:hover {
   border-radius: 16% 4% 5% 5%;
-  background-color: rgba(0, 0, 0, 0.08);
+  background-color: rgba(0, 0, 0, 0.04);
   font-size: 15px;
   font-weight: bolder;
   color: black;
