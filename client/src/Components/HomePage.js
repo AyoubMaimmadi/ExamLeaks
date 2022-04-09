@@ -86,27 +86,42 @@ const HomePage = () => {
           <h2 id="Home">
             Boost Your GPA By Reviewing OLd
             <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString(`Exams`)
-                  .pause(4000)
-                  .deleteAll()
-                  .typeString(`Quizes`)
-                  .pause(4000)
-                  .deleteAll()
-                  .typeString(`Projects`)
-                  .pause(4000)
-                  .deleteAll()
-                  .typeString(`Homework`)
-                  .pause(4000)
-                  .deleteAll()
-                  .typeString(`Syllabus`)
-                  .pause(4000)
-                  .start()
-                  .typeString(`Reviews`)
-                  .pause(4000)
-                  .start()
+              className="typewriter"
+              options={{
+                strings: [
+                  'Exams',
+                  'Quizes',
+                  'Projects',
+                  'Homework',
+                  'Syllabus',
+                  'Reviews',
+                ],
+                autoStart: true,
+                loop: true,
+                // delay: 175,
               }}
+              // onInit={(typewriter) => {
+              //   typewriter
+              // .typeString(`Exams`)
+              // .pause(5000)
+              // .deleteAll()
+              // .typeString(`Quizes`)
+              // .pause(5000)
+              // .deleteAll()
+              // .typeString(`Projects`)
+              // .pause(5000)
+              // .deleteAll()
+              // .typeString(`Homework`)
+              // .pause(5000)
+              // .deleteAll()
+              // .typeString(`Syllabus`)
+              // .pause(5000)
+              // .deleteAll()
+              // .typeString(`Reviews`)
+              // .pause(5000)
+              // .deleteAll()
+              //     .start()
+              // }}
             />
             <a className="scroll-link"></a>
           </h2>
