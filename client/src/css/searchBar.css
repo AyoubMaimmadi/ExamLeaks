@@ -32,7 +32,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
   font-weight: 500;
 }
 
@@ -92,7 +92,7 @@
 
 .btn3 {
   transition-duration: 0.3s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
 
 .btn3:hover {

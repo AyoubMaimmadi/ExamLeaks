@@ -399,6 +399,7 @@ html {
 }
 
 .exam-item:hover {
+  transition: 0.07s smooth;
   background-color: rgba(0, 0, 0, 0.06);
   font-size: 15px;
   font-weight: bolder;
