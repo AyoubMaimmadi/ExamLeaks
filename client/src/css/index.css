@@ -402,6 +402,8 @@ html {
 }
 .name {
   margin-right: 0.6rem;
+  font-weight: 650;
+  color: darkslategray;
 }
 
 .imgFix {
