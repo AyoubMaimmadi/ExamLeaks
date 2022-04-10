@@ -99,7 +99,7 @@ export const Exams = () => {
             {pagename}
             <a className="scroll-link"></a>
           </h2>
-          <div className="underline"></div>
+          {/* <div className="underline"></div> */}
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <Examm items={examItems} />
