@@ -400,6 +400,9 @@ html {
     scroll-behavior: smooth;
   }
 }
+.name {
+  margin-right: 0.6rem;
+}
 
 .imgFix {
   margin-top: 10%;
