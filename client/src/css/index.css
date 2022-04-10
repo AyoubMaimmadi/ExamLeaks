@@ -193,6 +193,14 @@ exam
   gap: 3rem 2rem;
   justify-items: center;
 }
+
+.b-text {
+  font-size: 1.5rem;
+  font-weight: 650;
+  color: #313bac;
+  /* margin-bottom: 1rem; */
+}
+
 .exam-item {
   background-color: white;
   display: grid;

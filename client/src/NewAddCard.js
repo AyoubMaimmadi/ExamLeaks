@@ -87,10 +87,10 @@ const NewAddCard = () => {
             Add Card
             <a className="scroll-link"></a>
           </h2>
-          <div className="underline"></div>
+          {/* <div className="underline"></div> */}
           <br />
           <br />
-          <h4>{error}</h4>
+          <h4 className="b-text">{error}</h4>
         </div>
       </section>
       <div className="uperuper">
@@ -223,11 +223,7 @@ const NewAddCard = () => {
         </div>
       </div>
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+
       <br />
       <br />
       <br />
@@ -240,12 +236,12 @@ const NewAddCard = () => {
               <div className="col-8 form-group pt-2 mx-auto">
                 <div className="title">
                   <h2 id="Add">Delete Card</h2>
-                  <div className="underline"></div>
+                  {/* <div className="underline"></div> */}
                   <br />
                 </div>
                 <div className="d-flex justify-content-center">
                   <br />
-                  <h4>{delerror}</h4>
+                  <h4 className="b-text">{delerror}</h4>
                 </div>
                 <input
                   type="text"
