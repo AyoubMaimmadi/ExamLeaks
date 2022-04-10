@@ -5,6 +5,7 @@
   max-width: var(--max-width);
 }
 .section-center-review {
+  /* background-color: red; */
   margin: 0 auto;
   margin-top: 1rem;
   width: 100vw;
@@ -51,27 +52,31 @@
   position: absolute;
   top: 200px;
   transform: translateY(-50%);
-  background: var(--clr-grey-5);
+  background: black;
   color: var(--clr-white);
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 2rem;
+  height: 2rem;
   display: grid;
   place-items: center;
   border-color: transparent;
   font-size: 1rem;
-  border-radius: var(--radius);
+  border-radius: 50%;
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .prev:hover,
 .next:hover {
-  background: black;
+  background: white;
+  color: black;
 }
 .prev {
   left: 0;
+  margin-left: 5rem;
 }
 .next {
+  margin-right: 5rem;
   right: 0;
 }
 

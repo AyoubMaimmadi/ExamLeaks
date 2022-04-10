@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 import { AiOutlineComment } from 'react-icons/ai'
 import data from './data/ReviewsData'
@@ -100,7 +99,6 @@ const Reviews = () => {
                 <h4>{name}</h4>
                 <p className="title-review">{title}</p>
                 <p className="text-review">{quote}</p>
-                {/* <BsFillChatQuoteFill className="icon-review" /> */}
                 <AiOutlineComment className="icon-review" />
               </myarticle>
             )
