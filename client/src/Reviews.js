@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
+import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 import { AiOutlineComment } from 'react-icons/ai'
 import data from './data/ReviewsData'
 import Navbar from './Components/Navbar'
@@ -105,10 +106,10 @@ const Reviews = () => {
             )
           })}
           <button className="prev" onClick={() => setIndex(index - 1)}>
-            <FaArrowAltCircleLeft />
+            <HiChevronLeft />
           </button>
           <button className="next" onClick={() => setIndex(index + 1)}>
-            <FaArrowAltCircleRight />
+            <HiChevronRight />
           </button>
         </div>
       </section>
