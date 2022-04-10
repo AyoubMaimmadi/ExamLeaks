@@ -64,6 +64,13 @@ const Footer = () => {
               <Link to="/reach-us" target="_blank" rel="noreferrer">
                 Email Us.
               </Link>
+              <a
+                href="https://gpabooster-api.herokuapp.com/exams"
+                targe="_blank"
+                rel="noreferrer"
+              >
+                API
+              </a>
             </p>
           </div>
         </div>
