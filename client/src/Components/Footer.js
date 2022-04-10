@@ -59,18 +59,19 @@ const Footer = () => {
           </ul>
           <div className="copyrightCol">
             <p>
-              Copyright &copy; Ayoub Maimmadi: ASED-Team-6<span> {date}</span>.
-              all rights reserved.{' '}
+              Copyright &copy;{' '}
+              <a
+                href="https://gpabooster-api.herokuapp.com/exams"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ayoub Maimmadi
+              </a>
+              : ASED-Team-6
+              <span> {date}</span>.&nbsp; &nbsp;all rights reserved.{' '}
               <Link to="/reach-us" target="_blank" rel="noreferrer">
                 Email Us.
               </Link>
-              <a
-                href="https://gpabooster-api.herokuapp.com/exams"
-                targe="_blank"
-                rel="noreferrer"
-              >
-                API
-              </a>
             </p>
           </div>
         </div>
