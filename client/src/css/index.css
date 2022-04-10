@@ -176,13 +176,14 @@ exam
   margin: 0 0.5rem;
   letter-spacing: 1px;
   padding: 0.375rem 0.75rem;
-  color: var(--clr-gold);
+  color: black;
   cursor: pointer;
   transition: var(--transition);
   border-radius: var(--radius);
+  font-weight: 500;
 }
 .filter-btn:hover {
-  background: var(--clr-gold);
+  background: #313bac;
   color: var(--clr-white);
 }
 .section-center {
