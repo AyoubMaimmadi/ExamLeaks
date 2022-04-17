@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/nav.css'
 import { Link } from 'react-router-dom'
+// import Avatar from '@mui/material/Avatar'
 
 // Click on the navigation button and get there using good'ol HMTL magic
 
@@ -11,6 +12,7 @@ const Navbar = () => {
         <h6 className="p-text">Ayoub Maimmadi</h6>
         <Link to="/something" target="_blank" rel="noreferrer">
           <button className="btn2">AM</button>
+          {/* <Avatar className="btn2" src="a" alt="a" /> */}
         </Link>
       </div>
       <nav className="main-nav">
