@@ -67,10 +67,9 @@ const Footer = () => {
               >
                 Ayoub Maimmadi
               </a>
-              : ASED-Team-6
-              <span> {date}</span>.&nbsp; &nbsp;all rights reserved.{' '}
+              <span> {date}</span>.&nbsp; &nbsp;All rights reserved.{' '}
               <Link to="/reach-us" target="_blank" rel="noreferrer">
-                Email Us.
+                Reach Us.
               </Link>
             </p>
           </div>
