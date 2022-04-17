@@ -41,7 +41,7 @@ const Email = () => {
       <div>
         <br />
         <div className="container uperuper">
-          <form onSubmit={sendEmail}>
+          <form autoComplete="off" onSubmit={sendEmail}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input

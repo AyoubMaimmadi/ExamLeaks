@@ -54,7 +54,7 @@ const Auth = () => {
       </section>
       <div className="uperuper">
         <div className="container myowncontainer">
-          <form onSubmit={{}}>
+          <form autoComplete="off" onSubmit={{}}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input
