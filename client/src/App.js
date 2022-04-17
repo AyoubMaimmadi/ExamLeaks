@@ -33,9 +33,9 @@ const App = () => {
           <Link to="/auth">
             <button className="btn3">Sign in</button>
           </Link>
-          <Link to="/something" target="_blank" rel="noreferrer">
+          {/* <Link to="/something" target="_blank" rel="noreferrer">
             <button className="btn2">{username}</button>
-          </Link>
+          </Link> */}
         </div>
         <Switch>
           <Route exact path="/">

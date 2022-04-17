@@ -7,6 +7,12 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <header>
+      <div className="app-flex">
+        <h6 className="p-text">Ayoub Maimmadi</h6>
+        <Link to="/something" target="_blank" rel="noreferrer">
+          <button className="btn2">AM</button>
+        </Link>
+      </div>
       <nav className="main-nav">
         <input type="checkbox" id="check" />
         <label htmlFor="check" className="menu-btn">
