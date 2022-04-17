@@ -44,12 +44,12 @@ body {
   color: #222;
   text-decoration: none;
   font-size: 18px;
-  transition: all 0.1s linear 0s;
+  transition: all 0.2s linear 0s;
   text-transform: uppercase;
 }
 
 .navlinks li a:hover {
-  color: #7ebcb9;
+  color: #fff;
   padding-bottom: 7px;
   /* border-bottom: 2px solid #7ebcb9; */
   text-decoration: none;
