@@ -67,7 +67,7 @@ const Footer = () => {
               >
                 Ayoub Maimmadi
               </a>
-              <span> {date}</span>.&nbsp; &nbsp;All rights reserved.{' '}
+              <span> {date}.</span>&nbsp;All rights reserved.{' '}
               <Link to="/reach-us" target="_blank" rel="noreferrer">
                 Reach Us.
               </Link>

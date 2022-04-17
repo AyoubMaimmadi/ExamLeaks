@@ -17,6 +17,16 @@ import { getPosts } from './actions/posts'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
+const SignIn = () => {
+  return (
+    <div className="format">
+      <Link to="/auth">
+        <button className="btn3">Sign in</button>
+      </Link>
+    </div>
+  )
+}
+
 const App = () => {
   const dispatch = useDispatch()
   const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
@@ -29,46 +39,53 @@ const App = () => {
   return (
     <>
       <Router>
-        <div className="format">
-          <Link to="/auth">
-            <button className="btn3">Sign in</button>
-          </Link>
-          {/* <Link to="/something" target="_blank" rel="noreferrer">
-            <button className="btn2">{username}</button>
-          </Link> */}
-        </div>
         <Switch>
           <Route exact path="/">
+            <SignIn />
             <HomePage />
           </Route>
           <Route exact path="/exams">
+            <SignIn />
             <Exams />
           </Route>
           <Route exact path="/quiz">
+            <SignIn />
+
             <Quiz />
           </Route>
           <Route exact path="/project">
+            <SignIn />
+
             <Projects />
           </Route>
           <Route exact path="/homework">
+            <SignIn />
+
             <Homewok />
           </Route>
           <Route exact path="/edit">
+            <SignIn />
+
             <NewAddCard />
           </Route>
           <Route exact path="/reviews">
             <Rviews />
           </Route>
           <Route exact path="/syllabus">
+            <SignIn />
+
             <Syllabus />
           </Route>
           <Route exact path="/auth">
+            <SignIn />
             <Auth />
           </Route>
           <Route exact path="/sign-in">
+            <SignIn />
             <SignIN />
           </Route>
           <Route exact path="/reach-us">
+            <SignIn />
             <Email />
           </Route>
           <Route exact path="*">
