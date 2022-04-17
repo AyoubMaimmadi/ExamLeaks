@@ -14,8 +14,6 @@ const Auth = () => {
   const [email, setemail] = useState('')
   const [password, setpassword] = useState('')
   const [password2, setpassword2] = useState('')
-  // const [user, setUser] = useState('AM')
-  const [exist, setexist] = useState(false)
 
   const googleSuccess = async (res) => {
     const result = res?.profileObj
