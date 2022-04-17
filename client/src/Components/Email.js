@@ -43,10 +43,10 @@ const Email = () => {
         <div className="container uperuper">
           <form autoComplete="off" onSubmit={sendEmail}>
             <div className="row pt-5 mx-auto">
-              <div className="col-8 form-group mx-auto">
+              <div className="col-8 form-group mx-auto ">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control bg-light"
                   placeholder="Name"
                   name="name"
                 />
@@ -54,22 +54,22 @@ const Email = () => {
               <div className="col-8 form-group pt-2 mx-auto">
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control bg-light"
                   placeholder="Email Address"
                   name="email"
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
+              <div className="col-8 form-group pt-2 mx-auto ">
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control bg-light"
                   placeholder="Subject"
                   name="subject"
                 />
               </div>
               <div className="col-8 form-group pt-2 mx-auto">
                 <textarea
-                  className="form-control"
+                  className="form-control bg-light"
                   id=""
                   cols="30"
                   rows="8"
@@ -80,7 +80,7 @@ const Email = () => {
               <div className="col-10 pt-3 mx-auto">
                 <input
                   type="submit"
-                  className="btn5"
+                  className="btn5 "
                   value="Send Message"
                 ></input>
               </div>
