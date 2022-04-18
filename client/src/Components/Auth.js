@@ -5,6 +5,7 @@ import Icon from './Icon'
 import { GoogleLogin } from 'react-google-login'
 import { Link, useHistory } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
+import { signin, signup } from '../actions/auth'
 
 const Auth = () => {
   const dispatch = useDispatch()
@@ -14,6 +15,23 @@ const Auth = () => {
   const [email, setemail] = useState('')
   const [password, setpassword] = useState('')
   const [password2, setpassword2] = useState('')
+
+  const [isSignup, setisSignup] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const formData = { username, email, password, password2 }
+    setusername('')
+    setemail('')
+    setpassword('')
+    setpassword2('')
+
+    if (isSignup) {
+      dispatch(signup(formData, history))
+    } else {
+      dispatch(signin(formData, history))
+    }
+  }
 
   const googleSuccess = async (res) => {
     const result = res?.profileObj
@@ -52,7 +70,7 @@ const Auth = () => {
       </section>
       <div className="uperuper">
         <div className="container myowncontainer">
-          <form autoComplete="off" onSubmit={{}}>
+          <form autoComplete="off" onSubmit={handleSubmit}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input
