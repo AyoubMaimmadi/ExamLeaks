@@ -62,7 +62,6 @@ const App = () => {
           </Route>
           <Route exact path="/edit">
             <SignIn />
-
             <NewAddCard />
           </Route>
           <Route exact path="/reviews">
