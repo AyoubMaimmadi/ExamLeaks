@@ -1,9 +1,11 @@
 import axios from 'axios'
 
-const url = 'https://gpabooster-api.herokuapp.com/exams'
+const API = axios.create({ baseURL: 'https://gpabooster-api.herokuapp.com' })
+
+// const url = 'https://gpabooster-api.herokuapp.com/exams'
 // const url = 'http://localhost:5000/exams'
 
-export const fetchPosts = () => axios.get(url)
-export const createPost = (newPost) => axios.post(url, newPost)
-export const deletePost = (id) => axios.delete(`${url}/${id}`)
-export const updatePost = (id, post) => axios.patch(`${url}/${id}`, post)
+export const fetchPosts = () => API.get('/exams')
+export const createPost = (newPost) => API.post('/exams', newPost)
+export const deletePost = (id) => API.delete(`/exams/${id}`)
+export const updatePost = (id, post) => API.patch(`/exams/${id}`, post)

@@ -8,7 +8,7 @@ import './css/newaddcard.css'
 let password = 'ayoub'
 
 const NewAddCard = () => {
-  const img = './images/bot.png'
+  const img = './images/newCourse.png'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
   const [name, setName] = useState('')
