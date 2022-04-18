@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import Exam from './Components/Exam'
 import Examm from './Components/Examm'
 import Categories from './Components/Categories'
 import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
-import hwdata from './data/HomeWorkData'
-import prjdata from './data/ProjectData'
-import quizeData from './data/QuizData'
-import sylData from './data/syllabusData'
 import { useSelector } from 'react-redux'
 
 export const Exams = () => {
