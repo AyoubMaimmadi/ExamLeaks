@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import '../css/nav.css'
 import { Link } from 'react-router-dom'
 import { Avatar } from '@material-ui/core'
@@ -7,12 +7,13 @@ import LoockOutlinedIcon from '@material-ui/icons/LockOutlined'
 // Click on the navigation button and get there using good'ol HMTL magic
 
 const Navbar = () => {
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
+  const [username, setusername] = useState('Ayoub Maimmadi')
+  // const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
 
-  useEffect(() => {
-    const token = user?.token
-    setUser(JSON.parse(localStorage.getItem('profile')))
-  }, [])
+  // useEffect(() => {
+  //   const token = user?.token
+  //   setUser(JSON.parse(localStorage.getItem('profile')))
+  // }, [])
 
   return (
     <header>
