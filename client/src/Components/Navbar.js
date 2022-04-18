@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="app-flex">
         <h6 className="p-text">Ayoub Maimmadi</h6>
         <Link to="/something" target="_blank" rel="noreferrer">
-          <button className="btn2">AM</button>
+          <img className="btn2" src="./images/avatar.jpeg" />
           {/* <Avatar className="btn2" src="a" alt="a" /> */}
         </Link>
       </div>
