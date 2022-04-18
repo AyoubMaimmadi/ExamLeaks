@@ -305,6 +305,7 @@ exam
 }
 
 .arrowbtn {
+  margin-top: 2rem;
   border-radius: 50%;
   padding: 2px;
   margin-left: 80%;
@@ -312,7 +313,7 @@ exam
   height: 44px;
   background: transparent;
   border: transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
 }
 
 .arrowbtn:hover {
