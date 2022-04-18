@@ -1,18 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/nav.css'
 import { Link } from 'react-router-dom'
-// import Avatar from '@mui/material/Avatar'
+import { Avatar } from '@material-ui/core'
+import LoockOutlinedIcon from '@material-ui/icons/LockOutlined'
 
 // Click on the navigation button and get there using good'ol HMTL magic
 
 const Navbar = () => {
+  const [username, setusername] = useState('Ayoub Maimmadi')
+
   return (
     <header>
       <div className="app-flex">
-        <h6 className="p-text">Ayoub Maimmadi</h6>
+        <h6 className="p-text">{username}</h6>
         <Link to="/something" target="_blank" rel="noreferrer">
-          <img className="btn2" src="./images/avatar.jpeg" />
-          {/* <Avatar className="btn2" src="a" alt="a" /> */}
+          {/* <img className="btn2" src="./images/avatar.jpeg" /> */}
+          <Avatar className="btn2" src="./images/avatar.jpeg">
+            <LoockOutlinedIcon />
+          </Avatar>
         </Link>
       </div>
       <nav className="main-nav">
