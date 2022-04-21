@@ -4,6 +4,7 @@ import SearchBar from './Components/SearchBar'
 import { useDispatch } from 'react-redux'
 import { createPost, deletePost } from './actions/posts'
 import './css/newaddcard.css'
+import { useHistory } from 'react-router-dom'
 
 let password = 'ayoub'
 
@@ -87,7 +88,6 @@ const NewAddCard = () => {
             Add Card
             <a className="scroll-link"></a>
           </h2>
-          {/* <div className="underline"></div> */}
           <br />
           <br />
           <h4 className="b-text">{error}</h4>
