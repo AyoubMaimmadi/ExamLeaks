@@ -1,6 +1,6 @@
 # GPA-Booster (Still In Production)
 
-![](client/public/images/gpabooster.PNG)
+![](./public/images/gpabooster.PNG)
 
 ## Agile Software Engineering Project using React: (JS/JSX/CSS/MongoDB/Express/Bootstrap/...)
 
