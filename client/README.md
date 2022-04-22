@@ -26,6 +26,6 @@ To use you need to:
 
 #### You can see this website's API using the link https://gpabooster-api.herokuapp.com/exams
 
-#### OR
+## OR Using Phone
 
 ![](./public/images/QRcode.PNG)
