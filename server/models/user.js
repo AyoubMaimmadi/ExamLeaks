@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+// user info schema -> has to have these attributes
 const userSchema = mongoose.Schema({
   name: { type: String, required: true },
   email: { type: String, required: true },

@@ -3,8 +3,9 @@ import jwt from 'jsonwebtoken'
 
 import UserModal from '../models/user.js'
 
-const secret = 'test'
+const secret = 'somethingCoolAF'
 
+// sign in server func that gets user info, compare it with stored data, then return answer
 export const signin = async (req, res) => {
   const { email, password } = req.body
 
@@ -28,6 +29,7 @@ export const signin = async (req, res) => {
   }
 }
 
+// sign up server func that gets user info, incript it, then save it in the local storage
 export const signup = async (req, res) => {
   const { email, password, firstName, lastName } = req.body
 

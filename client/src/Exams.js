@@ -14,11 +14,11 @@ export const Exams = () => {
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')
 
-  // Gather all data in one array with unique values
-
   useEffect(() => {
     setExamItems(posts)
   }, [])
+
+  // Gather all data in one array with unique values
 
   // const allData = [
   //   ...new Set(posts.map((item) => item)),

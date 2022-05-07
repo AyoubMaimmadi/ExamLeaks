@@ -1,6 +1,8 @@
 import * as api from '../api'
 
 // Action Creators
+
+// We dispatch fetch all the posts from the database
 export const getPosts = () => async (dispatch) => {
   try {
     const { data } = await api.fetchPosts()
@@ -10,6 +12,7 @@ export const getPosts = () => async (dispatch) => {
   }
 }
 
+// we dispatch create a new post givven entered data
 export const createPost = (post) => async (dispatch) => {
   try {
     const { data } = await api.createPost(post)
@@ -19,6 +22,7 @@ export const createPost = (post) => async (dispatch) => {
   }
 }
 
+// we dispatch delete a specific post from the database given a unique ID
 export const deletePost = (id) => async (dispatch) => {
   try {
     await api.deletePost(id)
@@ -28,6 +32,7 @@ export const deletePost = (id) => async (dispatch) => {
   }
 }
 
+// we dispatch update a specific post given a unique ID (ont implimented in the front-end)
 export const updatePost = (id, post) => async (dispatch) => {
   try {
     const { data } = await api.updatePost(id, post)

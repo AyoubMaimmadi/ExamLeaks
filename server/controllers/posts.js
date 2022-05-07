@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 import PostMessage from '../models/postMessage.js'
 
+// get all posts that match PostMessage schema
 export const getPosts = async (req, res) => {
   try {
     const postMessages = await PostMessage.find()
@@ -11,6 +12,7 @@ export const getPosts = async (req, res) => {
   }
 }
 
+// we create a specific post give a body from the front-end
 export const createPost = async (req, res) => {
   const post = req.body
   const newPost = new PostMessage(post)
@@ -22,6 +24,7 @@ export const createPost = async (req, res) => {
   }
 }
 
+// delete a specific post givn as ID from the params
 export const deletePost = async (req, res) => {
   const { id } = req.params
   if (!mongoose.Types.ObjectId.isValid(id))
@@ -31,16 +34,17 @@ export const deletePost = async (req, res) => {
   res.json({ message: 'Post deleted successfully.' })
 }
 
+// update with id
 export const updatePost = async (req, res) => {
-  const { id: _id } = req.params
+  const { id } = req.params
   const post = req.body
 
-  if (!mongoose.Types.ObjectId.isValid(_id))
-    return res.status(404).send(`No post with id: ${_id}`)
+  if (!mongoose.Types.ObjectId.isValid(id))
+    return res.status(404).send(`No post with id: ${id}`)
 
   const updatedPost = await PostMessage.findByIdAndUpdate(
-    _id,
-    { ...post, _id },
+    id,
+    { ...post, id },
     { new: true }
   )
 

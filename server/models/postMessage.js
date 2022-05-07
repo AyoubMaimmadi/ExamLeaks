@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+// the Exam/Quizes Schema -> has to have the attributes
 const postSchema = mongoose.Schema({
   id: Number,
   title: String,
