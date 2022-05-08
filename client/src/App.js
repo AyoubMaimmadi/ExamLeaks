@@ -12,6 +12,7 @@ import HomePage from './Components/HomePage'
 import Auth from './Components/Auth'
 import SignIN from './Components/SignIN'
 import Email from './Components/Email'
+import NameChecker from './Components/NameChecker'
 import { useDispatch } from 'react-redux'
 import { getPosts } from './actions/posts'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -82,6 +83,10 @@ const App = () => {
           <Route exact path="/reach-us">
             <SignIn />
             <Email />
+          </Route>
+          <Route exact path="/nametest">
+            <NameChecker />
+            <SignIn />
           </Route>
           <Route exact path="*">
             <ErrorPage />
