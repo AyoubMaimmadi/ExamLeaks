@@ -83,7 +83,6 @@ const App = () => {
             <SignIn />
             <Email />
           </Route>
-          </Route>
           <Route exact path="*">
             <ErrorPage />
           </Route>
