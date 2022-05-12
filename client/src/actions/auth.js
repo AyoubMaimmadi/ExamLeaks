@@ -1,6 +1,6 @@
 import * as api from '../api'
 
-// dispatch action auth for sign in,then signs in and goes back to home page
+// sign in function to be called when the user wants to signs in
 export const signin = (formData, history) => async (dispatch) => {
   try {
     const { data } = await api.signIn(formData)
@@ -11,7 +11,7 @@ export const signin = (formData, history) => async (dispatch) => {
   }
 }
 
-// dispatch action auth for signin up,
+// sign up function to be called when the user wants to signs up
 export const signup = (formData, history) => async (dispatch) => {
   try {
     const { data } = await api.signUp(formData)
