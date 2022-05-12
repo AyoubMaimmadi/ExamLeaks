@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import Icon from './Icon'
@@ -124,7 +124,6 @@ const Auth = () => {
               </div>
             </div>
           </form>
-          {/* <Link to="/something" target="_blank"> */}
           <GoogleLogin
             clientId="274059436296-0fjasat9srs1rt3j1ij4hddag02h7vbm.apps.googleusercontent.com"
             render={(renderProps) => (
@@ -142,7 +141,6 @@ const Auth = () => {
             onFailure={googleFailure}
             cookiePolicy="single_host_origin"
           />
-          {/* </Link> */}
           <div>
             <br />
             <h6 className="text-center">Already have an account? </h6>
