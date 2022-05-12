@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Components/Navbar'
-import SearchBar from './Components/SearchBar'
 import { useDispatch } from 'react-redux'
 import { createPost, deletePost } from './actions/posts'
 import './css/newaddcard.css'
-import { useHistory } from 'react-router-dom'
 
 let password = 'ayoub'
 
