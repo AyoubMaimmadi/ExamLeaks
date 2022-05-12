@@ -37,5 +37,6 @@ mongoose
   )
   .catch((error) => console.log(error.message))
 
-// you add this to get less errors, this got me more ones, so i comented it out lol
+// you add this to get less errors, this got me more ones, so i commented it out lol
+
 // mongoose.set('useFindAndModify', false)
