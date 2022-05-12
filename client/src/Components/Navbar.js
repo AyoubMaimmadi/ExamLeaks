@@ -19,7 +19,7 @@ const Navbar = () => {
     <header>
       <div className="app-flex">
         <h6 className="p-text">{username}</h6>
-        <Link to="/something" target="_blank" rel="noreferrer">
+        <Link to="/something">
           {/* <img className="btn2" src="./images/avatar.jpeg" /> */}
           <Avatar className="btn2" src="./images/avatar.jpeg">
             <LoockOutlinedIcon />

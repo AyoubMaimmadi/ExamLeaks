@@ -21,7 +21,7 @@ const SignIn = () => {
   return (
     <div className="format">
       <Link to="/auth">
-        <button className="btn3">Settings</button>
+        <button className="btn3">Account</button>
       </Link>
     </div>
   )
