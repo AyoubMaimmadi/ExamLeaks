@@ -35,18 +35,18 @@ export const deletePost = async (req, res) => {
 }
 
 // update with id, not implimented yet in the front-end
-export const updatePost = async (req, res) => {
-  const { id } = req.params
-  const post = req.body
+// export const updatePost = async (req, res) => {
+//   const { id } = req.params
+//   const post = req.body
 
-  if (!mongoose.Types.ObjectId.isValid(id))
-    return res.status(404).send(`No post with id: ${id}`)
+//   if (!mongoose.Types.ObjectId.isValid(id))
+//     return res.status(404).send(`No post with id: ${id}`)
 
-  const updatedPost = await PostMessage.findByIdAndUpdate(
-    id,
-    { ...post, id },
-    { new: true }
-  )
+//   const updatedPost = await PostMessage.findByIdAndUpdate(
+//     id,
+//     { ...post, id },
+//     { new: true }
+//   )
 
-  res.json(updatedPost)
-}
+//   res.json(updatedPost)
+// }
