@@ -34,7 +34,7 @@ export const deletePost = async (req, res) => {
   res.json({ message: 'Post deleted successfully.' })
 }
 
-// update with id
+// update with id, not implimented yet in the front-end
 export const updatePost = async (req, res) => {
   const { id } = req.params
   const post = req.body
