@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Navbar from './Navbar'
-import SearchBar from './SearchBar'
 import emailjs from 'emailjs-com'
 
 const Email = () => {
@@ -27,7 +26,6 @@ const Email = () => {
     <>
       <section className="exam section">
         <Navbar />
-        <SearchBar />
         <br />
         <div className="title">
           <h2 id="Add">
