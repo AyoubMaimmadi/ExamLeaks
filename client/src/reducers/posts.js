@@ -1,4 +1,4 @@
-// All the action types present in this application
+// All the action types in this application and what they return
 export default (posts = [], action) => {
   switch (action.type) {
     case 'FETCH_ALL':

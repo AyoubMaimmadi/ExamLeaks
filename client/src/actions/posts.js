@@ -2,7 +2,7 @@ import * as api from '../api'
 
 // Action Creators
 
-// We dispatch fetch all the posts from the database
+// We dispatch the action fetch all the posts from the database
 export const getPosts = () => async (dispatch) => {
   try {
     const { data } = await api.fetchPosts()
@@ -12,7 +12,7 @@ export const getPosts = () => async (dispatch) => {
   }
 }
 
-// we dispatch create a new post givven entered data
+// we dispatch the action create a new post given entered data
 export const createPost = (post) => async (dispatch) => {
   try {
     const { data } = await api.createPost(post)

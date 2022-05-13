@@ -1,4 +1,4 @@
-// Action types for authentication
+// Action types for authentication and what they return
 const authReducer = (state = { authData: null }, action) => {
   // authenticate action -> saves user data in the local storage
   switch (action.type) {
