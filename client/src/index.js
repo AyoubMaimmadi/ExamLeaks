@@ -23,7 +23,8 @@ const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 // We render the application to the DOM
 // We wrap the application in a Provider component, which allows us
-// to access the store from any component, and we pass the store as a prop
+// to access the store from any component.
+// We pass the store as a prop to the provider.
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>

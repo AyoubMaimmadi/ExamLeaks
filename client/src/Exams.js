@@ -9,9 +9,6 @@ import Navbar from './Components/Navbar'
 // Used to fetch the data from the global redux store
 import { useSelector } from 'react-redux'
 
-// we set an array of categories that has all the posts categories and an ALL category
-const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
-
 export const Exams = () => {
   // we initialize useSelector as a hook, where we get access the to whole redux store
   // and we extract the posts from the store that we exported from the reducers/index.js
@@ -19,6 +16,8 @@ export const Exams = () => {
 
   // we set useState Hooks to be able to access them from the component
   const [examItems, setExamItems] = useState([posts])
+  // we set an array of categories that has all the posts categories and an ALL category
+  const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
   const [categories, setCategories] = useState(allCategories)
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')

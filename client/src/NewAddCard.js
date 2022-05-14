@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react'
+// component imports
 import Navbar from './Components/Navbar'
+// hook for displatching actions to redux store
 import { useDispatch } from 'react-redux'
+// actions imports to be dispatched
 import { createPost, deletePost } from './actions/posts'
 import './css/newaddcard.css'
 
 let password = 'ayoub'
 
 const NewAddCard = () => {
+  // we initialize useState Hooks to be able to access them from the component
   const img = './images/newCourse.png'
   const [title, setTitle] = useState('')
   const [category, setCategory] = useState('')
@@ -16,6 +20,7 @@ const NewAddCard = () => {
   const [key, setKey] = useState('')
   const [ItemID, setItemID] = useState('')
   const [Delkey, setDelKey] = useState('')
+  // default error message for the form
   const [error, setError] = useState('Input Item Data to Add')
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
   const [colorError, setColorError] = useState(false)
