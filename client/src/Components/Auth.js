@@ -32,39 +32,51 @@ const Auth = () => {
   const [isSignup, setisSignup] = useState(false)
 
   const signUpEvent = (e) => {
+    // to prevent page from reloading
     e.preventDefault()
+
+    // we fill an object with the user's data
     const formData = { username, email, password, password2 }
+
+    // after clicking on the sign up button, we clear the form from the user inputs
     setusername('')
     setemail('')
     setpassword('')
     setpassword2('')
 
-    if (isSignup) {
+    // we check if the user has already signed up
+    if (!isSignup) {
+      // if the user has not already signed up, we dispatch the signup action
       dispatch(signup(formData, history))
     } else {
+      // if the user has already signed up, we dispatch the signin action
       dispatch(signin(formData, history))
     }
   }
 
   const googleSuccess = async (res) => {
+    // we get user data from the google response object when logging in with google
     const result = res?.profileObj
+    // we create a token with his google token id
     const token = res?.tokenId
-
+    // we dispatch the AUTH action with the user data and the token
+    // which will save the user data/token in the local storage of the browser
     try {
       dispatch({ type: 'AUTH', data: { result, token } })
+      // we navigate to the home page after login with google
       history.push('/')
     } catch (error) {
-      console.log(error)
+      console.erroe(error)
     }
   }
 
+  // in case of failure of the google login we display an error message
   const googleFailure = () => {
     console.log('Google sign in was unseccessful. Try again later.')
   }
 
   return (
     <>
-      {/* <button className="btn2">{user}</button> */}
       <section className="exam section">
         <Navbar />
         <SearchBar />

@@ -1,7 +1,9 @@
 import React from 'react'
 
-// We get categories and the function: filterItems from other components
-// then each time we click a category we display the filtred items
+// We get categories and the function: filterItems from the components who pass them as props
+// then we map and filter the categories array to create a button for each category
+// when we click on a button, we call the filterItems function with the category as a parameter
+// and then only the items with tbat specific category will be displayed
 
 const Categories = ({ categories, filterItems }) => {
   return (
