@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux'
 import { createPost, deletePost } from './actions/posts'
 import './css/newaddcard.css'
 
-let password = 'ayoub'
+let password = 'admin'
 
 const NewAddCard = () => {
   // we initialize useState Hooks to be able to access them from the component
@@ -20,27 +20,35 @@ const NewAddCard = () => {
   const [key, setKey] = useState('')
   const [ItemID, setItemID] = useState('')
   const [Delkey, setDelKey] = useState('')
-  // default error message for the form
+  // default error message for the form of adding a new course: 'ADD CARD' to: Input Item Data to Add
   const [error, setError] = useState('Input Item Data to Add')
   const [delerror, setDelerror] = useState('Input Item ID to Delete')
   const [colorError, setColorError] = useState(false)
   const [colorError2, setColorError2] = useState(false)
 
+  // we initialize useDispatch Hook to be able to dispatch actions to the redux store
   const dispatch = useDispatch()
 
+  // and id variable to be assinged to the new course
+  // this is not the same as the _id of the course in the database
+  // _id is the id of the course in the database and it's automatically generated
   let id = new Date().getTime().toString()
 
-  // Store data we got from the form in an item and add it to the list of Exams
-
-  const sendData = (e) => {
+  // FUNCTION: Store data we got from the form in an item and add it to the list of Exams
+  const createCard = (e) => {
+    // prevent default refreshing of the page
     e.preventDefault()
+    // get the form data inside an object
     const myitem = { id, title, category, name, img, link, desc }
-
+    // if the password is not correct, we change the color of the input field to red for 700ms
     if (key !== password) {
       setTimeout(() => setColorError(false), 700)
       setColorError(true)
       setKey('')
     }
+    // if the password is correct, we dispatch the action createPost to add the course
+    // to the list of courses in the database and we reset the form.
+    // We also display an success message to the user
     if (key === password) {
       dispatch(createPost(myitem)) // Add the new item to the database
       setTitle('')
@@ -52,20 +60,23 @@ const NewAddCard = () => {
       setTimeout(() => setError('Imput New Data'), 1200)
       setError('Added')
     } else {
+      // if the password is not correct, we also display an error message
       setError('Sorry, You do not have permission to add!')
     }
   }
 
-  // Remove an Item based on it's ID
-
-  const EditData = (e) => {
+  // FUNCTION: Remove an Item based on it's ID
+  const deleteCard = (e) => {
+    // prevent default refreshing of the page
     e.preventDefault()
-
+    // if the password is not correct, we change the color of the input field to red for 700ms
     if (Delkey !== password) {
       setTimeout(() => setColorError2(false), 700)
       setColorError2(true)
       setDelKey('')
     }
+    // if the password is correct, we dispatch the action deletePost to remove
+    // the card and we reset the form. We also display an success message to the user
     if (Delkey === password) {
       dispatch(deletePost(ItemID))
       setItemID('')
@@ -73,12 +84,10 @@ const NewAddCard = () => {
       setTimeout(() => setDelerror('Imput New item ID to delete'), 1200)
       setDelerror('Deleted')
     } else {
+      // if the password is not correct, we also display an error message
       setDelerror('Sorry, You do not have permission to Delete!')
     }
   }
-
-  ////////////////////////////////////////////////////////////////////////////
-  ////////////////////////////////////////////////////////////////////////////
 
   return (
     <>
@@ -98,7 +107,7 @@ const NewAddCard = () => {
       </section>
       <div className="uperuper">
         <div className="container myowncontainer">
-          <form onSubmit={sendData}>
+          <form onSubmit={createCard}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input
@@ -234,12 +243,11 @@ const NewAddCard = () => {
       <br />
       <div className="uperuper">
         <div className="container myowncontainer">
-          <form onSubmit={EditData}>
+          <form onSubmit={deleteCard}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group pt-2 mx-auto">
                 <div className="title">
                   <h2 id="Add">Delete Card</h2>
-                  {/* <div className="underline"></div> */}
                   <br />
                 </div>
                 <div className="d-flex justify-content-center">

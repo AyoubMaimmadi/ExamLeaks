@@ -42,14 +42,6 @@ const Reviews = () => {
 
   const handleReview = (e) => {
     e.preventDefault()
-    // if (parseInt(auiID) == 0) {
-    //   setTimeout(() => setColorError3(false), 800)
-    //   setColorError3(true)
-    //   setauiID('')
-    //   setTimeout(() => setReviewError(`Only AUIers can leave reviews :/`), 800)
-    //   setReviewError(`ID doesn't exist`)
-    //   setauiID('')
-    // }
     if (parseInt(auiID) >= 70000) {
       setusername('')
       setschool('')

@@ -78,7 +78,6 @@ const Homewok = () => {
             {pagename}
             <a className="scroll-link"></a>
           </h2>
-          {/* <div className="underline"></div> */}
         </div>
         <Categories categories={categories} filterItems={filterItems} />
         <Exam items={examItems} />
