@@ -1,24 +1,37 @@
 import React, { useState } from 'react'
+
+// components imports
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 import Icon from './Icon'
+
+// React Google Login API
 import { GoogleLogin } from 'react-google-login'
+// for page routing
 import { Link, useHistory } from 'react-router-dom'
+
+// hook for displatching actions to redux store
 import { useDispatch } from 'react-redux'
+
+// actions imports to be dispatched
 import { signin, signup } from '../actions/auth'
 
 const Auth = () => {
+  // we initialize a useDispatch hook to dispatch actions to the redux store
   const dispatch = useDispatch()
+  // we initialize a useHistory hook to navigate to the home page after login or signup
   const history = useHistory()
 
+  // we initialize useState Hooks to be able to access them from the component
   const [username, setusername] = useState('')
   const [email, setemail] = useState('')
   const [password, setpassword] = useState('')
   const [password2, setpassword2] = useState('')
 
+  // hook to check if a user has alredy signed up
   const [isSignup, setisSignup] = useState(false)
 
-  const handleSubmit = (e) => {
+  const signUpEvent = (e) => {
     e.preventDefault()
     const formData = { username, email, password, password2 }
     setusername('')
@@ -70,7 +83,7 @@ const Auth = () => {
       </section>
       <div className="uperuper">
         <div className="container myowncontainer">
-          <form autoComplete="off" onSubmit={handleSubmit}>
+          <form autoComplete="off" onSubmit={signUpEvent}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input

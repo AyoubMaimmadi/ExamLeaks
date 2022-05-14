@@ -1,9 +1,11 @@
 import React from 'react'
+
+// for dynamic routing between our project's components/pages
 import { Link } from 'react-router-dom'
 
 const date = new Date().getFullYear()
 
-// Literly just a footer for some style points
+// Our websites footer
 
 const Footer = () => {
   return (
@@ -38,7 +40,7 @@ const Footer = () => {
                 <img src="./images//twitter.svg" />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://www.linkedin.com/in/ayoub-maimmadi-533587198/"
                 target="_blank"
@@ -46,7 +48,7 @@ const Footer = () => {
               >
                 <img src="./images//linkedin.svg" />
               </a>
-            </li>
+            </li> */}
             <li>
               <a
                 href="https://github.com/AyoubMaimmadi"
@@ -65,7 +67,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Ayoub Maimmadi
+                Hex-Team
               </a>
               <span> {date}.</span>&nbsp;All rights reserved.{' '}
               <Link to="/reach-us" target="_blank" rel="noreferrer">
