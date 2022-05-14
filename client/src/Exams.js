@@ -1,32 +1,31 @@
 import React, { useState, useEffect } from 'react'
+
+// Components imports
 import Examm from './Components/Examm'
 import Categories from './Components/Categories'
 import Uparrow from './Components/Uparrow'
 import Navbar from './Components/Navbar'
+
+// Used to fetch the data from the global redux store
 import { useSelector } from 'react-redux'
 
 export const Exams = () => {
+  // we initialize useSelector as a hook, where we get access the to whole redux store
+  // and we extract the posts from the store that we exported from the reducers/index.js
   const posts = useSelector((state) => state.posts)
 
+  // we set an array of categories that has all the posts categories and an ALL category
   const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
+  // we set useState Hooks to be able to access them from the component
   const [examItems, setExamItems] = useState([posts])
   const [categories, setCategories] = useState(allCategories)
+
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')
 
   useEffect(() => {
     setExamItems(posts)
   }, [])
-
-  // Gather all data in one array with unique values
-
-  // const allData = [
-  //   ...new Set(posts.map((item) => item)),
-  //   ...new Set(quizeData.map((item) => item)),
-  //   ...new Set(prjdata.map((item) => item)),
-  //   ...new Set(hwdata.map((item) => item)),
-  //   ...new Set(sylData.map((item) => item)),
-  // ]
 
   // When there is an input in the searchbar we change the name of the page to Results and search for the target using simple array manipulation
 

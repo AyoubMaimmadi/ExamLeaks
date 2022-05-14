@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+
+// components imports
 import Navbar from './Navbar'
 import Exam from './Exam'
 import Uparrow from './Uparrow'
@@ -7,23 +9,24 @@ import hwdata from '../data/HomeWorkData'
 import prjdata from '../data/ProjectData'
 import quizeData from '../data/QuizData'
 import sylData from '../data/syllabusData'
+
+// Used to fetch the data from the global redux store
 import { useSelector } from 'react-redux'
+
+// To give that self writing and deleting effect we used in the homepage
 import Typewriter from 'typewriter-effect'
 
 const HomePage = () => {
+  // we initialize useSelector as a hook, where we get access the to whole redux store
+  // and we extract the posts from the store that we exported from the reducers/index.js
   const posts = useSelector((state) => state.posts)
 
+  // we set useState Hooks to be able to access them from the component
   const [examItems, setExamItems] = useState(items)
   const [flage, setFlage] = useState(false)
   const [input, setInput] = useState('')
-  const [pagename, setPagename] = useState(`<Typewriter
-  onInit={(typewriter) => {
-    typewriter.typeString('Welcome to the Online Exam Portal')
-  }}
-  />`)
-  const [pageHeadline, setpageHeadline] = useState(
-    `A Website For Boosting AUIer's GPA`
-  )
+
+  // we put all data of exams, quizes, projects, homework, ... in one array
   const allData = [
     ...new Set(posts.map((item) => item)),
     ...new Set(quizeData.map((item) => item)),
@@ -32,30 +35,35 @@ const HomePage = () => {
     ...new Set(sylData.map((item) => item)),
   ]
 
-  // When there is an input in the searchbar we change the name of the page to Results and search for the target using simple array manipulation
+  // When an input is detected in the searchbar, the flage is set to true and we search
+  // for the target using simple array manipulation
 
   useEffect(() => {
-    if (pagename === 'Results') {
+    if (flage) {
+      // we 1st set the exam items that will be displayed to an empty array
       setExamItems([])
+      // we map the allData array that has all the data of exams, quizes, projects, homework, ...
       allData.filter((val) => {
+        // we check if the input is in the title or name or category or id of the item
         if (
           val.title.toLowerCase().includes(input.toLowerCase()) ||
           val.name.toLowerCase().includes(input.toLowerCase()) ||
           val.category.toLowerCase().includes(input.toLowerCase()) ||
           val.id == parseInt(input)
         ) {
-          setExamItems((examItems) => [...examItems, val])
-        }
-      })
-    } else {
-      setExamItems([])
-      examItems.filter((val) => {
-        if (val.title.toLowerCase().includes(input.toLowerCase())) {
+          // if it is we add it to the examItems array to be displayed
           setExamItems((examItems) => [...examItems, val])
         }
       })
     }
+    // this means we have to run the effect every time the input changes
   }, [input])
+
+  // in the JSX/HTML we check if the flage is true or false
+  // flage ? .... : ....
+  // if flage is true we display the examItems array that has the filtered data
+  // if flage is false we display a the homepage interface which is a picture
+  // line 113-124
 
   return (
     <main>
@@ -70,11 +78,8 @@ const HomePage = () => {
             onChange={(e) => {
               setInput(e.target.value)
               setFlage(true)
-              setPagename('Results')
               if (e.target.value === '') {
                 setFlage(false)
-                setPagename(`A Website For Boosting AUIer's GPA`)
-                setpageHeadline(`A Website For Boosting AUIer's GPA`)
               }
             }}
           />
@@ -100,34 +105,10 @@ const HomePage = () => {
                 ],
                 autoStart: true,
                 loop: true,
-                // delay: 175,
               }}
-              // onInit={(typewriter) => {
-              //   typewriter
-              // .typeString(`Exams`)
-              // .pause(5000)
-              // .deleteAll()
-              // .typeString(`Quizes`)
-              // .pause(5000)
-              // .deleteAll()
-              // .typeString(`Projects`)
-              // .pause(5000)
-              // .deleteAll()
-              // .typeString(`Homework`)
-              // .pause(5000)
-              // .deleteAll()
-              // .typeString(`Syllabus`)
-              // .pause(5000)
-              // .deleteAll()
-              // .typeString(`Reviews`)
-              // .pause(5000)
-              // .deleteAll()
-              //     .start()
-              // }}
             />
             <a className="scroll-link"></a>
           </h2>
-          {/* <div className="underline"></div> */}
         </div>
         {flage ? (
           <>
