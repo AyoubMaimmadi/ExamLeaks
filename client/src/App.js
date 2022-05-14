@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+
+// component imports
 import Exams from './Exams'
 import Homewok from './Homework'
 import Footer from './Components/Footer'
@@ -12,11 +14,17 @@ import HomePage from './Components/HomePage'
 import Auth from './Components/Auth'
 import SignIN from './Components/SignIN'
 import Email from './Components/Email'
+
+// hook for displatching actions to redux store
 import { useDispatch } from 'react-redux'
+// action getPosts that will dispatched
 import { getPosts } from './actions/posts'
+
+// for dynamic routing between pages/components
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
+// Account setting component for signing in with credentials or with Google
 const SignIn = () => {
   return (
     <div className="format">
@@ -28,11 +36,11 @@ const SignIn = () => {
 }
 
 const App = () => {
+  // we initialize a useDispatch hook to dispatch an action to the redux store
   const dispatch = useDispatch()
-  const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
-  const [username, setUsername] = useState('JD')
 
   useEffect(() => {
+    // we dispatch the getPosts action every time the component is rendered
     dispatch(getPosts())
   }, [dispatch])
 

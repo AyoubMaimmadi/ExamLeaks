@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Google SVG icon
 const Icon = () => (
   <svg style={{ width: '20px', height: '20px' }} viewBox="0 0 24 24">
     <path

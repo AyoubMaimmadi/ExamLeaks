@@ -34,23 +34,22 @@ const Auth = () => {
   const signUpEvent = (e) => {
     // to prevent page from reloading
     e.preventDefault()
-
     // we fill an object with the user's data
     const formData = { username, email, password, password2 }
-
     // after clicking on the sign up button, we clear the form from the user inputs
     setusername('')
     setemail('')
     setpassword('')
     setpassword2('')
-
     // we check if the user has already signed up
     if (!isSignup) {
       // if the user has not already signed up, we dispatch the signup action
       dispatch(signup(formData, history))
+      alert('You have successfully signed up')
     } else {
       // if the user has already signed up, we dispatch the signin action
       dispatch(signin(formData, history))
+      alert('You have successfully signed in')
     }
   }
 

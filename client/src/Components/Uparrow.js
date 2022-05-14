@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsArrowUpCircleFill } from 'react-icons/bs'
 
-// Some more HTML magic to get to the top page when you click on the arrow
+// HTML magic to go to the top page when you click on the UP arrow
 
 const Uparrow = () => {
   return (

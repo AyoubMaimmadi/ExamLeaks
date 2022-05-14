@@ -1,6 +1,6 @@
 .search {
   position: absolute;
-  margin-left: 110px;
+  margin-left: 98px;
   border-radius: 40px;
   padding: 10px;
   transform: translate(-50%, -50%);
@@ -37,7 +37,7 @@
 .p-text {
   margin-top: 9rem;
   margin-left: -7rem;
-  margin-top: 1rem;
+  margin-top: 1.4rem;
   background-color: transparent;
   border: none;
   color: black;

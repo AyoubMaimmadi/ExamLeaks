@@ -1,12 +1,27 @@
 import React, { useState, useEffect } from 'react'
+
+// componets imports
 import Navbar from './Navbar'
 import SearchBar from './SearchBar'
+
+// for dynamic routing between pages
 import { Link } from 'react-router-dom'
 
 const SignIN = () => {
+  // initializing useState hooks for the sign in form
   const [username, setusername] = useState('')
   const [password, setpassword] = useState('')
-  const [colorError, setColorError] = useState(false)
+
+  const signIn = (e) => {
+    // prevent default form submission
+    e.preventDefault()
+    // check if the username and password are correct
+    if (username === 'admin' && password === 'admin') {
+      alert('Welcome Admin')
+    } else {
+      alert('Invalid Credentials')
+    }
+  }
 
   return (
     <>
@@ -28,7 +43,7 @@ const SignIN = () => {
       </section>
       <div className="uperuper">
         <div className="container myowncontainer">
-          <form onSubmit={{}}>
+          <form onSubmit={signIn}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group mx-auto">
                 <input

@@ -2,21 +2,9 @@ import React, { useState } from 'react'
 import { useEffect } from 'react'
 import exam from '../data/ExamData'
 
-// Doesn't work: ignore
+// The SearchBar component boiler plate
 
 const SearchBar = () => {
-  const [input, setInput] = useState('')
-  const [output, setOutput] = useState([])
-
-  useEffect(() => {
-    setOutput([])
-    exam.filter((val) => {
-      if (val.title.toLowerCase().includes(input.toLowerCase())) {
-        setOutput((output) => [...output, val])
-      }
-    })
-  }, [input])
-
   return (
     <div className="search">
       <input
@@ -24,7 +12,6 @@ const SearchBar = () => {
         name=""
         placeholder="i.e. Software Eng ..."
         className="text"
-        onChange={(e) => setInput(e.target.value)}
       />
       <a href="#" className="btn">
         <i className="fa fa-search "></i>

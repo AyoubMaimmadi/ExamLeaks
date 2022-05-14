@@ -1,26 +1,20 @@
 import React, { useState } from 'react'
-import '../css/nav.css'
-import { Link } from 'react-router-dom'
-import { Avatar } from '@material-ui/core'
+// Lock icon to display in the avatar when the user not logged in
 import LoockOutlinedIcon from '@material-ui/icons/LockOutlined'
+import '../css/nav.css'
+// for dynamic routing between pages
+import { Link } from 'react-router-dom'
+// to display the user's avatar
+import { Avatar } from '@material-ui/core'
 
-// Click on the navigation button and get there using good'ol HMTL magic
+// Navigate between pages/components using the '<Link to = '...'/>' component from react-router-dom
 
 const Navbar = () => {
-  const [username, setusername] = useState('Ayoub Maimmadi')
-  // const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
-
-  // useEffect(() => {
-  //   const token = user?.token
-  //   setUser(JSON.parse(localStorage.getItem('profile')))
-  // }, [])
-
   return (
     <header>
       <div className="app-flex">
-        <h6 className="p-text">{username}</h6>
+        <h6 className="p-text">AM</h6>
         <Link to="/something">
-          {/* <img className="btn2" src="./images/avatar.jpeg" /> */}
           <Avatar className="btn2" src="./images/avatar.jpeg">
             <LoockOutlinedIcon />
           </Avatar>
