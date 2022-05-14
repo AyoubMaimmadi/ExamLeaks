@@ -19,8 +19,9 @@ const Reviews = () => {
   const [review, setreview] = useState('')
   const [auiID, setauiID] = useState('')
 
-  // Every time the (people, index) changes,  we check if its
-  // the end of the array go over the last array index
+  // Every time (people or index) changes,  we check if the index is out of bounds
+  // if the index is less than 0, we set the index to the last index of the array
+  // if the index is higher than the length of the array, we set the index to 0
   useEffect(() => {
     const lastIndex = people.length - 1
     if (index < 0) {
@@ -31,20 +32,23 @@ const Reviews = () => {
     }
   }, [index, people])
 
-  // Every time the index changes, we set up an interval for 5 seconds,
-  // Then we increase the index and clear said interval
+  // Every time the index changes, we set up an interval for 4 seconds,
+  // Then we increase the index to move to the next review/array element
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
-    }, 2500)
+    }, 4000)
     return () => {
       clearInterval(slider)
     }
   }, [index])
 
   // Function to handle the review submission
-  const handleReview = (e) => {
+  const submitReview = (e) => {
+    // Prevent the default behavior of refreshing the page
     e.preventDefault()
+    // Check if the user has provided an AUI ID, if yes, display a success message
+    // and clear the form inputs
     if (parseInt(auiID) >= 70000) {
       setusername('')
       setschool('')
@@ -52,6 +56,8 @@ const Reviews = () => {
       setauiID('')
       setReviewError('Review Added Successfully!')
     } else {
+      // if the user has not provided an AUI ID, we display an error message
+      // and set the color of the input feild to red, and clear the Id input field
       setTimeout(() => setColorError3(false), 800)
       setColorError3(true)
       setauiID('')
@@ -120,7 +126,7 @@ const Reviews = () => {
       <br />
       <div className="uperuper">
         <div className="container myowncontainer">
-          <form onSubmit={handleReview}>
+          <form onSubmit={submitReview}>
             <div className="row pt-5 mx-auto">
               <div className="col-8 form-group pt-2 mx-auto">
                 <div className="title">
