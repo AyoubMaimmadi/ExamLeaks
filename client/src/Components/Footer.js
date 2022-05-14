@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const date = new Date().getFullYear()
 
-// Our websites footer
+// Our website's footer
 
 const Footer = () => {
   return (

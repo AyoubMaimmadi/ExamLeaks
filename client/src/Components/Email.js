@@ -3,23 +3,31 @@ import Navbar from './Navbar'
 import emailjs from 'emailjs-com'
 
 const Email = () => {
+  // send email function using emailjs
   function sendEmail(e) {
+    // prevent page from refreshing
     e.preventDefault()
+    // initialize emailjs
     emailjs
       .sendForm(
         'gmail',
         'template_h4ehzyk',
         e.target,
+        // user account id from emailjs when we created the account
         'user_lgllKkiV9b83P4UUBcDGr'
       )
+      // returns a promise
       .then(
         (result) => {
+          // output results to console for debugging
           console.log(result.text)
         },
         (error) => {
-          console.log(error.text)
+          // output errors to console for debuggings
+          console.error(error.text)
         }
       )
+    // clear the form after submitting
     e.target.reset()
   }
   return (

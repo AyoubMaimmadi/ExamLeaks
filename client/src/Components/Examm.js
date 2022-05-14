@@ -1,8 +1,11 @@
 import React from 'react'
 
-// Clone of Exam that deals with _id (MonogoDB)
-// We get items from Exams, Quizes, ...
-// We destruture then into cards that can be displayed
+//  FOR ITEMS THAT ARE SAVED IN THE DATABASE MONGODB WITH THE ID = _id
+
+// We get the exam or quiz or prj or syl items from the components who pass them as props
+// then we map them, and put each item info into a card that can be displayed with a unique id
+// We destruture their data {id, title, .... } so that we turn them into cards that can be displayed
+// and finally we return the card for each item
 
 const Examm = ({ items }) => {
   return (

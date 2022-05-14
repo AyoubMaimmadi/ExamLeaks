@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../css/errorpage.css'
 
+// Error page component if the user tries to access something that does not exist
 const ErrorPage = () => {
   return (
     <div className="mainbox">
