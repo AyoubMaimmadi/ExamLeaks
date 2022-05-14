@@ -1,4 +1,9 @@
 // All the action types in this application and what they return
+
+// As soon as the action is dispatched, the reducer will be called
+// The reducer will then update the state based on the action
+// and return it to the component that called that action
+
 export default (posts = [], action) => {
   switch (action.type) {
     case 'FETCH_ALL':
