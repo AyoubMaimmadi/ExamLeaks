@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react'
+
+// imports
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi'
 import { AiOutlineComment } from 'react-icons/ai'
 import data from './data/ReviewsData'
 import Navbar from './Components/Navbar'
 
 const Reviews = () => {
+  // useState hooks
   const [people, setPeople] = useState(data)
   const [index, setIndex] = useState(0)
-
   const [reviewError, setReviewError] = useState(
     `You must have an AUI ID to leave a review!`
   )
@@ -17,8 +19,8 @@ const Reviews = () => {
   const [review, setreview] = useState('')
   const [auiID, setauiID] = useState('')
 
-  // Every time the (people, index) changes,  we check if its the end of the array go over the last array index
-
+  // Every time the (people, index) changes,  we check if its
+  // the end of the array go over the last array index
   useEffect(() => {
     const lastIndex = people.length - 1
     if (index < 0) {
@@ -29,8 +31,8 @@ const Reviews = () => {
     }
   }, [index, people])
 
-  // Every time the index changes, we set up an interval for 5 seconds, Then we increase the index and clear said interval
-
+  // Every time the index changes, we set up an interval for 5 seconds,
+  // Then we increase the index and clear said interval
   useEffect(() => {
     let slider = setInterval(() => {
       setIndex(index + 1)
@@ -40,6 +42,7 @@ const Reviews = () => {
     }
   }, [index])
 
+  // Function to handle the review submission
   const handleReview = (e) => {
     e.preventDefault()
     if (parseInt(auiID) >= 70000) {
