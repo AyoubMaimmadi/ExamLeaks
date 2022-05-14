@@ -5,6 +5,9 @@ import * as api from '../api'
 // The action is an object with a type property, and a payload property
 // The payload property is the data that the action will send to the reducer
 // The type property is a string that describes the action
+// As soon as the action is dispatched, the reducer will be called
+// The reducer will then update the state based on the action
+// and return it to the component that called the action
 
 // We return the action fetch all the posts with dispatch type FETCH_ALL and the payload is the response/ data from the api
 export const getPosts = () => async (dispatch) => {
