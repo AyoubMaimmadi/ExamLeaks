@@ -51,7 +51,7 @@ const HomePage = () => {
           val.category.toLowerCase().includes(input.toLowerCase()) ||
           val.id == parseInt(input)
         ) {
-          // if it is we add it to the examItems array to be displayed
+          // if true, we add it to the examItems array to be displayed
           setExamItems((examItems) => [...examItems, val])
         }
       })

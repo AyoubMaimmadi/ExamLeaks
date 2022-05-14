@@ -19,26 +19,32 @@ export const Exams = () => {
   // we set useState Hooks to be able to access them from the component
   const [examItems, setExamItems] = useState([posts])
   const [categories, setCategories] = useState(allCategories)
-
   const [input, setInput] = useState('')
   const [pagename, setPagename] = useState('Exams')
 
   useEffect(() => {
+    // when we first load the page we set the exam items to be all the posts
     setExamItems(posts)
   }, [])
 
-  // When there is an input in the searchbar we change the name of the page to Results and search for the target using simple array manipulation
+  // When there is an input in the searchbar we change the name of the page
+  // to Results and search for the target using simple array manipulation
 
   useEffect(() => {
+    // the page name is set to Results when there is an input in the searchbar
     if (pagename === 'Results') {
+      // we 1st set the exam items that will be displayed to an empty array
       setExamItems([])
+      // we map the posts of exams
       posts.filter((val) => {
+        // we check if the input is in the title or name or category or id of the exam item
         if (
           val.title.toLowerCase().includes(input.toLowerCase()) ||
           val.name.toLowerCase().includes(input.toLowerCase()) ||
           val.category.toLowerCase().includes(input.toLowerCase()) ||
           val.id == parseInt(input)
         ) {
+          // if true,  we add it to the examItems array to be displayed
           setExamItems((examItems) => [...examItems, val])
         }
       })
