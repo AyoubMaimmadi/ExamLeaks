@@ -3,6 +3,8 @@ import * as api from '../api'
 // Action Creators
 // Functions that return actions
 // The action is an object with a type property, and a payload property
+// The payload property is the data that the action will send to the reducer
+// The type property is a string that describes the action
 
 // We return the action fetch all the posts with dispatch type FETCH_ALL and the payload is the response/ data from the api
 export const getPosts = () => async (dispatch) => {
