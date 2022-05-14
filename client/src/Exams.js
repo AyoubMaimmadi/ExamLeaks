@@ -9,13 +9,14 @@ import Navbar from './Components/Navbar'
 // Used to fetch the data from the global redux store
 import { useSelector } from 'react-redux'
 
+// we set an array of categories that has all the posts categories and an ALL category
+const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
+
 export const Exams = () => {
   // we initialize useSelector as a hook, where we get access the to whole redux store
   // and we extract the posts from the store that we exported from the reducers/index.js
   const posts = useSelector((state) => state.posts)
 
-  // we set an array of categories that has all the posts categories and an ALL category
-  const allCategories = ['all', ...new Set(posts.map((item) => item.category))]
   // we set useState Hooks to be able to access them from the component
   const [examItems, setExamItems] = useState([posts])
   const [categories, setCategories] = useState(allCategories)
@@ -29,7 +30,6 @@ export const Exams = () => {
 
   // When there is an input in the searchbar we change the name of the page
   // to Results and search for the target using simple array manipulation
-
   useEffect(() => {
     // the page name is set to Results when there is an input in the searchbar
     if (pagename === 'Results') {
@@ -49,6 +49,8 @@ export const Exams = () => {
         }
       })
     } else {
+      // when we delete the input from search bar when and page != Results
+      // we display all the posts back agagin because this time the input is empty
       setExamItems([])
       posts.filter((val) => {
         if (val.title.toLowerCase().includes(input.toLowerCase())) {
@@ -58,14 +60,16 @@ export const Exams = () => {
     }
   }, [input])
 
-  // Filter Items based on the School i.e. CSC, BA, ...
-
+  // Filter Cards based on the School i.e. CSC, BA, ...
   const filterItems = (category) => {
     if (category === 'all') {
+      // when the category is all, we display all the posts and return
       setExamItems(posts)
       return
     }
+    // when the category is not all, we filter the posts based on the category
     const newItems = posts.filter((item) => item.category === category)
+    // we set the exam items to be the filtered items
     setExamItems(newItems)
   }
 
