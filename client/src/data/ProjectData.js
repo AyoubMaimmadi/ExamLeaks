@@ -5,7 +5,7 @@ const prjdata = [
     category: 'SHSS',
     name: 'SHSS 3300',
     img: './images/shss.jpg',
-    link: 'https://github.com/AyoubMaimmadi',
+    link: 'https://drive.google.com/file/d/1H3GIIQK1Bc9VBAj82jlHTTn20w096P9N/view',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -14,7 +14,7 @@ const prjdata = [
     category: 'EMS',
     name: 'IMS 3300',
     img: './images/ims.jpg',
-    link: 'https://github.com/AyoubMaimmadi',
+    link: 'https://drive.google.com/file/d/1H3GIIQK1Bc9VBAj82jlHTTn20w096P9N/view',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
   {
@@ -23,7 +23,7 @@ const prjdata = [
     category: 'CSC',
     name: 'CSC 3300',
     img: './images/csc.png',
-    link: 'https://github.com/AyoubMaimmadi',
+    link: 'https://drive.google.com/file/d/1H3GIIQK1Bc9VBAj82jlHTTn20w096P9N/view',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
   },
 ]

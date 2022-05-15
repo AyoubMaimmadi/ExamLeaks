@@ -1,19 +1,11 @@
 const reviews = [
   {
-    id: 0,
-    image: './images/bot.png',
-    name: 'John Doe',
-    title: 'BA Student',
-    quote:
-      'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
-  },
-  {
     id: 1,
     image: './images/ayoub.jpeg',
     name: 'Ayoub Maimmadi',
     title: 'SSE Student',
     quote:
-      'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 2,
@@ -21,7 +13,7 @@ const reviews = [
     name: 'Rabii Alaoui',
     title: 'SSE Student',
     quote:
-      'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 3,
@@ -29,7 +21,7 @@ const reviews = [
     name: 'Imane Ettabaa',
     title: 'SSE Student',
     quote:
-      'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 4,
@@ -37,7 +29,7 @@ const reviews = [
     name: 'Hiba Akhaddar',
     title: 'SSE Student',
     quote:
-      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 5,
@@ -45,7 +37,7 @@ const reviews = [
     name: 'Abderrahmane Jibrane',
     title: 'BA Student',
     quote:
-      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 6,
@@ -53,7 +45,7 @@ const reviews = [
     name: 'Noure Eddine Jenhaji',
     title: 'EMS Student',
     quote:
-      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 7,
@@ -61,7 +53,7 @@ const reviews = [
     name: 'Ayman Tardaoui',
     title: 'BA Student',
     quote:
-      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     id: 8,
@@ -69,7 +61,7 @@ const reviews = [
     name: 'Taha Samih',
     title: 'EMS Student',
     quote:
-      'Marfa af yr 3 wolf moon kogi, readymade distillery asymmetrical seitan kale chips fingerstache cloud bread mustache twee messenger bag.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
 ]
 
