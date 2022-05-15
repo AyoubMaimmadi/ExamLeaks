@@ -71,8 +71,16 @@ const Footer = () => {
               </a>
               <span> {date}.</span>&nbsp;All rights reserved.{' '}
               <Link to="/reach-us" target="_blank" rel="noreferrer">
-                Reach Us.
+                Reach Us
               </Link>
+              <span>&nbsp;Via Email, or view the</span>
+              <a
+                href="https://drive.google.com/drive/folders/1sOkUhuKSSebG_Vk9V_fUoE6EH-MEFCxy"
+                target="_blank"
+                rel="noreferrer"
+              >
+                &nbsp;Agreement Form.
+              </a>
             </p>
           </div>
         </div>
