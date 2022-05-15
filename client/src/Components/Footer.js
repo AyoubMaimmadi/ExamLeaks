@@ -75,7 +75,7 @@ const Footer = () => {
               </Link>
               <span>&nbsp;Via Email, or view the</span>
               <a
-                href="https://drive.google.com/drive/folders/1sOkUhuKSSebG_Vk9V_fUoE6EH-MEFCxy"
+                href="https://drive.google.com/file/d/1gbkt8w3FFGgVJxcs9LLoYtPUKnZJy9IU/view"
                 target="_blank"
                 rel="noreferrer"
               >
