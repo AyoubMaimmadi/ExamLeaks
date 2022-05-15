@@ -55,6 +55,15 @@ const HomePage = () => {
           setExamItems((examItems) => [...examItems, val])
         }
       })
+    } else {
+      // when we delete the input from search bar when and page != Results
+      // we display all the posts back agagin because this time the input is empty
+      setExamItems([])
+      items.filter((val) => {
+        if (val.title.toLowerCase().includes(input.toLowerCase())) {
+          setExamItems((examItems) => [...examItems, val])
+        }
+      })
     }
     // this means we have to run the effect every time the input changes
   }, [input])
