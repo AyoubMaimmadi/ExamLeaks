@@ -67,7 +67,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                Hex-Team
+                Ayoub Maimmadi
               </a>
               <span> {date}.</span>&nbsp;All rights reserved.{' '}
               <Link to="/reach-us" target="_blank" rel="noreferrer">
