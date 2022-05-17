@@ -63,7 +63,7 @@ const Footer = () => {
             <p>
               Copyright &copy;{' '}
               <a
-                href="https://gpabooster-api.herokuapp.com/exams"
+                href="https://gpa-booster-api.herokuapp.com/exams"
                 target="_blank"
                 rel="noreferrer"
               >
