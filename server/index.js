@@ -23,9 +23,7 @@ app.get('/', (req, res) => {
 })
 
 // MongoDB link with express back-end
-// const CONNECTION_URL = process.env.CONNECTION_URL
-const CONNECTION_URL =
-  'mongodb+srv://ayoubmaimmadi:ayoubmaimmadi123@cluster0.jmgd0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const CONNECTION_URL = process.env.CONNECTION_URL
 
 const PORT = process.env.PORT || 5000
 

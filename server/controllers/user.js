@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken'
 
 import UserModal from '../models/user.js'
 
-const secret = 'somethingCoolAF'
+const secret = process.env.SECRET
 
 // sign in server func that gets user info, compare it with stored data, then return answer
 export const signin = async (req, res) => {
