@@ -1,8 +1,8 @@
-# GPA-Booster (Still In Production)
+# GPA-Booster
 
 ![](client/public/images/gpabooster.PNG)
 
-## Agile Software Engineering Project using React: (JS/JSX/CSS/MongoDB/Express/Bootstrap/...)
+## Agile Software Engineering Project using React: (MongoDB/Express/Bootstrap)
 
 ## Allows AUIers to easily find old exams, quizes, projects, and homeworks.
 
@@ -18,14 +18,12 @@ To use you need to:
 
 4- open terminal and run:
 
-##### - `npm install` to install node modules
+##### - `npm or yarn install` to install node modules in the client and server folders
 
-##### - `npm start` to open developement at localhost:3000
+##### - `npm or yarn start` to open developement at localhost:3000 in the client side
 
-#### You can see this website using the link https://gpabooster.netlify.app/
+##### - `npm or yarn start` to open developement at localhost:5000 in the server side
 
-#### You can see this website's API using the link https://gpa-booster-api.herokuapp.com/exams
+#### View website -> https://gpabooster.netlify.app/
 
-## OR Using Phone
-
-![](client/public/images/QRcode.PNG)
+#### View website's API -> https://gpa-booster-api.herokuapp.com/exams
