@@ -26,6 +26,3 @@ To use you need to:
 
 #### You can see this website's API using the link https://gpa-booster-api.herokuapp.com/exams
 
-## OR Using Phone
-
-![](./public/images/QRcode.PNG)
