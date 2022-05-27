@@ -24,6 +24,6 @@ To use you need to:
 
 ##### - `npm or yarn start` to open developement at localhost:5000 in the server side
 
-#### View website -> https://gpabooster.netlify.app/
+#### View website -> https://gpa-booster.vercel.app/
 
 #### View website's API -> https://gpa-booster-api.herokuapp.com/exams
