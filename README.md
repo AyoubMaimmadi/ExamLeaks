@@ -1,6 +1,6 @@
 # GPA-Booster
 
-##### View website -> https://gpa-booster.vercel.app/
+##### View -> https://gpa-booster.vercel.app/
 
 ![](client/public/images/gpabooster.PNG)
 
