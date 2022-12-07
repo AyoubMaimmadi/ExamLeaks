@@ -11,7 +11,7 @@ import { useSelector } from 'react-redux'
 
 export const Exams = () => {
   // we initialize useSelector as a hook, where we get access the to whole redux store
-  // and we extract the posts from the store that we exported from the reducers/index.js
+  // and we extract the posts0 from the store that we exported from the reducers/index.js
   const posts = useSelector((state) => state.posts)
 
   // we set useState Hooks to be able to access them from the component
