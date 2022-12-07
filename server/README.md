@@ -25,7 +25,3 @@ To use you need to:
 #### You can see this website using the link https://gpa-booster.vercel.app/
 
 #### You can see this website's API using the link https://gpa-booster-api.herokuapp.com/exams
-
-## OR Using Phone
-
-![](../client/public/images/QRcode.PNG)
