@@ -210,7 +210,7 @@ const postData = [
     id: 1018342342016,
     title: 'Agile Fes El Medina',
     category: 'CSC',
-    name: 'FOO 4400',
+    name: '',
     img: './images/csc.png',
     link: 'https://drive.google.com/file/d/1H3GIIQK1Bc9VBAj82jlHTTn20w096P9N/view',
     desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
