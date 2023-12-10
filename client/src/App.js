@@ -14,6 +14,7 @@ import HomePage from './Components/HomePage'
 import Auth from './Components/Auth'
 import SignIN from './Components/SignIN'
 import Email from './Components/Email'
+import Video from './Video'
 
 // hook for displatching actions to redux store
 import { useDispatch } from 'react-redux'
@@ -27,9 +28,9 @@ import { Link } from 'react-router-dom'
 // Account setting component for signing in with credentials or with Google
 const SignIn = () => {
   return (
-    <div className="format">
-      <Link to="/auth">
-        <button className="btn3">Account</button>
+    <div className='format'>
+      <Link to='/auth'>
+        <button className='btn3'>Account</button>
       </Link>
     </div>
   )
@@ -48,55 +49,59 @@ const App = () => {
     <>
       <Router>
         <Switch>
-          <Route exact path="/">
+          <Route exact path='/'>
             <SignIn />
             <HomePage />
           </Route>
-          <Route exact path="/exams">
+          <Route exact path='/exams'>
             <SignIn />
             <Exams />
           </Route>
-          <Route exact path="/quiz">
+          <Route exact path='/quiz'>
             <SignIn />
             <Quiz />
           </Route>
-          <Route exact path="/project">
+          <Route exact path='/project'>
             <SignIn />
             <Projects />
           </Route>
-          <Route exact path="/homework">
+          <Route exact path='/homework'>
             <SignIn />
             <Homewok />
           </Route>
-          <Route exact path="/edit">
+          <Route exact path='/video'>
+            <SignIn />
+            <Video />
+          </Route>
+          <Route exact path='/edit'>
             <SignIn />
             <NewAddCard />
           </Route>
-          <Route exact path="/reviews">
+          <Route exact path='/reviews'>
             <Rviews />
           </Route>
-          <Route exact path="/syllabus">
+          <Route exact path='/syllabus'>
             <SignIn />
             <Syllabus />
           </Route>
-          <Route exact path="/auth">
+          <Route exact path='/auth'>
             <SignIn />
             <Auth />
           </Route>
-          <Route exact path="/sign-in">
+          <Route exact path='/sign-in'>
             <SignIn />
             <SignIN />
           </Route>
-          <Route exact path="/reach-us">
+          <Route exact path='/reach-us'>
             <SignIn />
             <Email />
           </Route>
-          <Route exact path="*">
+          <Route exact path='*'>
             <ErrorPage />
           </Route>
         </Switch>
       </Router>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

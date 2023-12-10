@@ -103,7 +103,13 @@ const HomePage = () => {
             </span>
             <Typewriter
               options={{
-                strings: ['Countries', 'Cities', 'Places', 'Historical Sites'],
+                strings: [
+                  'Countries',
+                  'Cities',
+                  'Places',
+                  'Historical Sites',
+                  'and more...'
+                ],
                 autoStart: true,
                 loop: true
               }}

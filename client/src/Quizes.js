@@ -90,7 +90,7 @@ const Quiz = () => {
             <a className='scroll-link'></a>
           </h2>
         </div>
-        <Categories categories={categories} filterItems={filterItems} />
+        {/* <Categories categories={categories} filterItems={filterItems} /> */}
         <Exam items={examItems} />
       </section>
       <Uparrow />

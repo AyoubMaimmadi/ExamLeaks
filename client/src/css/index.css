@@ -426,3 +426,21 @@ html {
   text-align: center;
   margin-bottom: 2rem;
 }
+
+.video-chat-container {
+  margin: 5rem;
+  margin-top: 13rem;
+  display: flex;
+}
+
+.video-container {
+  width: 100%;
+}
+
+.chat-card {
+  flex: 1;
+  width: 30rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin-left: 1rem;
+}

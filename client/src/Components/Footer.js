@@ -10,34 +10,34 @@ const date = new Date().getFullYear()
 const Footer = () => {
   return (
     <footer>
-      <div className="footerCol">
-        <div className="container">
-          <ul className="socialCol">
+      <div className='footerCol'>
+        <div className='container'>
+          <ul className='socialCol'>
             <li>
               <a
-                href="https://www.facebook.com/AYOUB.MAIMMADI1"
-                target="_blank"
-                rel="noreferrer"
+                href='https://www.facebook.com/AYOUB.MAIMMADI1'
+                target='_blank'
+                rel='noreferrer'
               >
-                <img src="./images//fb.svg" />
+                <img src='./images//fb.svg' />
               </a>
             </li>
             <li>
               <a
-                href="https://www.instagram.com/ayoubmaimmadi/"
-                target="_blank"
-                rel="noreferrer"
+                href='https://www.instagram.com/ayoubmaimmadi/'
+                target='_blank'
+                rel='noreferrer'
               >
-                <img src="./images//insta.svg" />
+                <img src='./images//insta.svg' />
               </a>
             </li>
             <li>
               <a
-                href="https://twitter.com/Ayoubmaimmadi2"
-                target="_blank"
-                rel="noreferrer"
+                href='https://twitter.com/Ayoubmaimmadi2'
+                target='_blank'
+                rel='noreferrer'
               >
-                <img src="./images//twitter.svg" />
+                <img src='./images//twitter.svg' />
               </a>
             </li>
             {/* <li>
@@ -51,36 +51,25 @@ const Footer = () => {
             </li> */}
             <li>
               <a
-                href="https://github.com/AyoubMaimmadi"
-                target="_blank"
-                rel="noreferrer"
+                href='https://github.com/AyoubMaimmadi'
+                target='_blank'
+                rel='noreferrer'
               >
-                <img src="./images//github.svg" />
+                <img src='./images//github.svg' />
               </a>
             </li>
           </ul>
-          <div className="copyrightCol">
+          <div className='copyrightCol'>
             <p>
               Copyright &copy;{' '}
               <a
-                href="https://gpa-booster-api.herokuapp.com/exams"
-                target="_blank"
-                rel="noreferrer"
+                href='https://gpa-booster-api.herokuapp.com/exams'
+                target='_blank'
+                rel='noreferrer'
               >
                 Ayoub Maimmadi
               </a>
               <span> {date}.</span>&nbsp;All rights reserved.{' '}
-              <Link to="/reach-us" target="_blank" rel="noreferrer">
-                Reach Us
-              </Link>
-              <span>&nbsp;Via Email, or view the</span>
-              <a
-                href="https://drive.google.com/file/d/1gbkt8w3FFGgVJxcs9LLoYtPUKnZJy9IU/view"
-                target="_blank"
-                rel="noreferrer"
-              >
-                &nbsp;Agreement Form.
-              </a>
             </p>
           </div>
         </div>

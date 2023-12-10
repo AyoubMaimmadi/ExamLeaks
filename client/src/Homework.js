@@ -95,7 +95,7 @@ const Homewok = () => {
             </h2>
             {/* <div className="underline"></div> */}
           </div>
-          <Categories categories={categories} filterItems={filterItems} />
+          {/* <Categories categories={categories} filterItems={filterItems} /> */}
           <Exam items={examItems} />
         </section>
         <Uparrow />

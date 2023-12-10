@@ -104,7 +104,7 @@ export const Exams = () => {
           </h2>
           {/* <div className="underline"></div> */}
         </div>
-        <Categories categories={categories} filterItems={filterItems} />
+        {/* <Categories categories={categories} filterItems={filterItems} /> */}
         <Examm items={examItems} />
       </section>
       <Uparrow />
