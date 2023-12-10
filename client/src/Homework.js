@@ -15,7 +15,7 @@ const Homewok = () => {
   // we set useState Hooks to be able to access them from the component
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
-  const [pagename, setPagename] = useState('Homework')
+  const [pagename, setPagename] = useState('Italy')
   const [input, setInput] = useState('')
 
   // When there is an input in the searchbar we change the name of the page
@@ -65,14 +65,14 @@ const Homewok = () => {
   return (
     <>
       <main>
-        <section id="home" className="exam section">
+        <section id='home' className='exam section'>
           <Navbar />
-          <div className="search">
+          <div className='search'>
             <input
-              type="text"
-              name=""
-              placeholder="i.e. Software Eng ..."
-              className="text"
+              type='text'
+              name=''
+              placeholder='i.e. Marakech'
+              className='text'
               onChange={(e) => {
                 setInput(e.target.value)
                 setPagename('Results')
@@ -83,15 +83,15 @@ const Homewok = () => {
                 }
               }}
             />
-            <a href="#" className="btn">
-              <i className="fa fa-search "></i>
+            <a href='#' className='btn'>
+              <i className='fa fa-search '></i>
             </a>
           </div>
           <br />
-          <div className="title">
-            <h2 id="Homework">
+          <div className='title'>
+            <h2 id='Homework'>
               {pagename}
-              <a className="scroll-link"></a>
+              <a className='scroll-link'></a>
             </h2>
             {/* <div className="underline"></div> */}
           </div>

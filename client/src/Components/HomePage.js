@@ -81,7 +81,7 @@ const HomePage = () => {
           <input
             type='text'
             name=''
-            placeholder='i.e. Software Eng ...'
+            placeholder='i.e. Marakech'
             className='text'
             onChange={(e) => {
               setInput(e.target.value)

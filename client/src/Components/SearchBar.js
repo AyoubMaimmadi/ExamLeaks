@@ -6,15 +6,10 @@ import exam from '../data/ExamData'
 
 const SearchBar = () => {
   return (
-    <div className="search">
-      <input
-        type="text"
-        name=""
-        placeholder="i.e. Software Eng ..."
-        className="text"
-      />
-      <a href="#" className="btn">
-        <i className="fa fa-search "></i>
+    <div className='search'>
+      <input type='text' name='' placeholder='i.e. Marakech' className='text' />
+      <a href='#' className='btn'>
+        <i className='fa fa-search '></i>
       </a>
     </div>
   )

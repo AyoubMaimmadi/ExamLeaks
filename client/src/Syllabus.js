@@ -14,7 +14,7 @@ const Syllabus = () => {
   // we set useState Hooks to be able to access them from the component
   const [examItems, setExamItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
-  const [pagename, setPagename] = useState('Syllabus')
+  const [pagename, setPagename] = useState('Thailand')
   const [input, setInput] = useState('')
 
   // When there is an input in the searchbar we change the name of the page
@@ -68,7 +68,7 @@ const Syllabus = () => {
           <input
             type='text'
             name=''
-            placeholder='i.e. Software Eng ...'
+            placeholder='i.e. Marakech'
             className='text'
             onChange={(e) => {
               setInput(e.target.value)

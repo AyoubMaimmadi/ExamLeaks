@@ -31,19 +31,16 @@ const Navbar = () => {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/quiz'>Quizes</Link>
+            <Link to='/quiz'>Morocco</Link>
           </li>
           <li>
-            <Link to='/project'>Projects</Link>
+            <Link to='/project'>Spain</Link>
           </li>
           <li>
-            <Link to='/homework'>Homework</Link>
+            <Link to='/homework'>Italy</Link>
           </li>
           <li>
-            <Link to='/syllabus'>Syllabus</Link>
-          </li>
-          <li>
-            <Link to='/edit'>Edit</Link>
+            <Link to='/syllabus'>Thailand</Link>
           </li>
           <li>
             <Link to='/reviews'>Reviews</Link>

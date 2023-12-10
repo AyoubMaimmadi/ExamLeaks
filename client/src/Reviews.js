@@ -11,7 +11,7 @@ const Reviews = () => {
   const [people, setPeople] = useState(data)
   const [index, setIndex] = useState(0)
   const [reviewError, setReviewError] = useState(
-    `You must have an AUI ID to leave a review!`
+    `Please let us know what you think, and how we can improve!`
   )
   const [colorError3, setColorError3] = useState(false)
   const [username, setusername] = useState('')
@@ -69,17 +69,17 @@ const Reviews = () => {
 
   return (
     <>
-      <section className="section-review">
+      <section className='section-review'>
         <Navbar />
         <br />
 
-        <div className="title-review">
-          <h2 id="Reviews" className="text-center">
+        <div className='title-review'>
+          <h2 id='Reviews' className='text-center'>
             //&nbsp;reviews&nbsp;//
           </h2>
         </div>
         <br />
-        <div className="section-center-review">
+        <div className='section-center-review'>
           {people.map((person, personIndex) => {
             const { id, image, name, title, quote } = person
 
@@ -96,18 +96,18 @@ const Reviews = () => {
 
             return (
               <myarticle className={position} key={id}>
-                <img src={image} alt={name} className="person-img" />
+                <img src={image} alt={name} className='person-img' />
                 <h4>{name}</h4>
-                <p className="title-review">{title}</p>
-                <p className="text-review">{quote}</p>
-                <AiOutlineComment className="icon-review" />
+                <p className='title-review'>{title}</p>
+                <p className='text-review'>{quote}</p>
+                <AiOutlineComment className='icon-review' />
               </myarticle>
             )
           })}
-          <button className="prev" onClick={() => setIndex(index - 1)}>
+          <button className='prev' onClick={() => setIndex(index - 1)}>
             <HiChevronLeft />
           </button>
-          <button className="next" onClick={() => setIndex(index + 1)}>
+          <button className='next' onClick={() => setIndex(index + 1)}>
             <HiChevronRight />
           </button>
         </div>
@@ -124,73 +124,46 @@ const Reviews = () => {
       <br />
       <br />
       <br />
-      <div className="uperuper">
-        <div className="container myowncontainer">
+      <div className='uperuper'>
+        <div className='container myowncontainer'>
           <form onSubmit={submitReview}>
-            <div className="row pt-5 mx-auto">
-              <div className="col-8 form-group pt-2 mx-auto">
-                <div className="title">
-                  <h2 id="Add">Leave Review</h2>
-                  <div className="underline"></div>
+            <div className='row pt-5 mx-auto'>
+              <div className='col-8 form-group pt-2 mx-auto'>
+                <div className='title'>
+                  <h2 id='Add'>Leave Review</h2>
+                  <div className='underline'></div>
                   <br />
                 </div>
-                <div className="d-flex justify-content-center">
+                <div className='d-flex justify-content-center'>
                   <br />
                   <h4>{reviewError}</h4>
                 </div>
                 <input
-                  type="text"
+                  type='text'
                   required
-                  className="form-control"
-                  placeholder="Full Name"
+                  className='form-control'
+                  placeholder='Full Name'
                   value={username}
                   onChange={(e) => {
                     setusername(e.target.value)
                   }}
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
+
+              <div className='col-8 form-group pt-2 mx-auto'>
                 <input
-                  type="text"
+                  type='text'
                   required
-                  className="form-control"
-                  placeholder="AUI School"
-                  value={school}
-                  onChange={(e) => {
-                    setschool(e.target.value)
-                  }}
-                />
-              </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="text"
-                  required
-                  className="form-control"
-                  placeholder="Review"
+                  className='form-control'
+                  placeholder='Review'
                   value={review}
                   onChange={(e) => {
                     setreview(e.target.value)
                   }}
                 />
               </div>
-              <div className="col-8 form-group pt-2 mx-auto">
-                <input
-                  type="number"
-                  required
-                  className={`${
-                    colorError3 ? 'form-control btn-danger' : 'form-control'
-                  }`}
-                  placeholder="AUI ID"
-                  // min="7000"
-                  max="100500"
-                  value={auiID}
-                  onChange={(e) => {
-                    setauiID(e.target.value)
-                  }}
-                />
-              </div>
-              <div className="d-flex justify-content-center pt-4">
-                <input type="submit" className="btn3" value="Add"></input>
+              <div className='d-flex justify-content-center pt-4'>
+                <input type='submit' className='btn3' value='Add'></input>
               </div>
             </div>
           </form>
