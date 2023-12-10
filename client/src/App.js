@@ -57,15 +57,15 @@ const App = () => {
             <SignIn />
             <Exams />
           </Route>
-          <Route exact path='/quiz'>
+          <Route exact path='/morocco'>
             <SignIn />
             <Quiz />
           </Route>
-          <Route exact path='/project'>
+          <Route exact path='/spain'>
             <SignIn />
             <Projects />
           </Route>
-          <Route exact path='/homework'>
+          <Route exact path='/italy'>
             <SignIn />
             <Homewok />
           </Route>
@@ -80,7 +80,7 @@ const App = () => {
           <Route exact path='/reviews'>
             <Rviews />
           </Route>
-          <Route exact path='/syllabus'>
+          <Route exact path='/thailand'>
             <SignIn />
             <Syllabus />
           </Route>
