@@ -12,44 +12,41 @@ import { Avatar } from '@material-ui/core'
 const Navbar = () => {
   return (
     <header>
-      <div className="app-flex">
-        <h6 className="p-text">AM</h6>
-        <Link to="/something">
-          <Avatar className="btn2" src="./images/avatar.jpeg">
+      <div className='app-flex'>
+        <h6 className='p-text'>AM</h6>
+        <Link to='/something'>
+          <Avatar className='btn2' src='./images/avatar.jpeg'>
             <LoockOutlinedIcon />
           </Avatar>
         </Link>
       </div>
-      <nav className="main-nav">
-        <input type="checkbox" id="check" />
-        <label htmlFor="check" className="menu-btn">
-          <i className="fas fa-bars"></i>
+      <nav className='main-nav'>
+        <input type='checkbox' id='check' />
+        <label htmlFor='check' className='menu-btn'>
+          <i className='fas fa-bars'></i>
         </label>
-        <a href="index.html" className="logo"></a>
-        <ul className="navlinks">
+        <a href='index.html' className='logo'></a>
+        <ul className='navlinks'>
           <li>
-            <Link to="/">Home</Link>
+            <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to="/exams">Exams</Link>
+            <Link to='/quiz'>Quizes</Link>
           </li>
           <li>
-            <Link to="/quiz">Quizes</Link>
+            <Link to='/project'>Projects</Link>
           </li>
           <li>
-            <Link to="/project">Projects</Link>
+            <Link to='/homework'>Homework</Link>
           </li>
           <li>
-            <Link to="/homework">Homework</Link>
+            <Link to='/syllabus'>Syllabus</Link>
           </li>
           <li>
-            <Link to="/syllabus">Syllabus</Link>
+            <Link to='/edit'>Edit</Link>
           </li>
           <li>
-            <Link to="/edit">Edit</Link>
-          </li>
-          <li>
-            <Link to="/reviews">Reviews</Link>
+            <Link to='/reviews'>Reviews</Link>
           </li>
         </ul>
       </nav>

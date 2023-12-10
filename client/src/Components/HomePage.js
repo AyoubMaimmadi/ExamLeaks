@@ -28,11 +28,10 @@ const HomePage = () => {
 
   // we put all data of exams, quizes, projects, homework, ... in one array
   const allData = [
-    ...new Set(posts.map((item) => item)),
     ...new Set(quizeData.map((item) => item)),
     ...new Set(prjdata.map((item) => item)),
     ...new Set(hwdata.map((item) => item)),
-    ...new Set(sylData.map((item) => item)),
+    ...new Set(sylData.map((item) => item))
   ]
 
   // When an input is detected in the searchbar, the flage is set to true and we search
@@ -76,14 +75,14 @@ const HomePage = () => {
 
   return (
     <main>
-      <section id="home" className="exam section">
+      <section id='home' className='exam section'>
         <Navbar />
-        <div className="search">
+        <div className='search'>
           <input
-            type="text"
-            name=""
-            placeholder="i.e. Software Eng ..."
-            className="text"
+            type='text'
+            name=''
+            placeholder='i.e. Software Eng ...'
+            className='text'
             onChange={(e) => {
               setInput(e.target.value)
               setFlage(true)
@@ -92,31 +91,24 @@ const HomePage = () => {
               }
             }}
           />
-          <a href="#" className="btn">
-            <i className="fa fa-search "></i>
+          <a href='#' className='btn'>
+            <i className='fa fa-search '></i>
           </a>
         </div>
         <br />
-        <div className="title">
-          <h2 id="Home" className="typewriter">
-            <span className="typewriter2">
-              Boost Your GPA By Reviewing Previous
+        <div className='title'>
+          <h2 id='Home' className='typewriter'>
+            <span className='typewriter2'>
+              GTP portal, the place where you can virtually visit all
             </span>
             <Typewriter
               options={{
-                strings: [
-                  'Exams',
-                  'Quizes',
-                  'Projects',
-                  'Homework',
-                  'Syllabus',
-                  'Reviews',
-                ],
+                strings: ['Countries', 'Cities', 'Places', 'Historical Sites'],
                 autoStart: true,
-                loop: true,
+                loop: true
               }}
             />
-            <a className="scroll-link"></a>
+            <a className='scroll-link'></a>
           </h2>
         </div>
         {flage ? (
@@ -126,8 +118,12 @@ const HomePage = () => {
           </>
         ) : (
           <main>
-            <section className="moveup">
-              <img className="imgFix" src="./images/students.png" alt="alt" />
+            <section className='moveup'>
+              <img
+                className='imgFix'
+                src='./images/events_tourism_day.jpg'
+                alt='alt'
+              />
             </section>
           </main>
         )}

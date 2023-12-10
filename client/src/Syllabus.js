@@ -62,14 +62,14 @@ const Syllabus = () => {
 
   return (
     <main>
-      <section id="home" className="exam section">
+      <section id='home' className='exam section'>
         <Navbar />
-        <div className="search">
+        <div className='search'>
           <input
-            type="text"
-            name=""
-            placeholder="i.e. Software Eng ..."
-            className="text"
+            type='text'
+            name=''
+            placeholder='i.e. Software Eng ...'
+            className='text'
             onChange={(e) => {
               setInput(e.target.value)
               setPagename('Results')
@@ -80,15 +80,15 @@ const Syllabus = () => {
               }
             }}
           />
-          <a href="#" className="btn">
-            <i className="fa fa-search "></i>
+          <a href='#' className='btn'>
+            <i className='fa fa-search '></i>
           </a>
         </div>
         <br />
-        <div className="title">
-          <h2 id="Quizes">
+        <div className='title'>
+          <h2 id='<Quizes>'>
             {pagename}
-            <a className="scroll-link"></a>
+            <a className='scroll-link'></a>
           </h2>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
