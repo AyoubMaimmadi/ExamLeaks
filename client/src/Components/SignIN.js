@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react'
 
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
+import { signin } from '../actions/auth'
+import { useDispatch } from 'react-redux'
 
 const SignIN = () => {
-    const [username, setusername] = useState('')
+    const dispatch = useDispatch()
+
+    const [name, setusername] = useState('')
     const [password, setpassword] = useState('')
+    const history = useHistory()
 
     const signIn = (e) => {
         e.preventDefault()
-        if (username === 'admin' && password === 'admin') {
-            alert('Welcome Admin')
-        } else {
-            alert('Invalid Credentials')
-        }
+        dispatch(signin({ name, password }, history))
     }
 
     return (
@@ -41,7 +42,7 @@ const SignIN = () => {
                                     required
                                     className='form-control'
                                     placeholder='User Name'
-                                    value={username}
+                                    value={name}
                                     onChange={(e) => {
                                         setusername(e.target.value)
                                     }}
