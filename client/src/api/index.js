@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // API for this application, hosted in the PaaS --> Heroku
-const API = axios.create({ baseURL: 'https://gpa-booster-api.herokuapp.com' })
+const API = axios.create({ baseURL: 'http://localhost:5000' })
 
 // Axios funcs for geting, posting, deteling, and updating posts.
 

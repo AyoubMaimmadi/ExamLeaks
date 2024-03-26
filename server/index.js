@@ -29,9 +29,7 @@ const PORT = process.env.PORT || 5000
 
 mongoose
     .connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => app.listen(PORT, () => console.log(`Server Running on: http://localhost:${PORT}`)))
-    .catch((error) => console.log(error.message))
+    .then(() => app.listen(PORT, () => console.log(`Server Running onChange: http://localhost:${PORT}`)))
+    .catch((error) => console.log('error msg', error.message))
 
-// you add this to get less errors, this got me more ones, so i commented it out lol
-
-// mongoose.set('useFindAndModify', false)
+mongoose.set('strictQuery', true)
