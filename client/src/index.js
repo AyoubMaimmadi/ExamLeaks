@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import './css/index.css'
 import './css/searchBar.css'
 import './css/reviews.css'
+import './css/newaddcard.css'
 
 // Main APP import
 import App from './App'
@@ -26,12 +27,12 @@ const store = createStore(reducers, compose(applyMiddleware(thunk)))
 // to access the store from any component.
 // We pass the store as a prop to the provider.
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <Provider store={store}>
+            <Router>
+                <App />
+            </Router>
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById('root')
 )

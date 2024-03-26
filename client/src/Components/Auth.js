@@ -138,18 +138,12 @@ const Auth = () => {
                             </div>
                         </div>
                     </form>
-                    <GoogleLogin
-                        clientId='274059436296-0fjasat9srs1rt3j1ij4hddag02h7vbm.apps.googleusercontent.com'
-                        render={(renderProps) => (
-                            <button className='btn4' onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />}>
-                                Use Google&nbsp;
-                                <Icon />
-                            </button>
-                        )}
-                        onSuccess={googleSuccess}
-                        onFailure={googleFailure}
-                        cookiePolicy='single_host_origin'
-                    />
+                    <div className='d-flex justify-content-center pt-4'>
+                        <Link to='/'>
+                            <button className='btn3'>Home</button>
+                        </Link>
+                    </div>
+
                     <div>
                         <br />
                         <h6 className='text-center'>Already have an account? </h6>

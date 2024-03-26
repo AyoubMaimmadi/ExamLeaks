@@ -2,12 +2,6 @@ import React, { useState } from 'react'
 // Lock icon to display in the avatar when the user not logged in
 import LoockOutlinedIcon from '@material-ui/icons/LockOutlined'
 import '../css/nav.css'
-// for dynamic routing between pages
-import { Link } from 'react-router-dom'
-// to display the user's avatar
-import { Avatar } from '@material-ui/core'
-
-// Navigate between pages/components using the '<Link to = '...'/>' component from react-router-dom
 
 const Navbar = () => {
     return (
