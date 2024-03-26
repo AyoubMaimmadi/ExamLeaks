@@ -1,19 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
-// componets imports
-
-// for dynamic routing between pages
 import { Link } from 'react-router-dom'
 
 const SignIN = () => {
-    // initializing useState hooks for the sign in form
     const [username, setusername] = useState('')
     const [password, setpassword] = useState('')
 
     const signIn = (e) => {
-        // prevent default form submission
         e.preventDefault()
-        // check if the username and password are correct
         if (username === 'admin' && password === 'admin') {
             alert('Welcome Admin')
         } else {

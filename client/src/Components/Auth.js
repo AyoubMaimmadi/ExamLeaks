@@ -1,68 +1,31 @@
 import React, { useState } from 'react'
-// components imports
-// React Google Login API
-import { GoogleLogin } from 'react-google-login'
-// for page routing
 import { Link, useHistory } from 'react-router-dom'
-// hook for displatching actions to redux store
 import { useDispatch } from 'react-redux'
-// actions imports to be dispatched
 import { signin, signup } from '../actions/auth'
 
 const Auth = () => {
-    // we initialize a useDispatch hook to dispatch actions to the redux store
     const dispatch = useDispatch()
-    // we initialize a useHistory hook to navigate to the home page after login or signup
     const history = useHistory()
-    // we initialize useState Hooks to be able to access them from the component
     const [username, setusername] = useState('')
     const [email, setemail] = useState('')
     const [password, setpassword] = useState('')
     const [password2, setpassword2] = useState('')
-    // hook to check if a user has alredy signed up
     const [isSignup, setisSignup] = useState(false)
 
     const signUpEvent = (e) => {
-        // to prevent page from reloading
         e.preventDefault()
-        // we fill an object with the user's data
         const formData = { username, email, password, password2 }
-        // after clicking on the sign up button, we clear the form from the user inputs
         setusername('')
         setemail('')
         setpassword('')
         setpassword2('')
-        // we check if the user has already signed up
         if (!isSignup) {
-            // if the user has not already signed up, we dispatch the signup action
             dispatch(signup(formData, history))
             alert('You have successfully signed up')
         } else {
-            // if the user has already signed up, we dispatch the signin action
             dispatch(signin(formData, history))
             alert('You have successfully signed in')
         }
-    }
-
-    const googleSuccess = async (res) => {
-        // we get user data from the google response object when logging in with google
-        const result = res?.profileObj
-        // we create a token with his google token id
-        const token = res?.tokenId
-        // we dispatch the AUTH action with the user data and the token
-        // which will save the user data/token in the local storage of the browser
-        try {
-            dispatch({ type: 'AUTH', data: { result, token } })
-            // we navigate to the home page after login with google
-            history.push('/')
-        } catch (error) {
-            console.erroe(error)
-        }
-    }
-
-    // in case of failure of the google login we display an error message
-    const googleFailure = () => {
-        console.log('Google sign in was unseccessful. Try again later.')
     }
 
     return (
