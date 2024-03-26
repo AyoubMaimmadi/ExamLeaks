@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import ErrorPage from './Components/ErrorPage'
 import HomePage from './Components/HomePage'

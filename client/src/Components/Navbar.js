@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-// Lock icon to display in the avatar when the user not logged in
-import LoockOutlinedIcon from '@material-ui/icons/LockOutlined'
+import React from 'react'
 import '../css/nav.css'
 
 const Navbar = () => {

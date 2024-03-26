@@ -5,10 +5,10 @@ const API = axios.create({ baseURL: 'https://gpa-booster-api.herokuapp.com' })
 
 // Axios funcs for geting, posting, deteling, and updating posts.
 
-export const fetchPosts = () => API.get('/exams')
-export const createPost = (newPost) => API.post('/exams', newPost)
-export const deletePost = (id) => API.delete(`/exams/${id}`)
-export const updatePost = (id, post) => API.patch(`/exams/${id}`, post)
+export const fetchPosts = () => API.get('/tweets')
+export const createPost = (newPost) => API.post('/tweets', newPost)
+export const deletePost = (id) => API.delete(`/tweets/${id}`)
+export const updatePost = (id, post) => API.patch(`/tweets/${id}`, post)
 
 // Sign in and sign up options
 export const signIn = (formData) => API.post('/user/signin', formData)

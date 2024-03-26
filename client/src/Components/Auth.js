@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 // components imports
-import Icon from './Icon'
 // React Google Login API
 import { GoogleLogin } from 'react-google-login'
 // for page routing
