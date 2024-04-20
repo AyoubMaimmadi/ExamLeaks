@@ -1,12 +1,12 @@
 import express from 'express'
 
-import { getPosts, createPost, deletePost } from '../controllers/posts.js'
+import { getAllTweets, createPost, getRecommendedTweets, kafkaStreemedTweet } from '../controllers/posts.js'
 
 const router = express.Router()
 
-// app routes
-router.get('/', getPosts)
+router.get('/:id', getAllTweets)
+router.get('/recommended/:id', getRecommendedTweets)
+router.post('/sentiment', kafkaStreemedTweet)
 router.post('/', createPost)
-router.delete('/:id', deletePost)
 
 export default router
